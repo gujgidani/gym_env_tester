@@ -9,6 +9,7 @@ import gymnasium as gym
 import numpy as np
 import traci
 from gymnasium import spaces
+from sumolib import checkBinary
 
 import gym_envs.envs.traffic_light_support_functions as tlsf
 
@@ -53,13 +54,15 @@ class TrafficEnv(gym.Env):
             sys.path.append(os.path.join(os.environ['SUMO_HOME'], 'tools'))
 
         if render_mode == 'console':
-            self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.19.0/bin/sumo"
+            #self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.19.0/bin/sumo"
+            self.sumo_binary = checkBinary('sumo')
         else:
-            self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.19.0/bin/sumo-gui"
+            #self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.19.0/bin/sumo-gui"
+            self.sumo_binary = checkBinary('sumo-gui')
         self.sumo_cmd = [
             self.sumo_binary,
             "-c",
-            "/opt/homebrew/Cellar/sumo/1.19.0/share/sumo/tools/2024-06-19-11-38-25/osm.sumocfg",
+            "sumo_files/osm.sumocfg",
             "--start",
             "-e", str(simulation_time),
             "--quit-on-end",
