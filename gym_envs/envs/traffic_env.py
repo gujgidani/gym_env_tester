@@ -55,10 +55,19 @@ class TrafficEnv(gym.Env):
 
         if render_mode == 'console':
             #self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.19.0/bin/sumo"
-            self.sumo_binary = checkBinary('sumo')
+            #Check if mac or linux
+            if sys.platform == "darwin":
+                self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.19.0/bin/sumo"
+            else:
+                self.sumo_binary = '/usr/bin/sumo'
         else:
             #self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.19.0/bin/sumo-gui"
-            self.sumo_binary = checkBinary('sumo-gui')
+            #self.sumo_binary = checkBinary('sumo-gui')
+            #Check if mac or linux
+            if sys.platform == "darwin":
+                self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.19.0/bin/sumo-gui"
+            else:
+                self.sumo_binary = '/usr/bin/sumo-gui'
         self.sumo_cmd = [
             self.sumo_binary,
             "-c",
