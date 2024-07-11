@@ -68,7 +68,7 @@ class TrafficEnv(gym.Env):
             "--quit-on-end",
             "--scale", str(traffic_scale)
         ]
-        traci.start(self.sumo_cmd, port=8813)
+        traci.start(self.sumo_cmd)
 
         self.observation_space = spaces.Dict({
             # Megkérdezni Tamásékat a max értékről
