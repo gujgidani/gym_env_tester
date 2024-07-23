@@ -1,0 +1,206 @@
+
+Episode number:  0
+Step #0.00 (0ms ?*RT. ?UPS, TraCI: 6534ms, vehicles TOT 0 ACT 0 BUF 0)
+Step #300.00 (0ms ?*RT. ?UPS, TraCI: 1488ms, vehicles TOT 236 ACT 62 BUF 18)
+SteRewards:.00 (2ms ~= 500.00*RT, ~70000.00UPS, TraCI: 5ms, vehicles TOT 9598 ACT 140 BUF
+Episode number:  1
+Step #18300.00 (1ms ~= 1000.00*RT, ~134000.00UPS, TraCI: 286ms, vehicles TOT 9987 ACT 134
+Step #Rewards: (1ms ~= 1000.00*RT, ~129000.00UPS, TraCI: 0ms, vehicles TOT 8815 ACT 129 BU
+Episode number:  2
+Step #18300.00 (1ms ~= 1000.00*RT, ~96000.00UPS, TraCI: 106ms, vehicles TOT 9455 ACT 96 BU
+Step #167Rewards:ms ~= 1000.00*RT, ~107000.00UPS, TraCI: 1ms, vehicles TOT 9476 ACT 107 BU
+Episode number:  3
+Step #18300.00 (1ms ~= 1000.00*RT, ~102000.00UPS, TraCI: 131ms, vehicles TOT 10298 ACT 102
+Step #16300.Rewards:~= 1000.00*RT, ~107000.00UPS, TraCI: 16ms, vehicles TOT 8672 ACT 107 B
+Episode number:  4
+Step #18300.00 (3ms ~= 333.33*RT, ~37000.00UPS, TraCI: 129ms, vehicles TOT 9812 ACT 111 BU
+Step #15900.00 Rewards:1000.00*RT, ~106000.00UPS, TraCI: 1ms, vehicles TOT 8784 ACT 106 BU
+Episode number:  5
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 118ms, vehicles TOT 10256 ACT 128 BUF 4897)
+Step #15500.00 (0mRewards:?UPS, TraCI: 1ms, vehicles TOT 8423 ACT 117 BUF 4542)
+Episode number:  6
+Step #18300.00 (1ms ~= 1000.00*RT, ~89000.00UPS, TraCI: 119ms, vehicles TOT 10101 ACT 89 B
+Step #15100.00 (0ms ?Rewards:0*RT, ~98000.00UPS, TraCI: 13ms, vehicles TOT 8890 ACT 98 BUF
+Episode number:  7
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 116ms, vehicles TOT 10780 ACT 95 BUF 4373)
+
+Step #14700.00 (1ms ~= 1Rewards:T, ~132000.00UPS, TraCI: 0ms, vehicles TOT 7935 ACT 132 BU
+Episode number:  8
+Step #18300.00 (1ms ~= 1000.00*RT, ~91000.00UPS, TraCI: 121ms, vehicles TOT 10058 ACT 91 B
+
+Step #14300.00 (1ms ~= 1000Rewards:~97000.00UPS, TraCI: 0ms, vehicles TOT 7634 ACT 97 BUF
+Episode number:  9
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 114ms, vehicles TOT 9791 ACT 93 BUF 5362)
+Step #13900.00 (1ms ~= 1000.00Rewards:9000.00UPS, TraCI: 14ms, vehicles TOT 7688 ACT 119 B
+Episode number:  10
+Step #18300.00 (1ms ~= 1000.00*RT, ~132000.00UPS, TraCI: 111ms, vehicles TOT 9998 ACT 132
+Step #13500.00 (1ms ~= 1000.00*RTRewards:.00UPS, TraCI: 1ms, vehicles TOT 7033 ACT 87 BUF
+Episode number:  11
+Step #18300.00 (1ms ~= 1000.00*RT, ~98000.00UPS, TraCI: 113ms, vehicles TOT 9750 ACT 98 BU
+Step #13100.00 (1ms ~= 1000.00*RT, ~Rewards:vehicles TOT 7275 ACT 109 BUF 3670)
+Episode number:  12
+Step #18300.00 (1ms ~= 1000.00*RT, ~135000.00UPS, TraCI: 102ms, vehicles TOT 10022 ACT 135
+Step #12700.00 (0ms ?*RT. ?UPS, TraCI: Rewards:, TraCI: 15ms, vehicles TOT 6854 ACT 92 BUF
+Episode number:  13
+Step #18300.00 (1ms ~= 1000.00*RT, ~102000.00UPS, TraCI: 121ms, vehicles TOT 10139 ACT 102
+Step #12300.00 (1ms ~= 1000.00*RT, ~99000.Rewards:es TOT 6816 ACT 94 BUF 3456)
+Episode number:  14
+Step #18300.00 (1ms ~= 1000.00*RT, ~129000.00UPS, TraCI: 122ms, vehicles TOT 10159 ACT 129
+Step #11900.00 (1ms ~= 1000.00*RT, ~88000.00URewards:I: 0ms, vehicles TOT 6758 ACT 84 BUF
+Episode number:  15
+Step #18300.00 (1ms ~= 1000.00*RT, ~113000.00UPS, TraCI: 129ms, vehicles TOT 10241 ACT 113
+Step #11500.00 (1ms ~= 1000.00*RT, ~129000.00UPSRewards: 13ms, vehicles TOT 6592 ACT 132 B
+Episode number:  16
+Step #18300.00 (1ms ~= 1000.00*RT, ~99000.00UPS, TraCI: 133ms, vehicles TOT 10258 ACT 99 B
+
+Step #11100.00 (1ms ~= 1000.00*RT, ~91000.00UPS, TrRewards:41 ACT 87 BUF 3221)
+Episode number:  17
+Step #18300.00 (1ms ~= 1000.00*RT, ~135000.00UPS, TraCI: 116ms, vehicles TOT 10003 ACT 135
+Step #10700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TRewards:ACT 126 BUF 3206)
+Episode number:  18
+Step #18300.00 (1ms ~= 1000.00*RT, ~110000.00UPS, TraCI: 105ms, vehicles TOT 9717 ACT 110
+Step #10300.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT Rewards:icles TOT 5773 ACT 89 BUF
+Episode number:  19
+Step #18300.00 (1ms ~= 1000.00*RT, ~116000.00UPS, TraCI: 112ms, vehicles TOT 10168 ACT 116
+Step #9900.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 562Rewards:s TOT 5572 ACT 123 BUF
+Episode number:  20
+Step #18300.00 (1ms ~= 1000.00*RT, ~126000.00UPS, TraCI: 108ms, vehicles TOT 10051 ACT 126
+Step #9500.00 (1ms ~= 1000.00*RT, ~118000.00UPS, TraCI: 0ms, veRewards:F 2629)
+Episode number:  21
+Step #18300.00 (1ms ~= 1000.00*RT, ~119000.00UPS, TraCI: 111ms, vehicles TOT 10199 ACT 119
+Step #9100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 5206 ACT 1Rewards: 5140 ACT 111 BU
+Episode number:  22
+Step #18300.00 (1ms ~= 1000.00*RT, ~139000.00UPS, TraCI: 115ms, vehicles TOT 10146 ACT 139
+Step #8700.00 (1ms ~= 1000.00*RT, ~92000.00UPS, TraCI: 15ms, vehiclesRewards: ACT 89 BUF 2
+Episode number:  23
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 105ms, vehicles TOT 10027 ACT 104 BUF 5126)
+Step #8300.00 (1ms ~= 1000.00*RT, ~103000.00UPS, TraCI: 0ms, vehicles TORewards:
+Episode number:  24
+Step #18300.00 (1ms ~= 1000.00*RT, ~109000.00UPS, TraCI: 103ms, vehicles TOT 9836 ACT 109
+Step #7900.00 (1ms ~= 1000.00*RT, ~86000.00UPS, TraCI: 0ms, vehicles TOT 44Rewards:93 BUF
+Episode number:  25
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 123ms, vehicles TOT 9758 ACT 95 BUF 5395)
+Step #7500.00 (0ms ?*RT. ?UPS, TraCI: 16ms, vehicles TOT 4091 ACT 117 BUF 2226Rewards:
+Episode number:  26
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 105ms, vehicles TOT 10288 ACT 92 BUF 4865)
+
+Step #7100.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 3746 ACT 99 BUF 2234)    Rewards:F
+Episode number:  27
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 235ms, vehicles TOT 10342 ACT 98 BUF 4811)
+Step #6700.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 4192 ACT 107 BUF 1449)      Rewards:
+Episode number:  28
+Step #18300.00 (2ms ~= 500.00*RT, ~65500.00UPS, TraCI: 116ms, vehicles TOT 10596 ACT 131 B
+Step #6300.00 (1ms ~= 1000.00*RT, ~114000.00UPS, TraCI: 16ms, vehicles TOT 3746 ACT 114Rewards:
+Episode number:  29
+Step #18300.00 (1ms ~= 1000.00*RT, ~138000.00UPS, TraCI: 116ms, vehicles TOT 10156 ACT 138
+Step #5900.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 3510 ACT 115 BUF 1460)            Rewards:
+Episode number:  30
+Step #18300.00 (1ms ~= 1000.00*RT, ~98000.00UPS, TraCI: 120ms, vehicles TOT 10304 ACT 98 B
+StRewards:.00 (1ms ~= 1000.00*RT, ~112000.00UPS, TraCI: 0ms, vehicles TOT 3033 ACT 112 BUF
+Episode number:  31
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 109ms, vehicles TOT 10196 ACT 100 BUF 4957)
+Step Rewards: (1ms ~= 1000.00*RT, ~123000.00UPS, TraCI: 18ms, vehicles TOT 3070 ACT 123 BU
+Episode number:  32
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 108ms, vehicles TOT 10725 ACT 92 BUF 4428)
+Step #48Rewards:ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 2721 ACT 125 BUF 1239)
+Episode number:  33
+Step #18300.00 (1ms ~= 1000.00*RT, ~92000.00UPS, TraCI: 115ms, vehicles TOT 10352 ACT 92 B
+Step #4400.Rewards:?*RT. ?UPS, TraCI: 1ms, vehicles TOT 2526 ACT 106 BUF 1095)
+Episode number:  34
+Step #18300.00 (1ms ~= 1000.00*RT, ~103000.00UPS, TraCI: 115ms, vehicles TOT 10358 ACT 103
+Step #4000.00 (0ms ?*RT. ?UPS, TraCI: 18ms, vehicles TOT 2377 ACT 97 BUF 910)
+Episode number:  35 ~= 1000.00*RT, ~103000.00UPS, TraCI: 115ms, vehicles TOT 10358 ACT 103
+Step #3600.00 (1ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 1946 ACT 90 BUF 1004)
+Step #18300.00 (1ms ~= 1000.00*RT, ~102000.00UPS, TraCI: 124ms, vehicles TOT 10295 ACT 102
+Step #3200.00 (1ms ~*RT. ?UPS, TraCI: 0ms, vehicles TOT 1930 ACT 94 BUF 681)
+Episode number:  37 ~= 1000.00*RT, ~102000.00UPS, TraCI: 124ms, vehicles TOT 10295 ACT 102
+Step #2800.00 (1ms ~= 1. ?UPS, TraCI: 15ms, vehicles TOT 1634 ACT 92 BUF 643)
+Step #18300.00 (1ms ~= 1000.00*RT, ~90000.00UPS, TraCI: 117ms, vehicles TOT 9755 ACT 90 BU
+Step #2400.00 (1ms ~= 1000.00*RT, ~109000.00UPS, TraCI: 0ms, vehicles TOT 1462 ACT 109 BUF
+Step #2000.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 1234 ACT 121 BUF 367)
+Step #18300.00 (1ms ~= 1000.00*RT, ~131000.00UPS, TraCI: 117ms, vehicles TOT 10386 ACT 131
+Step #18300.00 (1ms ~= 1000.00*RT, ~93000.00UPS, TraCI: 141ms, vehicles TOT 9782 ACT 93 BU
+Episode number:  40
+Step #18300.00 (1ms ~= 1000.00*RT, ~93000.00UPS, TraCI: 141ms, vehicles TOT 9782 ACT 93 BU
+Step #1200.00 (0ms ?*RT. ?UPS, TraC128000.00UPS, TraCI: 0ms, vehicles TOT 771 ACT 128 BUF
+Episode number:  41
+Step #18300.00 (1ms ~= 1000.00*RT, ~119000.00UPS, TraCI: 119ms, vehicles TOT 10601 ACT 119
+Step #1200.00 (0ms ?*RT. ?UPS, TraCRewards:0UPS, TraCI: 0ms, vehicles TOT 771 ACT 128 BUF
+Episode number:  42
+Step #800.00 (1ms ~= 1000.00*RT, ~1190ms, vehicles TOT 502 ACT 113 BUF 89)
+Step #400.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 239 ACT 64 BUF 18)
+Step #400.00 (0ms ?*RT. ?UPS, TraCI: 0ms,Rewards:s TOT 239 ACT 64 BUF 18)
+Step #18000.00 (2ms ~= 500.00*RT, ~47000.00UPS, Rewards:ms, vehicles TOT 9693 ACT 90 BUF 5
+Step #17600.00 (1ms ~= 1000.00*RT, ~87000.00UPS, TraCI: 0ms, vehicles TOT 9791 ACT 87 BUF
+Step #17600.00 (1ms ~= 1000.00*RT, ~87000.00UPS, TrRewards:, vehicles TOT 9791 ACT 87 BUF
+Step #17200.00 (1ms ~= 1000.00*RT, ~93000.00UPS, TraCI: 19ms, vehicles TOT 9562 ACT 94 BUF
+Step #17200.00 (1ms ~= 1000.00*RT, ~93000.00UPS, TraCIRewards:vehicles TOT 9562 ACT 94 BUF
+Step #16800.00 (1ms ~= 1000.00*RT, ~98000.00UPS, TraCI: 1ms, vehicles TOT 8834 ACT 90 BUF
+Step #16800.00 (1ms ~= 1000.00*RT, ~98000.00UPS, TraCI: 1Rewards:cles TOT 8834 ACT 90 BUF
+Step #16400.00 (1ms ~= 1000.00*RT, ~90000.00UPS, TraCI: 0ms, vehicles TOT 9217 ACT 90 BUF
+Step #16400.00 (1ms ~= 1000.00*RT, ~90000.00UPS, TraCI: 0ms,Rewards:s TOT 9217 ACT 90 BUF
+Step #16000.00 (1ms ~= 1000.00*RT, ~97000.00UPS, TraCI: 1ms, vehicles TOT 8689 ACT 98 BUF
+Step #16000.00 (1ms ~= 1000.00*RT, ~97000.00UPS, TraCI: 1ms, veRewards:OT 8689 ACT 98 BUF
+Step #15600.00 (1ms ~= 1000.00*RT, ~104000.00UPS, TraCI: 16ms, vehcles TOT 8827 ACT 107 BU
+Step #15600.00 (1ms ~= 1000.00*RT, ~104000.00UPS, TraCI: 16ms, vehRewards: 8827 ACT 107 BU
+Step #15200.00 (1ms ~= 1000.00*RT, ~113000.00UPS, TraCI: 0ms, vehicles TOT 8564 ACT 103 BU
+Step #15200.00 (1ms ~= 1000.00*RT, ~113000.00UPS, TraCI: 0ms, vehicleRewards:64 ACT 103 BU
+Step #14800.00 (1ms ~= 1000.00*RT, ~100000.00UPS, TraCI: 0ms, vehicles TTOT 8344 ACT 101 B
+Step #14800.00 (1ms ~= 1000.00*RT, ~100000.00UPS, TraCI: 0ms, vehicles TRewards: ACT 101 B
+Step #14400.00 (1ms ~= 1000.00*RT, ~90000.00UPS, TraCI: 18ms, vehicles TOT 189 ACT 90 BUF
+Step #14400.00 (1ms ~= 1000.00*RT, ~90000.00UPS, TraCI: 18ms, vehicles TOT Rewards:90 BUF
+Step #14400.00 (1ms ~= 1000.00*RT, ~90000.00UPS, TraCI: 18ms, vehicles TOT Rewards:90 BUF
+Step #14000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 7888 ACT 123 BUF 38999 ACT 105 BU
+Step #14000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 7888 ACT 123 BUF 3899Rewards:5 BU
+Step #13600.00 (1ms ~= 1000.00*RT, ~114000.00UPS, TraCI: 1ms, vehicles TOT 7694 AACT 119 B
+Step #13600.00 (1ms ~= 1000.00*RT, ~114000.00UPS, TraCI: 1ms, vehicles TOT 7694 ARewards:B
+Step #13200.00 (1ms ~= 1000.00*RT, ~135000.00UPS, TraCI: 15ms, vehicles TOT 7403 ACT110 BU
+Step #13200.00 (1ms ~= 1000.00*RT, ~135000.00UPS, TraCI: 15ms, vehicles TOT 7403 ACTRewards:
+Step #12800.00 (1ms ~= 1000.00*RT, ~127000.00UPS, TraCI: 0ms, vehicles TOT 7267 ACT 127   s:
+Step #12800.00 (1ms ~= 1000.00*RT, ~127000.00UPS, TraCI: 0ms, vehicles TOT 7267 ACT 127Rewards:
+Step #12400.00 (1ms ~= 1000.00*RT, ~96000.00UPS, TraCI: 0ms, vehicles TOT 6456 ACT 96 BUF ards:
+Step #12400.00 (1ms ~= 1000.00*RT, ~96000.00UPS, TraCI: 0ms, vehicles TOT 6456 ACT 96 BUF Rewards:
+Step #12000.00 (1ms ~= 1000.00*RT, ~101000.00UPS, TraCI: 19ms, vehicles TOT 6581 ACT 101 BRewards:
+StRewards:0.00 (1ms ~= 1000.00*RT, ~101000.00UPS, TraCI: 19ms, vehicles TOT 6581 ACT 101 BRewards:
+Step #11600.00 (1ms ~= 1000.00*RT, ~102000.00UPS, TraCI: 0ms, vehicles TOT 6833 ACT 102 BURewards:
+Step Rewards:0 (1ms ~= 1000.00*RT, ~102000.00UPS, TraCI: 0ms, vehicles TOT 6833 ACT 102 BURewards:
+Step #11200.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 6393 ACT 93 BUF 3037)            Rewards:
+Step #11Rewards:0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 6393 ACT 93 BUF 3037)            Rewards:
+Step #10900.00 (1ms ~= 1000.00*RT, ~97000.00UPS, TraCI: 28ms, vehicles TOT 6370 ACT 97 BUFRewards:
+Step #10900Rewards: ~= 1000.00*RT, ~97000.00UPS, TraCI: 28ms, vehicles TOT 6370 ACT 97 BUFRewards:
+Step #10500.00 (1ms ~= 1000.00*RT, ~98000.00UPS, TraCI: 0ms, vehicles TOT 5609 ACT 98 BUF Rewards:
+Step #10500.00Rewards: 1000.00*RT, ~98000.00UPS, TraCI: 0ms, vehicles TOT 5609 ACT 98 BUF Rewards:
+Step #10100.00 (1ms ~= 1000.00*RT, ~90000.00UPS, TraCI: 0ms, vehicles TOT 5606 ACT 90 BUF Rewards:
+Step #10100.00 (1Rewards:00.00*RT, ~90000.00UPS, TraCI: 0ms, vehicles TOT 5606 ACT 90 BUF Rewards:
+Step #9700.00 (1ms ~= 1000.00*RT, ~104000.00UPS, TraCI: 16ms, vehicles TOT 5367 ACT 104 BURewards:
+Step #9700.00 (1ms ~Rewards:0*RT, ~104000.00UPS, TraCI: 16ms, vehicles TOT 5367 ACT 104 BURewards:
+Step #9300.00 (1ms ~= 1. ?UPS, TraCI: 1ms, vehicles TOT 5234 ACT 88 BUF 2512)             Rewards:
+Step #9300.00 (1ms ~= 1Rewards:TraCI: 1ms, vehicles TOT 5234 ACT 88 BUF 2512)             Rewards:
+Step #8900.00 (1ms ~= 1000UPS, TraCI: 1ms, vehicles TOT 4771 ACT 102 BUF 2639)            Rewards:
+Step #8900.00 (1ms ~= 1000Rewards:CI: 1ms, vehicles TOT 4771 ACT 102 BUF 2639)            Rewards:
+Step #8500.00 (0ms ?*RT. ?UPS*RT, ~97000.00UPS, TraCI: 16ms, vehicles TOT 4945 ACT 97 BUF Rewards:
+Step #8500.00 (0ms ?*RT. ?UPSRewards:000.00UPS, TraCI: 16ms, vehicles TOT 4945 ACT 97 BUF Rewards:
+Step #8100.00 (1ms ~= 1000.00*RTraCI: 1ms, vehicles TOT 4768 ACT 106 BUF 1968)            Rewards:
+Step #8100.00 (1ms ~= 1000.00*RTRewards:s, vehicles TOT 4768 ACT 106 BUF 1968)            Rewards:
+Step #7700.00 (1ms ~= 1000.00*RT, ~135000.00UPS, TraCI: 0ms, vehicles TOT 4229 ACT 135 BUFRewards:
+Step #7700.00 (1ms ~= 1000.00*RT, ~Rewards:0UPS, TraCI: 0ms, vehicles TOT 4229 ACT 135 BUFRewards:
+Step #7300.00 (1ms ~= 1000.00*RT, ~130000.00UPS, TraCI: 18ms, vehicles TOT 3955 ACT 134 BURewards:
+Step #7300.00 (1ms ~= 1000.00*RT, ~130Rewards:S, TraCI: 18ms, vehicles TOT 3955 ACT 134 BURewards:
+Step #6900.00 (0ms ?*RT. ?UPS, TraCI: 16m, vehicles TOT 3622 ACT 90 BUF 2104)             Rewards:
+Step #6900.00 (0ms ?*RT. ?UPS, TraCI: 16mRewards:es TOT 3622 ACT 90 BUF 2104)             Rewards:
+Step #6500.00 (1ms ~= 1000.00*RT, ~118000.00PS, TraCI: 0ms, vehicles TOT 3786 ACT 88 BUF 1Rewards:
+Step #6500.00 (1ms ~= 1000.00*RT, ~118000.00Rewards:I: 0ms, vehicles TOT 3786 ACT 88 BUF 1Rewards:
+Step #6100.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehi, TraCI: 16ms, vehicles TOT 3636 ACT 129 BURewards:
+Step #6100.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehiRewards: 16ms, vehicles TOT 3636 ACT 129 BURewards:
+Step #5700.00 (1ms ~= 1000.00*RT, ~94000.00UPS, TraCI: 0ms, vehicles TOT 3221 ACT 94 BUF 1Rewards:
+Step #5700.00 (1ms ~= 1000.00*RT, ~94000.00UPS, TrRewards:, vehicles TOT 3221 ACT 94 BUF 1Rewards:
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 170ms, vehicles TOT 10364 ACT 95 BUF 4789)         Rewards:
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 170ms, vehicleRewards:364 ACT 95 BUF 4789)         Rewards:
+Episode number:  77 ?*RT. ?UPS, TraCI: 170ms, vehicleRewards:364 ACT 95 BUF 4789)         Rewards:
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 141ms, vehicles TOT 10297 ACT 93 BUF 4856)         Rewards:
+Step #18300.00 (0ms ?*RT. ?UPS, TraCI: 141ms, vehicles TRewards: ACT 93 BUF 4856)         Rewards:
+Step #18300.00 (1ms ~= 1000.00*RT, ~102000.00UPS, TraCI: 123ms, vehicles TOT 10215 ACT 102Rewards:
+Step #18300.00 (1ms ~= 1000.00*RT, ~102000.00UPS, TraCI: 12Rewards:icles TOT 10215 ACT 102Rewards:
+Step #18300.00 (1ms ~= 1000.00*RT, ~89000.00UPS, TraCI: 116ms, vehicles TOT 10105 ACT 89 BRewards:
+Interrupt signal received, trying to exit gracefully.OT 4419 ACT 99 BUF 1812)             Rewards:
+Interrupt signal received, trying to exit gracefully.OT 4419 ACT 99 BUF 1812)             Rewards:

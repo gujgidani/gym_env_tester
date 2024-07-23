@@ -1,0 +1,318 @@
+
+ Retrying in 1 seconds
+Episode number:  0
+Episode number:  1
+[34m[1mwandb[39m[22m: [33mWARNING[39m Step only supports monotonically increasing values, use define_metric to set a custom x axis. For details see: https://wandb.me/define-metric
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 0 is less than current step: 12. Dropping entry: {'reward': 6.218593925237656, 'episode': 0, '_timestamp': 1721654193.795528}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 0 is less than current step: 12. Dropping entry: {'epsilon': 0.8937060261719126, '_timestamp': 1721654193.795635}).
+Episode number:  2
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 24. Dropping entry: {'reward': 6.500602215528488, 'episode': 1, '_timestamp': 1721654195.7093272}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 24. Dropping entry: {'epsilon': 0.8836420584316145, '_timestamp': 1721654195.709426}).
+Episode number:  3
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 2 is less than current step: 36. Dropping entry: {'reward': 6.132528603076935, 'episode': 2, '_timestamp': 1721654198.034397}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 2 is less than current step: 36. Dropping entry: {'epsilon': 0.8736981365882709, '_timestamp': 1721654198.034503}).
+Episode number:  4
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 3 is less than current step: 48. Dropping entry: {'reward': 5.66310578584671, 'episode': 3, '_timestamp': 1721654199.8390899}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 3 is less than current step: 48. Dropping entry: {'epsilon': 0.8638728286999532, '_timestamp': 1721654199.8391528}).
+Episode number:  5
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 4 is less than current step: 60. Dropping entry: {'reward': 6.251431554555893, 'episode': 4, '_timestamp': 1721654201.770036}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 4 is less than current step: 60. Dropping entry: {'epsilon': 0.8541647199053474, '_timestamp': 1721654201.770116}).
+Episode number:  6
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 5 is less than current step: 72. Dropping entry: {'reward': 6.788556694984436, 'episode': 5, '_timestamp': 1721654203.588268}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 5 is less than current step: 72. Dropping entry: {'epsilon': 0.8445724122200112, '_timestamp': 1721654203.5883389}).
+Episode number:  7
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 6 is less than current step: 84. Dropping entry: {'reward': 6.7243653535842896, 'episode': 6, '_timestamp': 1721654205.4031382}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 6 is less than current step: 84. Dropping entry: {'epsilon': 0.8350945243350624, '_timestamp': 1721654205.4032068}).
+Episode number:  8
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 7 is less than current step: 96. Dropping entry: {'reward': 6.684796512126923, 'episode': 7, '_timestamp': 1721654207.267658}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 7 is less than current step: 96. Dropping entry: {'epsilon': 0.8257296914182677, '_timestamp': 1721654207.267744}).
+Episode number:  9
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 8 is less than current step: 108. Dropping entry: {'reward': 5.844352424144745, 'episode': 8, '_timestamp': 1721654209.7884648}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 8 is less than current step: 108. Dropping entry: {'epsilon': 0.8164765649175045, '_timestamp': 1721654209.788533}).
+Episode number:  10
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 9 is less than current step: 120. Dropping entry: {'reward': 5.938520073890686, 'episode': 9, '_timestamp': 1721654211.504081}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 9 is less than current step: 120. Dropping entry: {'epsilon': 0.8073338123665674, '_timestamp': 1721654211.5041542}).
+Episode number:  11
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 10 is less than current step: 132. Dropping entry: {'reward': 6.721748232841492, 'episode': 10, '_timestamp': 1721654213.6032388}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 10 is less than current step: 132. Dropping entry: {'epsilon': 0.7983001171932902, '_timestamp': 1721654213.603314}).
+Episode number:  12
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 11 is less than current step: 144. Dropping entry: {'reward': 6.1817143857479095, 'episode': 11, '_timestamp': 1721654215.744498}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 11 is less than current step: 144. Dropping entry: {'epsilon': 0.7893741785299576, '_timestamp': 1721654215.74457}).
+Episode number:  13
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 12 is less than current step: 156. Dropping entry: {'reward': 6.733269780874252, 'episode': 12, '_timestamp': 1721654217.726819}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 12 is less than current step: 156. Dropping entry: {'epsilon': 0.7805547110259781, '_timestamp': 1721654217.726881}).
+Episode number:  14
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 13 is less than current step: 168. Dropping entry: {'reward': 6.307161033153534, 'episode': 13, '_timestamp': 1721654219.737965}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 13 is less than current step: 168. Dropping entry: {'epsilon': 0.7718404446627908, '_timestamp': 1721654219.738032}).
+Episode number:  15
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 14 is less than current step: 180. Dropping entry: {'reward': 6.158065289258957, 'episode': 14, '_timestamp': 1721654221.6557598}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 14 is less than current step: 180. Dropping entry: {'epsilon': 0.7632301245709813, '_timestamp': 1721654221.655833}).
+Episode number:  16
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 15 is less than current step: 192. Dropping entry: {'reward': 7.419151216745377, 'episode': 15, '_timestamp': 1721654223.660629}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 15 is less than current step: 192. Dropping entry: {'epsilon': 0.7547225108495776, '_timestamp': 1721654223.6606982}).
+Episode number:  17
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 16 is less than current step: 204. Dropping entry: {'reward': 8.85087662935257, 'episode': 16, '_timestamp': 1721654225.541766}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 16 is less than current step: 204. Dropping entry: {'epsilon': 0.7463163783875025, '_timestamp': 1721654225.5418339}).
+Episode number:  18
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 17 is less than current step: 216. Dropping entry: {'reward': 7.271118640899658, 'episode': 17, '_timestamp': 1721654227.743786}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 17 is less than current step: 216. Dropping entry: {'epsilon': 0.7380105166871558, '_timestamp': 1721654227.743847}).
+Episode number:  19
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 18 is less than current step: 228. Dropping entry: {'reward': 7.712459087371826, 'episode': 18, '_timestamp': 1721654229.641147}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 18 is less than current step: 228. Dropping entry: {'epsilon': 0.7298037296900999, '_timestamp': 1721654229.641212}).
+Episode number:  20
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 19 is less than current step: 240. Dropping entry: {'reward': 7.703623324632645, 'episode': 19, '_timestamp': 1721654231.4426088}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 19 is less than current step: 240. Dropping entry: {'epsilon': 0.7216948356048258, '_timestamp': 1721654231.4426692}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 20 is less than current step: 252. Dropping entry: {'reward': 7.808169573545456, 'episode': 20, '_timestamp': 1721654233.293153}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 20 is less than current step: 252. Dropping entry: {'epsilon': 0.7136826667365731, '_timestamp': 1721654233.293217}).
+Episode number:  21
+Episode number:  22
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 21 is less than current step: 264. Dropping entry: {'reward': 7.392439991235733, 'episode': 21, '_timestamp': 1721654235.103758}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 21 is less than current step: 264. Dropping entry: {'epsilon': 0.7057660693191796, '_timestamp': 1721654235.1038249}).
+Episode number:  23
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 22 is less than current step: 276. Dropping entry: {'reward': 6.9948451817035675, 'episode': 22, '_timestamp': 1721654237.043018}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 22 is less than current step: 276. Dropping entry: {'epsilon': 0.6979439033489373, '_timestamp': 1721654237.043082}).
+Episode number:  24
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 23 is less than current step: 288. Dropping entry: {'reward': 6.108197808265686, 'episode': 23, '_timestamp': 1721654239.1364338}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 23 is less than current step: 288. Dropping entry: {'epsilon': 0.6902150424204296, '_timestamp': 1721654239.136514}).
+Episode number:  25
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 24 is less than current step: 300. Dropping entry: {'reward': 7.516566514968872, 'episode': 24, '_timestamp': 1721654241.014314}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 24 is less than current step: 300. Dropping entry: {'epsilon': 0.6825783735643275, '_timestamp': 1721654241.0143812}).
+Episode number:  26
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 25 is less than current step: 312. Dropping entry: {'reward': 7.737718164920807, 'episode': 25, '_timestamp': 1721654242.862178}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 25 is less than current step: 312. Dropping entry: {'epsilon': 0.6750327970871192, '_timestamp': 1721654242.862249}).
+Episode number:  27
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 26 is less than current step: 324. Dropping entry: {'reward': 7.606410831212997, 'episode': 26, '_timestamp': 1721654244.734058}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 26 is less than current step: 324. Dropping entry: {'epsilon': 0.6675772264127533, '_timestamp': 1721654244.734129}).
+Episode number:  28
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 27 is less than current step: 336. Dropping entry: {'reward': 7.580249458551407, 'episode': 27, '_timestamp': 1721654246.456553}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 27 is less than current step: 336. Dropping entry: {'epsilon': 0.6602105879261694, '_timestamp': 1721654246.456616}).
+Episode number:  29
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 28 is less than current step: 348. Dropping entry: {'reward': 7.337224006652832, 'episode': 28, '_timestamp': 1721654248.572596}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 28 is less than current step: 348. Dropping entry: {'epsilon': 0.6529318208186959, '_timestamp': 1721654248.572669}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 29 is less than current step: 360. Dropping entry: {'reward': 6.867116749286652, 'episode': 29, '_timestamp': 1721654251.356386}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 29 is less than current step: 360. Dropping entry: {'epsilon': 0.6457398769352914, '_timestamp': 1721654251.356452}).
+Episode number:  30
+Episode number:  31
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 30 is less than current step: 372. Dropping entry: {'reward': 7.053175657987595, 'episode': 30, '_timestamp': 1721654253.653919}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 30 is less than current step: 372. Dropping entry: {'epsilon': 0.6386337206236091, '_timestamp': 1721654253.653991}).
+Episode number:  32
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 31 is less than current step: 384. Dropping entry: {'reward': 8.75838452577591, 'episode': 31, '_timestamp': 1721654255.849231}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 31 is less than current step: 384. Dropping entry: {'epsilon': 0.6316123285848606, '_timestamp': 1721654255.84931}).
+Episode number:  33
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 32 is less than current step: 396. Dropping entry: {'reward': 7.867203235626221, 'episode': 32, '_timestamp': 1721654257.951542}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 32 is less than current step: 396. Dropping entry: {'epsilon': 0.6246746897264592, '_timestamp': 1721654257.95162}).
+Episode number:  34
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 33 is less than current step: 408. Dropping entry: {'reward': 8.619641482830048, 'episode': 33, '_timestamp': 1721654260.256682}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 33 is less than current step: 408. Dropping entry: {'epsilon': 0.617819805016421, '_timestamp': 1721654260.2567601}).
+Episode number:  35
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 34 is less than current step: 420. Dropping entry: {'reward': 8.684350103139877, 'episode': 34, '_timestamp': 1721654262.150836}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 34 is less than current step: 420. Dropping entry: {'epsilon': 0.6110466873395025, '_timestamp': 1721654262.1509361}).
+Episode number:  36
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 35 is less than current step: 432. Dropping entry: {'reward': 9.102167546749115, 'episode': 35, '_timestamp': 1721654263.9134562}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 35 is less than current step: 432. Dropping entry: {'epsilon': 0.6043543613550543, '_timestamp': 1721654263.913526}).
+Episode number:  37
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 36 is less than current step: 444. Dropping entry: {'reward': 8.345811307430267, 'episode': 36, '_timestamp': 1721654265.789675}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 36 is less than current step: 444. Dropping entry: {'epsilon': 0.59774186335657, '_timestamp': 1721654265.789748}).
+Episode number:  38
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 37 is less than current step: 456. Dropping entry: {'reward': 8.104590088129044, 'episode': 37, '_timestamp': 1721654267.7425642}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 37 is less than current step: 456. Dropping entry: {'epsilon': 0.5912082411329117, '_timestamp': 1721654267.742625}).
+Episode number:  39
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 38 is less than current step: 468. Dropping entry: {'reward': 8.565834701061249, 'episode': 38, '_timestamp': 1721654270.3357701}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 38 is less than current step: 468. Dropping entry: {'epsilon': 0.5847525538311887, '_timestamp': 1721654270.336014}).
+Episode number:  40
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 39 is less than current step: 480. Dropping entry: {'reward': 7.865832358598709, 'episode': 39, '_timestamp': 1721654272.432288}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 39 is less than current step: 480. Dropping entry: {'epsilon': 0.5783738718212744, '_timestamp': 1721654272.43235}).
+Episode number:  41
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 40 is less than current step: 492. Dropping entry: {'reward': 7.88980633020401, 'episode': 40, '_timestamp': 1721654274.2915788}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 40 is less than current step: 492. Dropping entry: {'epsilon': 0.5720712765619367, '_timestamp': 1721654274.2916422}).
+Episode number:  42
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 41 is less than current step: 504. Dropping entry: {'reward': 8.932708978652954, 'episode': 41, '_timestamp': 1721654276.203678}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 41 is less than current step: 504. Dropping entry: {'epsilon': 0.5658438604685675, '_timestamp': 1721654276.20375}).
+Episode number:  43
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 42 is less than current step: 516. Dropping entry: {'reward': 7.2021507024765015, 'episode': 42, '_timestamp': 1721654278.153406}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 42 is less than current step: 516. Dropping entry: {'epsilon': 0.5596907267824881, '_timestamp': 1721654278.153476}).
+Episode number:  44
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 43 is less than current step: 528. Dropping entry: {'reward': 6.641397535800934, 'episode': 43, '_timestamp': 1721654280.049972}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 43 is less than current step: 528. Dropping entry: {'epsilon': 0.5536109894418153, '_timestamp': 1721654280.050039}).
+Episode number:  45
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 44 is less than current step: 540. Dropping entry: {'reward': 7.543800562620163, 'episode': 44, '_timestamp': 1721654281.899907}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 44 is less than current step: 540. Dropping entry: {'epsilon': 0.547603772953866, '_timestamp': 1721654281.899984}).
+Episode number:  46
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 45 is less than current step: 552. Dropping entry: {'reward': 7.716967850923538, 'episode': 45, '_timestamp': 1721654283.977067}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 45 is less than current step: 552. Dropping entry: {'epsilon': 0.5416682122690857, '_timestamp': 1721654283.9771361}).
+Episode number:  47
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 46 is less than current step: 564. Dropping entry: {'reward': 7.901327073574066, 'episode': 46, '_timestamp': 1721654286.181138}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 46 is less than current step: 564. Dropping entry: {'epsilon': 0.5358034526564787, '_timestamp': 1721654286.181201}).
+Episode number:  48
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 47 is less than current step: 576. Dropping entry: {'reward': 7.189997762441635, 'episode': 47, '_timestamp': 1721654288.1193101}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 47 is less than current step: 576. Dropping entry: {'epsilon': 0.5300086495805266, '_timestamp': 1721654288.1193779}).
+Episode number:  49
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 48 is less than current step: 588. Dropping entry: {'reward': 7.605265587568283, 'episode': 48, '_timestamp': 1721654289.951673}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 48 is less than current step: 588. Dropping entry: {'epsilon': 0.5242829685795732, '_timestamp': 1721654289.951746}).
+Episode number:  50
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 49 is less than current step: 600. Dropping entry: {'reward': 6.918918043375015, 'episode': 49, '_timestamp': 1721654291.868094}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 49 is less than current step: 600. Dropping entry: {'epsilon': 0.5186255851456602, '_timestamp': 1721654291.8681679}).
+Episode number:  51
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 50 is less than current step: 612. Dropping entry: {'reward': 7.743234276771545, 'episode': 50, '_timestamp': 1721654293.799135}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 50 is less than current step: 612. Dropping entry: {'epsilon': 0.5130356846057967, '_timestamp': 1721654293.799205}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 50 is less than current step: 612. Dropping entry: {'mean_reward_value': 7.313873291015625, '_timestamp': 1721654293.801488}).
+Episode number:  52
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 51 is less than current step: 624. Dropping entry: {'reward': 7.722957521677017, 'episode': 51, '_timestamp': 1721654295.861119}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 51 is less than current step: 624. Dropping entry: {'epsilon': 0.5075124620046463, '_timestamp': 1721654295.861196}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 51 is less than current step: 624. Dropping entry: {'mean_reward_value': 7.32174015045166, '_timestamp': 1721654295.8612669}).
+Episode number:  53
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 52 is less than current step: 636. Dropping entry: {'reward': 8.121647775173187, 'episode': 52, '_timestamp': 1721654297.756076}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 52 is less than current step: 636. Dropping entry: {'epsilon': 0.5020551219886098, '_timestamp': 1721654297.756146}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 52 is less than current step: 636. Dropping entry: {'mean_reward_value': 7.3368330001831055, '_timestamp': 1721654297.756213}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 53 is less than current step: 648. Dropping entry: {'reward': 7.76592880487442, 'episode': 53, '_timestamp': 1721654299.574604}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 53 is less than current step: 648. Dropping entry: {'epsilon': 0.49666287869129466, '_timestamp': 1721654299.574682}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 53 is less than current step: 648. Dropping entry: {'mean_reward_value': 7.344779014587402, '_timestamp': 1721654299.57476}).
+Episode number:  54
+Episode number:  55
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 54 is less than current step: 660. Dropping entry: {'reward': 8.52989661693573, 'episode': 54, '_timestamp': 1721654301.7486532}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 54 is less than current step: 660. Dropping entry: {'epsilon': 0.4913349556203482, '_timestamp': 1721654301.748717}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 54 is less than current step: 660. Dropping entry: {'mean_reward_value': 7.366326808929443, '_timestamp': 1721654301.748805}).
+Episode number:  56
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 55 is less than current step: 672. Dropping entry: {'reward': 8.535944700241089, 'episode': 55, '_timestamp': 1721654303.977349}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 55 is less than current step: 672. Dropping entry: {'epsilon': 0.4860705855456415, '_timestamp': 1721654303.9774148}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 55 is less than current step: 672. Dropping entry: {'mean_reward_value': 7.387213230133057, '_timestamp': 1721654303.977484}).
+Episode number:  57
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 56 is less than current step: 684. Dropping entry: {'reward': 8.720872074365616, 'episode': 56, '_timestamp': 1721654306.137109}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 56 is less than current step: 684. Dropping entry: {'epsilon': 0.480869010388787, '_timestamp': 1721654306.137179}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 56 is less than current step: 684. Dropping entry: {'mean_reward_value': 7.410610675811768, '_timestamp': 1721654306.137245}).
+Episode number:  58
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 57 is less than current step: 696. Dropping entry: {'reward': 9.266043245792389, 'episode': 57, '_timestamp': 1721654308.174596}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 57 is less than current step: 696. Dropping entry: {'epsilon': 0.47572948111397373, '_timestamp': 1721654308.174669}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 57 is less than current step: 696. Dropping entry: {'mean_reward_value': 7.442601203918457, '_timestamp': 1721654308.174738}).
+Episode number:  59
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 58 is less than current step: 708. Dropping entry: {'reward': 9.016955494880676, 'episode': 58, '_timestamp': 1721654310.148078}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 58 is less than current step: 708. Dropping entry: {'epsilon': 0.4706512576201049, '_timestamp': 1721654310.148153}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 58 is less than current step: 708. Dropping entry: {'mean_reward_value': 7.469285488128662, '_timestamp': 1721654310.1482182}).
+Episode number:  60
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 59 is less than current step: 720. Dropping entry: {'reward': 8.54060274362564, 'episode': 59, '_timestamp': 1721654313.20416}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 59 is less than current step: 720. Dropping entry: {'epsilon': 0.46563360863422226, '_timestamp': 1721654313.204221}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 59 is less than current step: 720. Dropping entry: {'mean_reward_value': 7.48714017868042, '_timestamp': 1721654313.204303}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 60 is less than current step: 732. Dropping entry: {'reward': 8.118365228176117, 'episode': 60, '_timestamp': 1721654315.418217}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 60 is less than current step: 732. Dropping entry: {'epsilon': 0.4606758116062013, '_timestamp': 1721654315.418281}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 60 is less than current step: 732. Dropping entry: {'mean_reward_value': 7.497488021850586, '_timestamp': 1721654315.4183521}).
+Episode number:  61
+Episode number:  62
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 61 is less than current step: 744. Dropping entry: {'reward': 8.91290482878685, 'episode': 61, '_timestamp': 1721654317.290869}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 61 is less than current step: 744. Dropping entry: {'epsilon': 0.4557771526047028, '_timestamp': 1721654317.290935}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 61 is less than current step: 744. Dropping entry: {'mean_reward_value': 7.520317554473877, '_timestamp': 1721654317.290997}).
+Episode number:  63
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 62 is less than current step: 756. Dropping entry: {'reward': 7.676665246486664, 'episode': 62, '_timestamp': 1721654319.199945}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 62 is less than current step: 756. Dropping entry: {'epsilon': 0.45093692621436565, '_timestamp': 1721654319.200011}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 62 is less than current step: 756. Dropping entry: {'mean_reward_value': 7.522799491882324, '_timestamp': 1721654319.200078}).
+Episode number:  64
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 63 is less than current step: 768. Dropping entry: {'reward': 8.77062737941742, 'episode': 63, '_timestamp': 1721654321.022033}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 63 is less than current step: 768. Dropping entry: {'epsilon': 0.4461544354342257, '_timestamp': 1721654321.0221388}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 63 is less than current step: 768. Dropping entry: {'mean_reward_value': 7.542296409606934, '_timestamp': 1721654321.022211}).
+Episode number:  65
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 64 is less than current step: 780. Dropping entry: {'reward': 8.387876570224762, 'episode': 64, '_timestamp': 1721654322.912986}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 64 is less than current step: 780. Dropping entry: {'epsilon': 0.4414289915773465, '_timestamp': 1721654322.9130611}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 64 is less than current step: 780. Dropping entry: {'mean_reward_value': 7.555305480957031, '_timestamp': 1721654322.91312}).
+Episode number:  66
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 65 is less than current step: 792. Dropping entry: {'reward': 8.335121273994446, 'episode': 65, '_timestamp': 1721654324.719411}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 65 is less than current step: 792. Dropping entry: {'epsilon': 0.43675991417164695, '_timestamp': 1721654324.719479}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 65 is less than current step: 792. Dropping entry: {'mean_reward_value': 7.5671210289001465, '_timestamp': 1721654324.7195442}).
+Episode number:  67
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 66 is less than current step: 804. Dropping entry: {'reward': 7.9714325070381165, 'episode': 66, '_timestamp': 1721654326.60208}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 66 is less than current step: 804. Dropping entry: {'epsilon': 0.4321465308619124, '_timestamp': 1721654326.602151}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 66 is less than current step: 804. Dropping entry: {'mean_reward_value': 7.573155879974365, '_timestamp': 1721654326.602209}).
+Episode number:  68
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 67 is less than current step: 816. Dropping entry: {'reward': 8.613682121038437, 'episode': 67, '_timestamp': 1721654328.483705}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 67 is less than current step: 816. Dropping entry: {'epsilon': 0.42758817731297444, '_timestamp': 1721654328.483773}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 67 is less than current step: 816. Dropping entry: {'mean_reward_value': 7.588457107543945, '_timestamp': 1721654328.483833}).
+Episode number:  69
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 68 is less than current step: 828. Dropping entry: {'reward': 8.39816564321518, 'episode': 68, '_timestamp': 1721654330.306675}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 68 is less than current step: 828. Dropping entry: {'epsilon': 0.423084197114045, '_timestamp': 1721654330.306774}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 68 is less than current step: 828. Dropping entry: {'mean_reward_value': 7.600192070007324, '_timestamp': 1721654330.306868}).
+Episode number:  70
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 69 is less than current step: 840. Dropping entry: {'reward': 7.2030278742313385, 'episode': 69, '_timestamp': 1721654332.2916322}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 69 is less than current step: 840. Dropping entry: {'epsilon': 0.4186339416841926, '_timestamp': 1721654332.291701}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 69 is less than current step: 840. Dropping entry: {'mean_reward_value': 7.594518184661865, '_timestamp': 1721654332.2917671}).
+Episode number:  71
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 70 is less than current step: 852. Dropping entry: {'reward': 7.878492504358292, 'episode': 70, '_timestamp': 1721654334.097377}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 70 is less than current step: 852. Dropping entry: {'epsilon': 0.41423677017894517, '_timestamp': 1721654334.097447}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 70 is less than current step: 852. Dropping entry: {'mean_reward_value': 7.598517417907715, '_timestamp': 1721654334.097507}).
+Episode number:  72
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 71 is less than current step: 864. Dropping entry: {'reward': 7.865331798791885, 'episode': 71, '_timestamp': 1721654335.9746292}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 71 is less than current step: 864. Dropping entry: {'epsilon': 0.40989204939800766, '_timestamp': 1721654335.9746969}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 71 is less than current step: 864. Dropping entry: {'mean_reward_value': 7.602223873138428, '_timestamp': 1721654335.9747589}).
+Episode number:  73
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 72 is less than current step: 876. Dropping entry: {'reward': 8.328897684812546, 'episode': 72, '_timestamp': 1721654337.851678}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 72 is less than current step: 876. Dropping entry: {'epsilon': 0.40559915369407995, '_timestamp': 1721654337.851748}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 72 is less than current step: 876. Dropping entry: {'mean_reward_value': 7.61217737197876, '_timestamp': 1721654337.851805}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 73 is less than current step: 888. Dropping entry: {'reward': 8.819979339838028, 'episode': 73, '_timestamp': 1721654339.664927}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 73 is less than current step: 888. Dropping entry: {'epsilon': 0.40135746488276247, '_timestamp': 1721654339.664999}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 73 is less than current step: 888. Dropping entry: {'mean_reward_value': 7.628499507904053, '_timestamp': 1721654339.66506}).
+Episode number:  74
+Episode number:  75
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 74 is less than current step: 900. Dropping entry: {'reward': 8.352599263191223, 'episode': 74, '_timestamp': 1721654341.492298}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 74 is less than current step: 900. Dropping entry: {'epsilon': 0.39716637215353673, '_timestamp': 1721654341.4923708}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 74 is less than current step: 900. Dropping entry: {'mean_reward_value': 7.63815450668335, '_timestamp': 1721654341.4924319}).
+Episode number:  76
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 75 is less than current step: 912. Dropping entry: {'reward': 8.421583741903305, 'episode': 75, '_timestamp': 1721654343.372295}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 75 is less than current step: 912. Dropping entry: {'epsilon': 0.3930252719818075, '_timestamp': 1721654343.3723662}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 75 is less than current step: 912. Dropping entry: {'mean_reward_value': 7.648462295532227, '_timestamp': 1721654343.372437}).
+Episode number:  77
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 76 is less than current step: 924. Dropping entry: {'reward': 8.201631605625153, 'episode': 76, '_timestamp': 1721654345.3069062}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 76 is less than current step: 924. Dropping entry: {'epsilon': 0.3889335680419941, '_timestamp': 1721654345.306978}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 76 is less than current step: 924. Dropping entry: {'mean_reward_value': 7.655646800994873, '_timestamp': 1721654345.3070421}).
+Episode number:  78
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 77 is less than current step: 936. Dropping entry: {'reward': 8.009599208831787, 'episode': 77, '_timestamp': 1721654347.1181152}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 77 is less than current step: 936. Dropping entry: {'epsilon': 0.38489067112165876, '_timestamp': 1721654347.1181881}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 77 is less than current step: 936. Dropping entry: {'mean_reward_value': 7.660184383392334, '_timestamp': 1721654347.118251}).
+Episode number:  79
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 78 is less than current step: 948. Dropping entry: {'reward': 8.029745489358902, 'episode': 78, '_timestamp': 1721654349.543092}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 78 is less than current step: 948. Dropping entry: {'epsilon': 0.3808959990366588, '_timestamp': 1721654349.543204}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 78 is less than current step: 948. Dropping entry: {'mean_reward_value': 7.664863109588623, '_timestamp': 1721654349.5432892}).
+Episode number:  80
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 79 is less than current step: 960. Dropping entry: {'reward': 8.775677412748337, 'episode': 79, '_timestamp': 1721654351.4760058}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 79 is less than current step: 960. Dropping entry: {'epsilon': 0.37694897654731124, '_timestamp': 1721654351.4760761}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 79 is less than current step: 960. Dropping entry: {'mean_reward_value': 7.678747653961182, '_timestamp': 1721654351.476136}).
+Episode number:  81
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 80 is less than current step: 972. Dropping entry: {'reward': 7.94148850440979, 'episode': 80, '_timestamp': 1721654353.783129}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 80 is less than current step: 972. Dropping entry: {'epsilon': 0.37304903527555694, '_timestamp': 1721654353.783206}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 80 is less than current step: 972. Dropping entry: {'mean_reward_value': 7.681991100311279, '_timestamp': 1721654353.7832708}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 81 is less than current step: 984. Dropping entry: {'reward': 9.029646635055542, 'episode': 81, '_timestamp': 1721654355.690028}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 81 is less than current step: 984. Dropping entry: {'epsilon': 0.36919561362311376, '_timestamp': 1721654355.690099}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 81 is less than current step: 984. Dropping entry: {'mean_reward_value': 7.698426246643066, '_timestamp': 1721654355.690155}).
+Episode number:  82
+Episode number:  83
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 82 is less than current step: 996. Dropping entry: {'reward': 8.623489797115326, 'episode': 82, '_timestamp': 1721654357.495617}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 82 is less than current step: 996. Dropping entry: {'epsilon': 0.36538815669060504, '_timestamp': 1721654357.4956858}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 82 is less than current step: 996. Dropping entry: {'mean_reward_value': 7.709571361541748, '_timestamp': 1721654357.49575}).
+Episode number:  84
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 83 is less than current step: 1008. Dropping entry: {'reward': 8.534005403518677, 'episode': 83, '_timestamp': 1721654359.587761}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 83 is less than current step: 1008. Dropping entry: {'epsilon': 0.36162611619765306, '_timestamp': 1721654359.5878348}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 83 is less than current step: 1008. Dropping entry: {'mean_reward_value': 7.719385623931885, '_timestamp': 1721654359.5879428}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 84 is less than current step: 1020. Dropping entry: {'reward': 8.418204456567764, 'episode': 84, '_timestamp': 1721654361.542828}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 84 is less than current step: 1020. Dropping entry: {'epsilon': 0.35790895040392606, '_timestamp': 1721654361.542896}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 84 is less than current step: 1020. Dropping entry: {'mean_reward_value': 7.727607250213623, '_timestamp': 1721654361.542958}).
+Episode number:  85
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 85 is less than current step: 1032. Dropping entry: {'reward': 9.388289630413055, 'episode': 85, '_timestamp': 1721654363.5934982}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 85 is less than current step: 1032. Dropping entry: {'epsilon': 0.3542361240311264, '_timestamp': 1721654363.5935712}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 85 is less than current step: 1032. Dropping entry: {'mean_reward_value': 7.746917724609375, '_timestamp': 1721654363.593636}).
+Episode number:  86
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 86 is less than current step: 1044. Dropping entry: {'reward': 8.494835883378983, 'episode': 86, '_timestamp': 1721654365.51842}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 86 is less than current step: 1044. Dropping entry: {'epsilon': 0.35060710818590984, '_timestamp': 1721654365.518582}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 86 is less than current step: 1044. Dropping entry: {'mean_reward_value': 7.755514144897461, '_timestamp': 1721654365.5186582}).
+Episode number:  87
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 87 is less than current step: 1056. Dropping entry: {'reward': 7.596528261899948, 'episode': 87, '_timestamp': 1721654367.629388}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 87 is less than current step: 1056. Dropping entry: {'epsilon': 0.3470213802837236, '_timestamp': 1721654367.629462}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 87 is less than current step: 1056. Dropping entry: {'mean_reward_value': 7.7537078857421875, '_timestamp': 1721654367.6295512}).
+Episode number:  88
+Episode number:  89
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 88 is less than current step: 1068. Dropping entry: {'reward': 9.106592565774918, 'episode': 88, '_timestamp': 1721654369.910053}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 88 is less than current step: 1068. Dropping entry: {'epsilon': 0.3434784239735536, '_timestamp': 1721654369.910131}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 88 is less than current step: 1068. Dropping entry: {'mean_reward_value': 7.768908500671387, '_timestamp': 1721654369.9102101}).
+Episode number:  90
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 89 is less than current step: 1080. Dropping entry: {'reward': 8.507408767938614, 'episode': 89, '_timestamp': 1721654372.0116842}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 89 is less than current step: 1080. Dropping entry: {'epsilon': 0.339977729063569, '_timestamp': 1721654372.011751}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 89 is less than current step: 1080. Dropping entry: {'mean_reward_value': 7.777114391326904, '_timestamp': 1721654372.011829}).
+Episode number:  91
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 90 is less than current step: 1092. Dropping entry: {'reward': 7.748760133981705, 'episode': 90, '_timestamp': 1721654373.939936}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 90 is less than current step: 1092. Dropping entry: {'epsilon': 0.3365187914476534, '_timestamp': 1721654373.94}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 90 is less than current step: 1092. Dropping entry: {'mean_reward_value': 7.776803016662598, '_timestamp': 1721654373.940059}).

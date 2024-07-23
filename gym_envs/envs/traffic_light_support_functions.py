@@ -97,17 +97,18 @@ def change_phase_plan(phase_tuple, cycle_time):
     new_phase_plan = generate_phase_plan(starting_phases, phase_lengths)
     return new_phase_plan
 
-def generate_phase_combinations(min_length, max_sum):
+def generate_phase_combinations(min_length, max_sum, step=1):
     """
-    Generates phase combinations based on a minimum length and maximum sum.
+    Generates phase combinations based on a minimum length, maximum sum, and step size.
 
     :parameter min_length: The minimum length of a phase.
     :parameter max_sum: The maximum sum of two phases.
+    :parameter step: The step size for the iteration.
     :return: A list of phase combinations.
     """
     combinations = []
-    for i in range(min_length, max_sum):
-        for j in range(min_length, max_sum):
+    for i in range(min_length, max_sum, step):
+        for j in range(min_length, max_sum, step):
             if i + j <= max_sum:
                 combinations.append([i, j])
     return combinations

@@ -1,0 +1,817 @@
+2024-07-17 18:09:41,207 INFO    StreamThr :25145 [internal.py:wandb_internal():85] W&B internal server running at pid: 25145, started at: 2024-07-17 18:09:41.207180
+2024-07-17 18:09:41,208 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status
+2024-07-17 18:09:41,214 INFO    WriterThread:25145 [datastore.py:open_for_write():87] open: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/run-rey77w7l.wandb
+2024-07-17 18:09:41,214 DEBUG   SenderThread:25145 [sender.py:send():379] send: header
+2024-07-17 18:09:41,238 DEBUG   SenderThread:25145 [sender.py:send():379] send: run
+2024-07-17 18:09:41,639 INFO    SenderThread:25145 [dir_watcher.py:__init__():211] watching files in: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files
+2024-07-17 18:09:41,639 INFO    SenderThread:25145 [sender.py:_start_run_threads():1188] run started: rey77w7l with start time 1721232581.206946
+2024-07-17 18:09:41,646 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: check_version
+2024-07-17 18:09:41,646 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: check_version
+2024-07-17 18:09:41,737 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: run_start
+2024-07-17 18:09:41,748 DEBUG   HandlerThread:25145 [system_info.py:__init__():26] System info init
+2024-07-17 18:09:41,748 DEBUG   HandlerThread:25145 [system_info.py:__init__():41] System info init done
+2024-07-17 18:09:41,749 INFO    HandlerThread:25145 [system_monitor.py:start():194] Starting system monitor
+2024-07-17 18:09:41,749 INFO    SystemMonitor:25145 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-17 18:09:41,749 INFO    HandlerThread:25145 [system_monitor.py:probe():214] Collecting system info
+2024-07-17 18:09:41,752 INFO    SystemMonitor:25145 [interfaces.py:start():188] Started cpu monitoring
+2024-07-17 18:09:41,755 INFO    SystemMonitor:25145 [interfaces.py:start():188] Started disk monitoring
+2024-07-17 18:09:41,756 INFO    SystemMonitor:25145 [interfaces.py:start():188] Started gpuapple monitoring
+2024-07-17 18:09:41,759 INFO    SystemMonitor:25145 [interfaces.py:start():188] Started memory monitoring
+2024-07-17 18:09:41,760 INFO    SystemMonitor:25145 [interfaces.py:start():188] Started network monitoring
+2024-07-17 18:09:42,447 DEBUG   HandlerThread:25145 [system_info.py:probe():152] Probing system
+2024-07-17 18:09:42,452 DEBUG   HandlerThread:25145 [system_info.py:_probe_git():137] Probing git
+2024-07-17 18:09:42,488 DEBUG   HandlerThread:25145 [system_info.py:_probe_git():145] Probing git done
+2024-07-17 18:09:42,488 DEBUG   HandlerThread:25145 [system_info.py:probe():200] Probing system done
+2024-07-17 18:09:42,488 DEBUG   HandlerThread:25145 [system_monitor.py:probe():223] {'os': 'macOS-14.5-arm64-arm-64bit', 'python': '3.11.9', 'heartbeatAt': '2024-07-17T16:09:42.447242', 'startedAt': '2024-07-17T16:09:41.201577', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_pytorch.py', 'codePathLocal': 'main_pytorch.py', 'codePath': 'main_pytorch.py', 'git': {'remote': 'https://github.com/wagnertamas/gym_env_tester.git', 'commit': '9db7eedea0d1e7aeda87af65fdffde2139416f69'}, 'email': 'wtamas99@yahoo.com', 'root': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester', 'host': 'Wagner-MacBook-Pro.local', 'username': 'wagnertamas', 'executable': '/opt/anaconda3/envs/sumo_RL_pytorch/bin/python', 'cpu_count': 12, 'cpu_count_logical': 12, 'disk': {'/': {'total': 926.3517189025879, 'used': 567.1875343322754}}, 'gpuapple': {'type': 'Apple M3 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 18.0}}
+2024-07-17 18:09:42,488 INFO    HandlerThread:25145 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-17 18:09:42,488 INFO    HandlerThread:25145 [system_monitor.py:probe():227] Publishing system info
+2024-07-17 18:09:42,488 DEBUG   HandlerThread:25145 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-17 18:09:42,642 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/conda-environment.yaml
+2024-07-17 18:09:44,242 DEBUG   HandlerThread:25145 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-17 18:09:44,242 INFO    HandlerThread:25145 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-17 18:09:44,247 DEBUG   SenderThread:25145 [sender.py:send():379] send: files
+2024-07-17 18:09:44,247 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-17 18:09:44,366 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-17 18:09:44,366 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 18:09:44,366 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:44,367 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: python_packages
+2024-07-17 18:09:44,367 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 18:09:44,614 DEBUG   SenderThread:25145 [sender.py:send():379] send: telemetry
+2024-07-17 18:09:44,648 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/conda-environment.yaml
+2024-07-17 18:09:44,648 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/requirements.txt
+2024-07-17 18:09:44,648 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:09:44,648 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-metadata.json
+2024-07-17 18:09:44,889 INFO    wandb-upload_0:25145 [upload_job.py:push():130] Uploaded file /var/folders/yn/dg_q2mz977vdg9hz0gn6wlzw0000gn/T/tmpef09wqgxwandb/gd862wg5-wandb-metadata.json
+2024-07-17 18:09:45,371 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:46,359 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:46,359 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:46,359 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:46,359 DEBUG   SenderThread:25145 [sender.py:send():379] send: telemetry
+2024-07-17 18:09:46,359 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:09:46,373 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:46,658 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:09:47,375 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:48,341 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:48,342 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:48,342 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:48,342 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:09:48,342 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:09:48,343 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:09:48,380 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:48,668 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:09:48,668 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:09:49,385 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:50,385 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:50,454 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:50,454 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:50,454 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:50,454 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:09:50,455 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:09:50,455 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:09:50,679 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:09:50,679 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:09:51,390 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:51,538 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:09:52,393 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:52,531 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:52,531 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:52,532 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:52,532 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:09:52,532 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:09:52,532 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:09:52,686 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:09:52,686 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:09:53,397 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:54,402 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:54,684 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:54,686 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:54,688 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:09:54,688 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:09:54,689 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:54,690 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:09:54,691 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:09:54,691 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:09:55,408 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:56,410 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:56,702 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:09:56,815 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:09:56,952 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:56,952 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:56,952 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:56,953 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:09:56,953 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:09:56,953 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:09:57,412 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:57,708 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:09:58,414 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:58,713 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:09:59,104 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:59,105 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:59,105 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:09:59,105 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:09:59,105 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:09:59,105 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:09:59,371 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 18:09:59,371 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 18:09:59,416 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:09:59,718 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:00,421 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:00,718 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:01,266 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:01,267 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:01,267 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:01,267 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:01,267 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:01,267 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:01,426 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:01,724 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:02,347 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:10:02,429 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:02,729 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:03,270 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:03,270 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:03,270 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:03,270 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:03,271 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:03,271 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:03,434 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:03,734 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:04,439 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:04,740 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:05,299 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:05,300 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:05,300 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:05,300 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:05,301 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:05,301 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:05,440 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:05,745 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:06,442 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:06,750 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:07,285 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:07,286 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:07,286 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:07,286 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:07,286 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:07,286 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:07,397 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:10:07,443 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:07,756 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:08,448 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:08,761 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:09,453 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:09,462 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:09,462 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:09,462 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:09,463 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:09,463 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:09,463 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:09,766 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:10,458 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:10,771 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:11,356 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:11,357 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:11,357 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:11,357 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:11,357 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:11,357 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:11,463 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:11,777 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:12,460 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:10:12,464 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:12,778 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:12,778 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/config.yaml
+2024-07-17 18:10:13,208 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:13,208 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:13,208 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:13,208 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:13,208 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:13,209 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:13,469 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:13,783 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:14,373 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 18:10:14,373 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 18:10:14,474 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:14,786 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:15,100 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:15,100 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:15,100 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:15,100 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:15,100 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:15,101 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:15,479 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:15,791 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:16,481 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:16,794 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:16,879 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:16,880 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:16,880 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:16,880 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:16,880 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:16,880 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:17,486 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:17,799 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:17,966 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:10:18,491 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:18,699 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:18,699 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:18,700 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:18,700 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:18,700 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:18,700 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:18,805 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:18,805 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:19,492 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:20,497 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:20,616 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:20,616 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:20,616 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:20,617 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:20,617 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:20,617 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:20,813 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:20,813 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:21,502 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:22,384 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:22,384 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:22,384 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:22,384 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:22,385 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:22,385 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:22,504 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:22,824 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:22,824 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:23,472 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:10:23,505 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:24,059 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:24,060 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:24,060 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:24,060 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:24,060 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:24,060 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:24,510 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:24,834 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:24,835 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:25,515 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:25,852 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:25,852 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:25,853 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:25,853 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:25,853 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:25,853 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:26,520 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:26,845 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:26,845 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:27,522 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:27,841 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:27,841 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:27,841 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:27,841 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:27,841 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:27,841 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:27,850 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:28,527 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:28,855 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:28,925 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:10:29,378 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 18:10:29,378 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 18:10:29,529 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:29,712 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:29,712 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:29,712 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:29,712 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:29,713 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:29,713 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:29,861 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:30,534 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:30,866 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:31,535 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:31,679 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:31,679 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:31,679 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:31,680 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:31,680 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:31,680 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:31,868 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:32,540 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:32,873 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:33,542 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:33,612 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:33,612 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:33,612 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:33,613 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:33,613 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:33,613 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:33,875 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:34,412 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:10:34,547 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:34,880 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:35,548 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:35,655 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:35,655 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:35,655 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:35,656 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:35,656 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:35,656 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:35,882 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:36,553 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:36,883 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:37,546 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:37,546 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:37,546 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:37,546 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:37,546 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:37,547 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:37,555 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:37,887 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:38,559 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:38,891 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:39,413 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:10:39,564 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:39,666 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:39,666 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:39,666 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:39,666 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:39,666 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:39,667 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:39,896 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:40,567 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:40,898 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:41,568 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:41,652 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:41,652 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:41,652 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:41,653 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:41,653 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:41,653 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:41,764 DEBUG   SystemMonitor:25145 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-17 18:10:41,765 DEBUG   SenderThread:25145 [sender.py:send():379] send: telemetry
+2024-07-17 18:10:41,765 DEBUG   SenderThread:25145 [sender.py:send():379] send: stats
+2024-07-17 18:10:41,903 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:42,573 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:42,907 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:43,577 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:43,795 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:43,796 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:43,796 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:43,796 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:43,796 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:43,797 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:43,913 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:44,379 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 18:10:44,379 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 18:10:44,577 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:44,634 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:10:44,914 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:44,914 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/config.yaml
+2024-07-17 18:10:45,582 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:45,907 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:45,907 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:45,907 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:45,908 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:45,908 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:45,908 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:45,920 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:46,587 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:46,923 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:47,588 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:47,893 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:47,894 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:47,894 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:47,894 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:47,894 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:47,894 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:47,929 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:48,591 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:48,934 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:49,608 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:50,368 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:50,369 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:50,369 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:50,369 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:50,369 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:50,369 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:10:50,369 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:50,601 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:50,942 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:50,943 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:51,604 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:52,369 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:52,369 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:52,369 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:52,369 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:52,370 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:52,370 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:52,605 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:52,953 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:52,953 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:53,610 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:54,309 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:54,309 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:54,309 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:54,309 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:54,310 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:54,310 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:54,615 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:54,958 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:54,958 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:55,430 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:10:55,620 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:56,399 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:56,399 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:56,400 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:56,400 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:56,400 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:56,400 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:56,625 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:56,969 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:56,969 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:57,630 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:58,378 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:58,379 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:58,379 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:10:58,379 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:10:58,379 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:10:58,380 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:10:58,632 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:10:58,976 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:10:58,976 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:10:59,384 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 18:10:59,384 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 18:10:59,637 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:00,335 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:00,336 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:00,336 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:00,336 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:00,336 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:00,336 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:00,640 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:00,988 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:00,988 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:01,419 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:11:01,642 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:02,449 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:02,449 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:02,449 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:02,449 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:02,449 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:02,450 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:02,643 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:02,998 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:02,998 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:03,648 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:04,494 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:04,494 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:04,494 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:04,494 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:04,494 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:04,495 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:04,653 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:05,009 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:05,009 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:05,658 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:06,557 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:06,558 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:06,558 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:06,558 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:06,558 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:06,558 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:11:06,559 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:06,660 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:07,017 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:07,017 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:07,661 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:08,561 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:08,561 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:08,561 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:08,562 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:08,562 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:08,563 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:08,663 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:09,027 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:09,028 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:09,667 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:10,647 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:10,648 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:10,648 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:10,648 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:10,648 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:10,648 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:10,672 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:11,037 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:11,673 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:11,733 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:11:11,766 DEBUG   SenderThread:25145 [sender.py:send():379] send: stats
+2024-07-17 18:11:12,554 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:12,554 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:12,555 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:12,555 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:12,555 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:12,555 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:12,675 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:13,048 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:13,048 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:13,677 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:14,389 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 18:11:14,389 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 18:11:14,524 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:14,524 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:14,524 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:14,582 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:14,582 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:14,582 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:14,681 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:15,058 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:15,059 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:15,686 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:16,523 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:16,523 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:16,523 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:16,524 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:16,524 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:16,524 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:16,691 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:17,069 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:17,069 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:17,599 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:11:17,697 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:18,656 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:18,656 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:18,656 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:18,657 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:18,657 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:18,657 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:18,699 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:19,078 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:19,078 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:19,704 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:20,683 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:20,683 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:20,683 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:20,683 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:20,683 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:20,684 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:20,709 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:21,086 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:21,086 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:21,714 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:22,716 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:22,771 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:22,771 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:22,771 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:22,771 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:22,772 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:22,772 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:11:22,773 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:23,097 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:23,097 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:23,721 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:24,661 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:24,661 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:24,661 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:24,661 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:24,662 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:24,662 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:24,726 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:25,105 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:25,105 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:25,731 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:26,537 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:26,538 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:26,538 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:26,538 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:26,538 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:26,539 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:26,735 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:27,116 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:27,116 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:27,736 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:28,274 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:28,275 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:28,275 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:28,275 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:28,275 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:28,275 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:11:28,275 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:28,737 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:29,127 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:29,127 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:29,394 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-17 18:11:29,394 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: stop_status
+2024-07-17 18:11:29,742 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:30,156 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:30,156 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:30,156 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:30,156 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:30,157 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:30,157 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:30,746 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:31,145 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:31,146 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:31,751 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:32,018 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:32,018 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:32,018 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:32,018 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:32,018 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:32,019 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:32,150 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:32,756 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:33,153 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:33,761 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:33,958 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:33,958 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:33,958 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:33,959 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:33,959 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:33,959 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:11:33,960 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:34,158 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:34,766 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:35,164 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:35,771 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:35,832 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:35,833 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:35,833 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:35,833 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:35,833 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:35,833 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:36,170 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:36,774 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:37,175 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:37,716 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:37,717 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:37,717 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:37,717 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:37,717 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:37,718 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:37,778 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:38,180 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:38,783 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:39,182 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:39,466 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:11:39,554 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:39,555 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:39,555 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:39,555 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:39,555 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:39,555 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:39,788 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:40,187 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:40,793 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:41,193 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:41,287 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:41,287 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:41,287 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:41,288 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:41,288 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:41,288 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:41,771 DEBUG   SenderThread:25145 [sender.py:send():379] send: stats
+2024-07-17 18:11:41,798 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:42,198 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:42,803 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:43,151 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:43,151 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:43,151 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:43,151 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-17 18:11:43,151 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:43,151 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:43,152 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:43,152 DEBUG   SenderThread:25145 [sender.py:send():379] send: telemetry
+2024-07-17 18:11:43,152 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: server_info
+2024-07-17 18:11:43,152 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: server_info
+2024-07-17 18:11:43,203 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:43,203 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:43,302 DEBUG   SenderThread:25145 [sender.py:send():379] send: exit
+2024-07-17 18:11:43,302 INFO    SenderThread:25145 [sender.py:send_exit():586] handling exit code: 0
+2024-07-17 18:11:43,302 INFO    SenderThread:25145 [sender.py:send_exit():588] handling runtime: 121
+2024-07-17 18:11:43,303 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:43,303 INFO    SenderThread:25145 [sender.py:send_exit():594] send defer
+2024-07-17 18:11:43,303 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:43,303 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-17 18:11:43,304 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:43,304 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-17 18:11:43,304 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 1
+2024-07-17 18:11:43,304 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:43,304 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-17 18:11:43,304 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:43,304 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-17 18:11:43,304 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 2
+2024-07-17 18:11:43,304 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:43,304 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-17 18:11:43,304 INFO    HandlerThread:25145 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-17 18:11:43,304 DEBUG   SystemMonitor:25145 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-17 18:11:43,304 DEBUG   SystemMonitor:25145 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-17 18:11:43,304 INFO    HandlerThread:25145 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-17 18:11:43,304 INFO    HandlerThread:25145 [interfaces.py:finish():200] Joined disk monitor
+2024-07-17 18:11:43,304 INFO    HandlerThread:25145 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-07-17 18:11:43,304 INFO    HandlerThread:25145 [interfaces.py:finish():200] Joined memory monitor
+2024-07-17 18:11:43,304 INFO    HandlerThread:25145 [interfaces.py:finish():200] Joined network monitor
+2024-07-17 18:11:43,305 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:43,305 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-17 18:11:43,305 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 3
+2024-07-17 18:11:43,305 DEBUG   SenderThread:25145 [sender.py:send():379] send: stats
+2024-07-17 18:11:43,305 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:43,305 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-17 18:11:43,305 DEBUG   SenderThread:25145 [sender.py:send():379] send: history
+2024-07-17 18:11:43,305 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: summary_record
+2024-07-17 18:11:43,306 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:43,306 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:43,306 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-17 18:11:43,306 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 4
+2024-07-17 18:11:43,306 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:43,306 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-17 18:11:43,306 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:43,306 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-17 18:11:43,306 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 5
+2024-07-17 18:11:43,306 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:43,306 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-17 18:11:43,307 DEBUG   SenderThread:25145 [sender.py:send():379] send: summary
+2024-07-17 18:11:43,307 INFO    SenderThread:25145 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-17 18:11:43,307 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:43,307 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-17 18:11:43,307 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 6
+2024-07-17 18:11:43,307 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:43,307 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-17 18:11:43,307 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:43,307 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-17 18:11:43,308 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: status_report
+2024-07-17 18:11:43,493 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 7
+2024-07-17 18:11:43,493 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:43,493 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-17 18:11:43,494 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:43,494 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-17 18:11:44,208 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:44,209 INFO    Thread-12 :25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/config.yaml
+2024-07-17 18:11:44,307 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-17 18:11:44,907 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 8
+2024-07-17 18:11:44,907 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: poll_exit
+2024-07-17 18:11:44,907 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:44,907 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-17 18:11:44,907 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:44,907 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-17 18:11:44,908 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 9
+2024-07-17 18:11:44,908 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:44,908 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-17 18:11:44,908 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:44,908 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-17 18:11:44,908 INFO    SenderThread:25145 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-17 18:11:45,214 INFO    SenderThread:25145 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:45,214 INFO    SenderThread:25145 [dir_watcher.py:finish():388] scan: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files
+2024-07-17 18:11:45,214 INFO    SenderThread:25145 [dir_watcher.py:finish():402] scan save: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/requirements.txt requirements.txt
+2024-07-17 18:11:45,214 INFO    SenderThread:25145 [dir_watcher.py:finish():402] scan save: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log output.log
+2024-07-17 18:11:45,215 INFO    SenderThread:25145 [dir_watcher.py:finish():402] scan save: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/config.yaml config.yaml
+2024-07-17 18:11:45,216 INFO    SenderThread:25145 [dir_watcher.py:finish():402] scan save: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json wandb-summary.json
+2024-07-17 18:11:45,217 INFO    SenderThread:25145 [dir_watcher.py:finish():402] scan save: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/conda-environment.yaml conda-environment.yaml
+2024-07-17 18:11:45,217 INFO    SenderThread:25145 [dir_watcher.py:finish():402] scan save: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-metadata.json wandb-metadata.json
+2024-07-17 18:11:45,217 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 10
+2024-07-17 18:11:45,217 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:45,218 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-17 18:11:45,218 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:45,218 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-17 18:11:45,219 INFO    SenderThread:25145 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-17 18:11:45,312 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-17 18:11:45,314 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: poll_exit
+2024-07-17 18:11:45,610 INFO    wandb-upload_1:25145 [upload_job.py:push():130] Uploaded file /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/output.log
+2024-07-17 18:11:45,766 INFO    wandb-upload_0:25145 [upload_job.py:push():130] Uploaded file /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/requirements.txt
+2024-07-17 18:11:45,768 INFO    wandb-upload_3:25145 [upload_job.py:push():130] Uploaded file /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/wandb-summary.json
+2024-07-17 18:11:45,774 INFO    wandb-upload_4:25145 [upload_job.py:push():130] Uploaded file /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/conda-environment.yaml
+2024-07-17 18:11:45,786 INFO    wandb-upload_2:25145 [upload_job.py:push():130] Uploaded file /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/files/config.yaml
+2024-07-17 18:11:45,992 INFO    Thread-11 (_thread_body):25145 [sender.py:transition_state():614] send defer: 11
+2024-07-17 18:11:45,992 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:45,992 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-17 18:11:45,992 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:45,992 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-17 18:11:45,992 INFO    SenderThread:25145 [file_pusher.py:join():175] waiting for file pusher
+2024-07-17 18:11:45,993 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 12
+2024-07-17 18:11:45,994 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:45,994 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-17 18:11:45,994 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:45,994 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-17 18:11:45,994 INFO    SenderThread:25145 [file_stream.py:finish():601] file stream finish called
+2024-07-17 18:11:46,315 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-17 18:11:49,217 INFO    SenderThread:25145 [file_stream.py:finish():605] file stream finish is done
+2024-07-17 18:11:49,217 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 13
+2024-07-17 18:11:49,217 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: poll_exit
+2024-07-17 18:11:49,217 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:49,217 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-17 18:11:49,218 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:49,218 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-17 18:11:49,218 INFO    SenderThread:25145 [sender.py:transition_state():614] send defer: 14
+2024-07-17 18:11:49,218 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: defer
+2024-07-17 18:11:49,218 INFO    HandlerThread:25145 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-17 18:11:49,218 DEBUG   SenderThread:25145 [sender.py:send():379] send: final
+2024-07-17 18:11:49,218 DEBUG   SenderThread:25145 [sender.py:send():379] send: footer
+2024-07-17 18:11:49,218 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: defer
+2024-07-17 18:11:49,218 INFO    SenderThread:25145 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-17 18:11:49,218 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-17 18:11:49,218 DEBUG   SenderThread:25145 [sender.py:send_request():406] send_request: poll_exit
+2024-07-17 18:11:49,219 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-17 18:11:49,219 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-17 18:11:49,219 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-17 18:11:49,219 DEBUG   HandlerThread:25145 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-17 18:11:49,220 INFO    HandlerThread:25145 [handler.py:finish():882] shutting down handler
+2024-07-17 18:11:50,223 INFO    WriterThread:25145 [datastore.py:close():296] close: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_180941-rey77w7l/run-rey77w7l.wandb
+2024-07-17 18:11:50,223 INFO    SenderThread:25145 [sender.py:finish():1608] shutting down sender
+2024-07-17 18:11:50,223 INFO    SenderThread:25145 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-17 18:11:50,224 INFO    SenderThread:25145 [file_pusher.py:join():175] waiting for file pusher

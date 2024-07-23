@@ -1,0 +1,184 @@
+2024-07-22 15:11:47,452 INFO    StreamThr :3233 [internal.py:wandb_internal():85] W&B internal server running at pid: 3233, started at: 2024-07-22 15:11:47.450669
+2024-07-22 15:11:47,454 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: status
+2024-07-22 15:11:47,471 INFO    WriterThread:3233 [datastore.py:open_for_write():87] open: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/run-05z7s0sv.wandb
+2024-07-22 15:11:47,472 DEBUG   SenderThread:3233 [sender.py:send():379] send: header
+2024-07-22 15:11:47,509 DEBUG   SenderThread:3233 [sender.py:send():379] send: run
+2024-07-22 15:11:51,189 INFO    SenderThread:3233 [dir_watcher.py:__init__():211] watching files in: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files
+2024-07-22 15:11:51,189 INFO    SenderThread:3233 [sender.py:_start_run_threads():1188] run started: 05z7s0sv with start time 1721653907.451938
+2024-07-22 15:11:51,194 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: check_version
+2024-07-22 15:11:51,194 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: check_version
+2024-07-22 15:11:51,287 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: run_start
+2024-07-22 15:11:51,292 DEBUG   HandlerThread:3233 [system_info.py:__init__():26] System info init
+2024-07-22 15:11:51,292 DEBUG   HandlerThread:3233 [system_info.py:__init__():41] System info init done
+2024-07-22 15:11:51,292 INFO    HandlerThread:3233 [system_monitor.py:start():194] Starting system monitor
+2024-07-22 15:11:51,293 INFO    SystemMonitor:3233 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-22 15:11:51,293 INFO    HandlerThread:3233 [system_monitor.py:probe():214] Collecting system info
+2024-07-22 15:11:51,293 INFO    SystemMonitor:3233 [interfaces.py:start():188] Started cpu monitoring
+2024-07-22 15:11:51,295 INFO    SystemMonitor:3233 [interfaces.py:start():188] Started disk monitoring
+2024-07-22 15:11:51,296 INFO    SystemMonitor:3233 [interfaces.py:start():188] Started gpuapple monitoring
+2024-07-22 15:11:51,297 INFO    SystemMonitor:3233 [interfaces.py:start():188] Started memory monitoring
+2024-07-22 15:11:51,298 INFO    SystemMonitor:3233 [interfaces.py:start():188] Started network monitoring
+2024-07-22 15:11:51,740 DEBUG   HandlerThread:3233 [system_info.py:probe():152] Probing system
+2024-07-22 15:11:51,745 DEBUG   HandlerThread:3233 [system_info.py:_probe_git():137] Probing git
+2024-07-22 15:11:51,781 DEBUG   HandlerThread:3233 [system_info.py:_probe_git():145] Probing git done
+2024-07-22 15:11:51,781 DEBUG   HandlerThread:3233 [system_info.py:probe():200] Probing system done
+2024-07-22 15:11:51,781 DEBUG   HandlerThread:3233 [system_monitor.py:probe():223] {'os': 'macOS-14.5-arm64-arm-64bit', 'python': '3.11.9', 'heartbeatAt': '2024-07-22T13:11:51.740818', 'startedAt': '2024-07-22T13:11:47.434728', 'docker': None, 'cuda': None, 'args': ('--TAU=0.010169777524425104', '--batch_size=128', '--eps_decay=1000', '--eps_start=0.9769932246119852', '--fc_layer_size_1=16', '--fc_layer_size_2=48', '--gamma=0.097084244056014', '--learning_rate=0.06362989766572845', '--num_episodes=400'), 'state': 'running', 'program': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/train_pytorch.py', 'codePathLocal': 'train_pytorch.py', 'codePath': 'train_pytorch.py', 'git': {'remote': 'https://github.com/wagnertamas/gym_env_tester.git', 'commit': '9db7eedea0d1e7aeda87af65fdffde2139416f69'}, 'email': 'wtamas99@yahoo.com', 'root': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester', 'host': 'Wagner-MacBook-Pro.local', 'username': 'wagnertamas', 'executable': '/opt/anaconda3/envs/sumo_RL_pytorch/bin/python', 'cpu_count': 12, 'cpu_count_logical': 12, 'disk': {'/': {'total': 926.3517189025879, 'used': 597.9955253601074}}, 'gpuapple': {'type': 'Apple M3 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 18.0}}
+2024-07-22 15:11:51,781 INFO    HandlerThread:3233 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-22 15:11:51,781 INFO    HandlerThread:3233 [system_monitor.py:probe():227] Publishing system info
+2024-07-22 15:11:51,781 DEBUG   HandlerThread:3233 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-22 15:11:52,193 INFO    Thread-12 :3233 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/conda-environment.yaml
+2024-07-22 15:11:53,673 DEBUG   HandlerThread:3233 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-22 15:11:53,674 INFO    HandlerThread:3233 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-22 15:11:53,677 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: status_report
+2024-07-22 15:11:53,677 DEBUG   SenderThread:3233 [sender.py:send():379] send: files
+2024-07-22 15:11:53,677 INFO    SenderThread:3233 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-22 15:11:53,766 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-22 15:11:53,767 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: python_packages
+2024-07-22 15:11:53,767 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-22 15:11:53,768 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-22 15:11:53,769 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: stop_status
+2024-07-22 15:11:54,038 DEBUG   SenderThread:3233 [sender.py:send():379] send: telemetry
+2024-07-22 15:11:54,197 INFO    Thread-12 :3233 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/conda-environment.yaml
+2024-07-22 15:11:54,197 INFO    Thread-12 :3233 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/output.log
+2024-07-22 15:11:54,197 INFO    Thread-12 :3233 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/requirements.txt
+2024-07-22 15:11:54,197 INFO    Thread-12 :3233 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/wandb-metadata.json
+2024-07-22 15:11:54,647 INFO    wandb-upload_0:3233 [upload_job.py:push():130] Uploaded file /var/folders/yn/dg_q2mz977vdg9hz0gn6wlzw0000gn/T/tmpn5x385n5wandb/fbwbspve-wandb-metadata.json
+2024-07-22 15:11:54,772 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-22 15:11:54,817 DEBUG   SenderThread:3233 [sender.py:send():379] send: telemetry
+2024-07-22 15:11:55,772 DEBUG   SenderThread:3233 [sender.py:send():379] send: telemetry
+2024-07-22 15:11:55,772 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: server_info
+2024-07-22 15:11:55,772 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: server_info
+2024-07-22 15:11:55,923 DEBUG   SenderThread:3233 [sender.py:send():379] send: exit
+2024-07-22 15:11:55,923 INFO    SenderThread:3233 [sender.py:send_exit():586] handling exit code: 1
+2024-07-22 15:11:55,923 INFO    SenderThread:3233 [sender.py:send_exit():588] handling runtime: 4
+2024-07-22 15:11:55,923 INFO    SenderThread:3233 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-22 15:11:55,924 INFO    SenderThread:3233 [sender.py:send_exit():594] send defer
+2024-07-22 15:11:55,924 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:11:55,924 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-22 15:11:55,924 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:11:55,924 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-22 15:11:55,924 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 1
+2024-07-22 15:11:55,924 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:11:55,924 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-22 15:11:55,924 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:11:55,924 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-22 15:11:55,924 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 2
+2024-07-22 15:11:55,924 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:11:55,924 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-22 15:11:55,924 INFO    HandlerThread:3233 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-22 15:11:55,924 INFO    HandlerThread:3233 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-22 15:11:55,924 DEBUG   SystemMonitor:3233 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-22 15:11:55,925 DEBUG   SystemMonitor:3233 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-22 15:11:55,925 DEBUG   SystemMonitor:3233 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-22 15:11:55,925 INFO    HandlerThread:3233 [interfaces.py:finish():200] Joined disk monitor
+2024-07-22 15:11:55,925 INFO    HandlerThread:3233 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-07-22 15:11:55,925 INFO    HandlerThread:3233 [interfaces.py:finish():200] Joined memory monitor
+2024-07-22 15:11:55,925 INFO    HandlerThread:3233 [interfaces.py:finish():200] Joined network monitor
+2024-07-22 15:11:55,925 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:11:55,925 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-22 15:11:55,925 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 3
+2024-07-22 15:11:55,925 DEBUG   SenderThread:3233 [sender.py:send():379] send: telemetry
+2024-07-22 15:11:55,925 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:11:55,925 DEBUG   SenderThread:3233 [sender.py:send():379] send: stats
+2024-07-22 15:11:55,925 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-22 15:11:55,925 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:11:55,925 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-22 15:11:55,925 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 4
+2024-07-22 15:11:55,925 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:11:55,925 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-22 15:11:55,926 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:11:55,926 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-22 15:11:55,926 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 5
+2024-07-22 15:11:55,926 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:11:55,926 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-22 15:11:55,926 DEBUG   SenderThread:3233 [sender.py:send():379] send: summary
+2024-07-22 15:11:55,927 INFO    SenderThread:3233 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-22 15:11:55,927 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:11:55,927 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-22 15:11:55,927 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 6
+2024-07-22 15:11:55,927 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:11:55,927 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-22 15:11:55,927 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:11:55,927 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-22 15:11:55,928 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: status_report
+2024-07-22 15:11:56,090 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 7
+2024-07-22 15:11:56,091 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:11:56,091 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-22 15:11:56,091 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:11:56,091 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-22 15:11:56,205 INFO    Thread-12 :3233 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/output.log
+2024-07-22 15:11:56,205 INFO    Thread-12 :3233 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/config.yaml
+2024-07-22 15:11:56,205 INFO    Thread-12 :3233 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/wandb-summary.json
+2024-07-22 15:11:56,928 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-22 15:11:58,212 INFO    Thread-12 :3233 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/output.log
+2024-07-22 15:11:59,783 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 8
+2024-07-22 15:11:59,784 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: poll_exit
+2024-07-22 15:11:59,784 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:11:59,785 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-22 15:11:59,785 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:11:59,785 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-22 15:11:59,785 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 9
+2024-07-22 15:11:59,785 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:11:59,785 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-22 15:11:59,785 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:11:59,786 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-22 15:11:59,786 INFO    SenderThread:3233 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-22 15:11:59,936 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-22 15:12:00,221 INFO    SenderThread:3233 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/output.log
+2024-07-22 15:12:00,222 INFO    SenderThread:3233 [dir_watcher.py:finish():388] scan: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files
+2024-07-22 15:12:00,223 INFO    SenderThread:3233 [dir_watcher.py:finish():402] scan save: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/requirements.txt requirements.txt
+2024-07-22 15:12:00,223 INFO    SenderThread:3233 [dir_watcher.py:finish():402] scan save: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/output.log output.log
+2024-07-22 15:12:00,226 INFO    SenderThread:3233 [dir_watcher.py:finish():402] scan save: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/config.yaml config.yaml
+2024-07-22 15:12:00,227 INFO    SenderThread:3233 [dir_watcher.py:finish():402] scan save: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/wandb-summary.json wandb-summary.json
+2024-07-22 15:12:00,229 INFO    SenderThread:3233 [dir_watcher.py:finish():402] scan save: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/conda-environment.yaml conda-environment.yaml
+2024-07-22 15:12:00,231 INFO    SenderThread:3233 [dir_watcher.py:finish():402] scan save: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/wandb-metadata.json wandb-metadata.json
+2024-07-22 15:12:00,231 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 10
+2024-07-22 15:12:00,233 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: poll_exit
+2024-07-22 15:12:00,233 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:12:00,234 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-22 15:12:00,234 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:12:00,234 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-22 15:12:00,234 INFO    SenderThread:3233 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-22 15:12:00,630 INFO    wandb-upload_1:3233 [upload_job.py:push():130] Uploaded file /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/output.log
+2024-07-22 15:12:00,688 INFO    wandb-upload_0:3233 [upload_job.py:push():130] Uploaded file /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/requirements.txt
+2024-07-22 15:12:00,749 INFO    wandb-upload_2:3233 [upload_job.py:push():130] Uploaded file /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/config.yaml
+2024-07-22 15:12:00,751 INFO    wandb-upload_3:3233 [upload_job.py:push():130] Uploaded file /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/wandb-summary.json
+2024-07-22 15:12:00,794 INFO    wandb-upload_4:3233 [upload_job.py:push():130] Uploaded file /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/files/conda-environment.yaml
+2024-07-22 15:12:00,941 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-22 15:12:00,942 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: poll_exit
+2024-07-22 15:12:01,000 INFO    Thread-11 (_thread_body):3233 [sender.py:transition_state():614] send defer: 11
+2024-07-22 15:12:01,001 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:12:01,001 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-22 15:12:01,002 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:12:01,002 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-22 15:12:01,002 INFO    SenderThread:3233 [file_pusher.py:join():175] waiting for file pusher
+2024-07-22 15:12:01,004 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 12
+2024-07-22 15:12:01,005 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:12:01,005 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-22 15:12:01,006 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:12:01,006 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-22 15:12:01,006 INFO    SenderThread:3233 [file_stream.py:finish():601] file stream finish called
+2024-07-22 15:12:01,183 INFO    SenderThread:3233 [file_stream.py:finish():605] file stream finish is done
+2024-07-22 15:12:01,184 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 13
+2024-07-22 15:12:01,184 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:12:01,184 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-22 15:12:01,184 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:12:01,184 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-22 15:12:01,184 INFO    SenderThread:3233 [sender.py:transition_state():614] send defer: 14
+2024-07-22 15:12:01,184 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: defer
+2024-07-22 15:12:01,184 INFO    HandlerThread:3233 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-22 15:12:01,184 DEBUG   SenderThread:3233 [sender.py:send():379] send: final
+2024-07-22 15:12:01,184 DEBUG   SenderThread:3233 [sender.py:send():379] send: footer
+2024-07-22 15:12:01,184 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: defer
+2024-07-22 15:12:01,185 INFO    SenderThread:3233 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-22 15:12:01,186 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-22 15:12:01,186 DEBUG   SenderThread:3233 [sender.py:send_request():406] send_request: poll_exit
+2024-07-22 15:12:01,187 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-22 15:12:01,188 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-22 15:12:01,188 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-22 15:12:01,188 DEBUG   HandlerThread:3233 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-22 15:12:01,188 INFO    HandlerThread:3233 [handler.py:finish():882] shutting down handler
+2024-07-22 15:12:02,191 INFO    WriterThread:3233 [datastore.py:close():296] close: /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151147-05z7s0sv/run-05z7s0sv.wandb
+2024-07-22 15:12:02,191 INFO    SenderThread:3233 [sender.py:finish():1608] shutting down sender
+2024-07-22 15:12:02,194 INFO    SenderThread:3233 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-22 15:12:02,194 INFO    SenderThread:3233 [file_pusher.py:join():175] waiting for file pusher

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/train_pytorch.py", line 95, in train
+    action = select_action(state, policy_net, env, device, eps_start, eps_end, eps_decay)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: select_action() missing 1 required positional argument: 'steps_done'
+Episode number:  0

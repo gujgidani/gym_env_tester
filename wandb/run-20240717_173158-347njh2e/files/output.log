@@ -1,0 +1,28 @@
+
+Episode number:  0
+Traceback (most recent call last):
+  File "/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_pytorch.py", line 250, in train
+    action = select_action(state, policy_net, env, device, eps_start, eps_end, eps_decay)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_pytorch.py", line 134, in select_action
+    return policy_net(state).max(1).indices.view(1, 1)
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1716, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1727, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_pytorch.py", line 109, in forward
+    vehicle_count = F.relu(self.fc_vehicle_count(x['vehicle_count']))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1716, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1727, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: MPS device does not support linear for non-float inputs

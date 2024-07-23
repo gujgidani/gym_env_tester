@@ -1,0 +1,34 @@
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_setup.py:_flush():76] Configure stats pid to 18515
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_setup.py:_flush():76] Loading settings from /Users/wagnertamas/.config/wandb/settings
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_setup.py:_flush():76] Loading settings from /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/settings
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'traffic-light-dqn', 'entity': 'wagnertamas-budapesti-m-szaki-s-gazdas-gtudom-nyi-egyetem', 'root_dir': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester', 'sweep_id': '9ibv46m6', 'run_id': 'tcj29bno', 'sweep_param_path': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/sweep-9ibv46m6/config-tcj29bno.yaml'}
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main_pytorch.py', 'program_abspath': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_pytorch.py', 'program': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_pytorch.py'}
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_init.py:_log_setup():529] Logging user logs to /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_155145-tcj29bno/logs/debug.log
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_init.py:_log_setup():530] Logging internal logs to /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240717_155145-tcj29bno/logs/debug-internal.log
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_init.py:init():569] calling init triggers
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_init.py:init():576] wandb.init called with sweep_config: {'TAU': 0.005, 'batch_size': 32, 'eps_decay': 500, 'eps_start': 0.947623233406953, 'fc_layer_size_1': 32, 'fc_layer_size_2': 32, 'gamma': 0.6740856759584037, 'learning_rate': 0.018805150294762464, 'num_episodes': 500}
+config: {}
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_init.py:init():619] starting backend
+2024-07-17 15:51:45,766 INFO    Thread-3 (_run_job):18515 [wandb_init.py:init():623] setting up manager
+2024-07-17 15:51:45,769 INFO    Thread-3 (_run_job):18515 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-07-17 15:51:45,769 INFO    Thread-3 (_run_job):18515 [wandb_init.py:init():631] backend started and connected
+2024-07-17 15:51:45,774 INFO    Thread-3 (_run_job):18515 [wandb_run.py:_config_callback():1382] config_cb None None {'TAU': 0.005, 'batch_size': 32, 'eps_decay': 500, 'eps_start': 0.947623233406953, 'fc_layer_size_1': 32, 'fc_layer_size_2': 32, 'gamma': 0.6740856759584037, 'learning_rate': 0.018805150294762464, 'num_episodes': 500}
+2024-07-17 15:51:45,775 INFO    Thread-3 (_run_job):18515 [wandb_init.py:init():720] updated telemetry
+2024-07-17 15:51:45,800 INFO    Thread-3 (_run_job):18515 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-17 15:51:46,182 INFO    Thread-3 (_run_job):18515 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-17 15:51:46,286 INFO    Thread-3 (_run_job):18515 [wandb_run.py:_on_init():2411] got version response 
+2024-07-17 15:51:46,286 INFO    Thread-3 (_run_job):18515 [wandb_init.py:init():804] starting run threads in backend
+2024-07-17 15:51:58,288 INFO    Thread-3 (_run_job):18515 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-17 15:51:58,288 INFO    Thread-3 (_run_job):18515 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-17 15:51:58,288 INFO    Thread-3 (_run_job):18515 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-17 15:51:58,288 INFO    Thread-3 (_run_job):18515 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-17 15:51:58,296 INFO    Thread-3 (_run_job):18515 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-17 15:51:58,720 INFO    Thread-3 (_run_job):18515 [wandb_watch.py:watch():51] Watching
+2024-07-17 15:51:58,720 INFO    Thread-3 (_run_job):18515 [wandb_watch.py:watch():51] Watching
+2024-07-17 15:55:02,226 INFO    Thread-3 (_run_job):18515 [wandb_run.py:_finish():2109] finishing run wagnertamas-budapesti-m-szaki-s-gazdas-gtudom-nyi-egyetem/traffic-light-dqn/tcj29bno
+2024-07-17 15:55:02,226 INFO    Thread-3 (_run_job):18515 [wandb_run.py:_atexit_cleanup():2349] got exitcode: 1
+2024-07-17 15:55:02,226 INFO    Thread-3 (_run_job):18515 [wandb_run.py:_restore():2332] restore
+2024-07-17 15:55:02,227 INFO    Thread-3 (_run_job):18515 [wandb_run.py:_restore():2338] restore done

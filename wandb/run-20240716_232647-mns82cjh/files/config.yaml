@@ -1,0 +1,54 @@
+wandb_version: 1
+
+BATCH_SIZE:
+  desc: null
+  value: 128
+GAMMA:
+  desc: null
+  value: 0.99
+EPS_START:
+  desc: null
+  value: 0.9
+EPS_END:
+  desc: null
+  value: 0.05
+EPS_DECAY:
+  desc: null
+  value: 10000
+TAU:
+  desc: null
+  value: 0.005
+LR:
+  desc: null
+  value: 0.0001
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.9
+    cli_version: 0.17.4
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    start_time: 1721165207
+    t:
+      1:
+      - 1
+      - 49
+      - 55
+      - 71
+      2:
+      - 1
+      - 49
+      - 55
+      - 71
+      3:
+      - 1
+      - 16
+      - 23
+      4: 3.11.9
+      5: 0.17.4
+      8:
+      - 1
+      - 4
+      - 5
+      13: darwin-arm64

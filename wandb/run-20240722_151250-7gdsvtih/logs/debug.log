@@ -1,0 +1,24 @@
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_setup.py:_flush():76] Configure stats pid to 3835
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_setup.py:_flush():76] Loading settings from /Users/wagnertamas/.config/wandb/settings
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_setup.py:_flush():76] Loading settings from /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/settings
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'wagnertamas-budapesti-m-szaki-s-gazdas-gtudom-nyi-egyetem', 'project': 'traffic-light-dqn', 'sweep_id': 'zdyx763m', 'root_dir': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester', 'run_id': '7gdsvtih', 'sweep_param_path': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/sweep-zdyx763m/config-7gdsvtih.yaml'}
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_pytorch.py', 'program_abspath': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/train_pytorch.py', 'program': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/train_pytorch.py'}
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_init.py:_log_setup():529] Logging user logs to /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151250-7gdsvtih/logs/debug.log
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_init.py:_log_setup():530] Logging internal logs to /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240722_151250-7gdsvtih/logs/debug-internal.log
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_init.py:init():569] calling init triggers
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_init.py:init():576] wandb.init called with sweep_config: {'TAU': 0.0067613774501147, 'batch_size': 128, 'eps_decay': 500, 'eps_start': 0.8848665187962507, 'fc_layer_size_1': 16, 'fc_layer_size_2': 16, 'gamma': 0.11933510728454716, 'learning_rate': 0.0392624189454122, 'num_episodes': 650}
+config: {'num_episodes': 600, 'TAU': 0.014622523699104623, 'learning_rate': 0.022850574714388262, 'batch_size': 128, 'gamma': 0.05420679682778693, 'eps_start': 0.677398614743279, 'eps_decay': 100, 'fc_layer_size_1': 32, 'fc_layer_size_2': 16}
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_init.py:init():619] starting backend
+2024-07-22 15:12:50,309 INFO    MainThread:3835 [wandb_init.py:init():623] setting up manager
+2024-07-22 15:12:50,311 INFO    MainThread:3835 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-07-22 15:12:50,312 INFO    MainThread:3835 [wandb_init.py:init():631] backend started and connected
+2024-07-22 15:12:50,317 INFO    MainThread:3835 [wandb_run.py:_config_callback():1382] config_cb None None {'TAU': 0.0067613774501147, 'batch_size': 128, 'eps_decay': 500, 'eps_start': 0.8848665187962507, 'fc_layer_size_1': 16, 'fc_layer_size_2': 16, 'gamma': 0.11933510728454716, 'learning_rate': 0.0392624189454122, 'num_episodes': 650}
+2024-07-22 15:12:50,318 INFO    MainThread:3835 [wandb_init.py:init():720] updated telemetry
+2024-07-22 15:12:50,341 INFO    MainThread:3835 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-22 15:12:50,727 INFO    MainThread:3835 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-22 15:12:50,810 INFO    MainThread:3835 [wandb_run.py:_on_init():2411] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-22 15:12:50,811 INFO    MainThread:3835 [wandb_init.py:init():804] starting run threads in backend

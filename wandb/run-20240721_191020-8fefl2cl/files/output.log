@@ -1,0 +1,57 @@
+
+ Retrying in 1 seconds
+Episode number:  0
+Episode number:  1
+Episode number:  2
+Episode number:  3
+Episode number:  4
+Episode number:  5
+Episode number:  6
+Episode number:  7
+Episode number:  8
+Episode number:  9
+Episode number:  10
+Episode number:  11
+Episode number:  12
+Episode number:  13
+Episode number:  14
+Episode number:  15
+Episode number:  16
+Episode number:  17
+Episode number:  18
+Episode number:  19
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+Traceback (most recent call last):
+  File "/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/train_pytorch.py", line 157, in train
+    sum_of_rewards = sum(episode_rewards)/len(episode_rewards)
+                     ^^^
+  File "_pydevd_bundle/pydevd_cython_darwin_311_64.pyx", line 1187, in _pydevd_bundle.pydevd_cython_darwin_311_64.SafeCallWrapper.__call__
+  File "_pydevd_bundle/pydevd_cython_darwin_311_64.pyx", line 627, in _pydevd_bundle.pydevd_cython_darwin_311_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_311_64.pyx", line 937, in _pydevd_bundle.pydevd_cython_darwin_311_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_311_64.pyx", line 928, in _pydevd_bundle.pydevd_cython_darwin_311_64.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython_darwin_311_64.pyx", line 585, in _pydevd_bundle.pydevd_cython_darwin_311_64.PyDBFrame.do_wait_suspend
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1201, in do_wait_suspend
+    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)
+  File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/pydevd.py", line 1216, in _do_wait_suspend
+    time.sleep(0.01)

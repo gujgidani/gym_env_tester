@@ -4,20 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70394c15-94f3-4b6c-823c-e4f8a836cb62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gym_env_tester.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gym_envs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gym_envs/envs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gym_envs/envs/traffic_env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gym_envs/envs/traffic_light_support_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_keras.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_pytorch.ipynb" afterDir="false" />
+    <list default="true" id="70394c15-94f3-4b6c-823c-e4f8a836cb62" name="Changes" comment="Changed to chack linux and mac">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_lightning.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_torchRL.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onnx_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_pytorch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym_envs/envs/traffic_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym_envs/envs/traffic_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym_envs/envs/traffic_light_support_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym_envs/envs/traffic_light_support_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_pytorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/main_pytorch.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumo_files/e1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumo_files/e1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumo_files/e1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumo_files/e1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumo_files/e1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumo_files/e1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumo_files/e1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumo_files/e1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumo_files/e1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumo_files/e1_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumo_files/e1_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumo_files/e1_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_1.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +33,29 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wagnertamas&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/wagnertamas/gym_env_tester.git&quot;,
+    &quot;accountId&quot;: &quot;1895948d-546c-4e9e-ae3e-b8c1923db680&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -44,30 +66,103 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/gym_envs/envs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.Dockerfile.executor": "Run",
+    "Python.main_pytorch.executor": "Debug",
+    "Python.onnx_main.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.thread.executor": "Debug",
+    "Python.train_pytorch.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/gym_envs/envs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localReportPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="$PROJECT_DIR$/report_dynamo_export.sarif" />
+        <option name="qodana" value="false" />
+        <option name="reportGuid" value="26fa39a3-b12c-451e-aa1b-e8544622d569" />
+        <option name="reportName" value="26fa39a3-b12c-451e-aa1b-e8544622d569" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription path="$PROJECT_DIR$/report_dynamo_export.sarif" qodana="false" reportGuid="26fa39a3-b12c-451e-aa1b-e8544622d569" reportId="26fa39a3-b12c-451e-aa1b-e8544622d569" />
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/gym_envs/envs" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="main_pytorch" type="PythonConfigurationType" factoryName="Python">
+      <module name="gym_env_tester" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="sumo_RL_pytorch" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_pytorch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="python_onnx_builder" />
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Python.main_pytorch" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17890.14" />
-        <option value="bundled-python-sdk-5b207ade9991-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17890.14" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
+        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
       </set>
     </attachedChunks>
   </component>
@@ -83,11 +178,120 @@
       <workItem from="1720120648615" duration="16442000" />
       <workItem from="1720432641984" duration="29696000" />
       <workItem from="1720540135707" duration="13052000" />
-      <workItem from="1720616388519" duration="8477000" />
+      <workItem from="1720616388519" duration="17807000" />
+      <workItem from="1720717937151" duration="96000" />
+      <workItem from="1720718059489" duration="131000" />
+      <workItem from="1720718195779" duration="44396000" />
+      <workItem from="1721176676535" duration="4462000" />
+      <workItem from="1721220187276" duration="3007000" />
+      <workItem from="1721224520624" duration="46000" />
+      <workItem from="1721261230226" duration="2526000" />
+      <workItem from="1721263918052" duration="725000" />
+      <workItem from="1721316771375" duration="7767000" />
+      <workItem from="1721572492243" duration="15009000" />
+      <workItem from="1721603381280" duration="12626000" />
     </task>
+    <task id="LOCAL-00001" summary="Init">
+      <option name="closed" value="true" />
+      <created>1720693813843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720693813843</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Sumo files were added">
+      <option name="closed" value="true" />
+      <created>1720698713058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720698713058</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changed to automative sumo path.">
+      <option name="closed" value="true" />
+      <created>1720699578169</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720699578169</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Change traci connect">
+      <option name="closed" value="true" />
+      <created>1720700502186</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720700502186</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changed to chack linux and mac">
+      <option name="closed" value="true" />
+      <created>1720705940992</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720705940992</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init" />
+    <MESSAGE value="Sumo files were added" />
+    <MESSAGE value="Changed to automative sumo path." />
+    <MESSAGE value="Change traci connect" />
+    <MESSAGE value="Changed to chack linux and mac" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed to chack linux and mac" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook:///Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_torchRL.ipynb</url>
+          <line>70</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook:///Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_torchRL.ipynb</url>
+          <line>79</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file:///opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torchrl/data/tensor_specs.py</url>
+          <line>1450</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train_pytorch.py</url>
+          <line>159</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/onnx_main.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/gym_env_tester$main_pytorch.coverage" NAME="main_pytorch Coverage Results" MODIFIED="1721579677348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/gym_env_tester$test.coverage" NAME="test Coverage Results" MODIFIED="1720823320139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gym_env_tester$thread.coverage" NAME="thread Coverage Results" MODIFIED="1721581726916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/concurrent/futures" />
+    <SUITE FILE_PATH="coverage/gym_env_tester$onnx_main.coverage" NAME="onnx_main Coverage Results" MODIFIED="1721653095803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gym_env_tester$train_pytorch.coverage" NAME="train_pytorch Coverage Results" MODIFIED="1721581815262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,0 +1,57 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.9
+    cli_version: 0.17.4
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1721272611
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 2
+      - 23
+      - 37
+      - 61
+      4: 3.11.9
+      5: 0.17.4
+      8:
+      - 4
+      - 5
+      - 9
+      13: darwin-arm64
+TAU:
+  desc: null
+  value: 0.02230271707938111
+batch_size:
+  desc: null
+  value: 128
+eps_decay:
+  desc: null
+  value: 20
+eps_start:
+  desc: null
+  value: 0.549910196287656
+fc_layer_size_1:
+  desc: null
+  value: 32
+fc_layer_size_2:
+  desc: null
+  value: 128
+gamma:
+  desc: null
+  value: 0.1520427899417493
+learning_rate:
+  desc: null
+  value: 0.04069609840826685
+num_episodes:
+  desc: null
+  value: 600

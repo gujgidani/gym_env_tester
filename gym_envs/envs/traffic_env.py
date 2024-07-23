@@ -22,7 +22,7 @@ class TrafficEnv(gym.Env):
 
     def __init__(self, render_mode, starting_phases, phase_lengths, traffic_scale=1,
                  trafficlight_order=(5, 4, 0, 1, 3, 2), phase_number=6,
-                 cycle_time=60, simulation_time=3600):
+                 cycle_time=60, simulation_time=3600, phase_change_step=1):
         """
         The constructor for the TrafficEnv class.
 
@@ -36,6 +36,7 @@ class TrafficEnv(gym.Env):
         :parameter phase_number (int): The number of phases in the simulation.
         :parameter cycle_time (int): The cycle time for the traffic lights.
         :parameter simulation_time (int): The simulation time for the traffic lights.
+        :parameter phase_change_step (int): The step for changing the phase.
         :return None
         """
         self.traffic_scale = traffic_scale
@@ -57,7 +58,7 @@ class TrafficEnv(gym.Env):
             #self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.19.0/bin/sumo"
             #Check if mac or linux
             if sys.platform == "darwin":
-                self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.19.0/bin/sumo"
+                self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.20.0/bin/sumo"
             else:
                 self.sumo_binary = '/usr/bin/sumo'
         else:
@@ -65,7 +66,7 @@ class TrafficEnv(gym.Env):
             #self.sumo_binary = checkBinary('sumo-gui')
             #Check if mac or linux
             if sys.platform == "darwin":
-                self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.19.0/bin/sumo-gui"
+                self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.20.0/bin/sumo-gui"
             else:
                 self.sumo_binary = '/usr/bin/sumo-gui'
         self.sumo_cmd = [
@@ -88,7 +89,7 @@ class TrafficEnv(gym.Env):
                 start=np.full((5,phase_number, cycle_time), 1))
         })
 
-        self.actions = tlsf.generate_phase_combinations(5, 36)
+        self.actions = tlsf.generate_phase_combinations(5, 36,step = phase_change_step)
         self.action_space = spaces.Discrete(len(self.actions))
 
     def _get_obs(self):
@@ -131,7 +132,7 @@ class TrafficEnv(gym.Env):
         #    pass
         self.current_step = 0
 
-        #self.sumo_cmd[-1] = str(self.np_random.integers(1, 5) / 2.0)
+        self.sumo_cmd[-1] = str(self.np_random.integers(2, 6) / 4.0)
         #traci.start(self.sumo_cmd, port=8813)
         traci.load(self.sumo_cmd[1:])
         time.sleep(0.001)
@@ -140,6 +141,8 @@ class TrafficEnv(gym.Env):
             self.current_step += 1
         for i in range(5):
             self.phase_plan[i] = self.initial_phase_plan
+
+        self.edge_list = traci.edge.getIDList()
 
         return self._get_obs(), {}
 
@@ -166,7 +169,7 @@ class TrafficEnv(gym.Env):
                     tls[0], tlsf.get_phase_column_for_step(self.phase_plan[-1], i, self.traci_order)
                 )
                 for edge in self.edge_list:
-                    mean_speed += traci.edge.getLastStepMeanSpeed(edge)/ 13.89
+                    mean_speed += traci.edge.getLastStepMeanSpeed(edge)/ 13.89 / len(self.edge_list)
         obs = self._get_obs()
         # The reward is the negative of the traveltimes
         # Reward = átlag sebessség edge-kre

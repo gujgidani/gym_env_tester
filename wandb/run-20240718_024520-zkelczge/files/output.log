@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 162, in __getattr__
+    return self.__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+           ~~~~~~~~~~~^^^^^
+KeyError: 'num_episodes'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_pytorch.py", line 220, in train
+    num_episodes = config.num_episodes
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 164, in __getattr__
+    raise AttributeError(
+AttributeError: <class 'wandb.sdk.wandb_config.Config'> object has no attribute 'num_episodes'

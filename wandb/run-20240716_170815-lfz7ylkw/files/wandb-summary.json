@@ -1,0 +1,1 @@
+{"loss": 0.06438321620225906, "trainer/step": 29900, "_timestamp": 1721142505.076467, "_runtime": 9.561633110046387, "_step": 1349, "epsilon": 0.38019466400146484, "max_steps": 210, "steps": 0, "total_episodes": 1270, "_wandb": {"runtime": 9}}

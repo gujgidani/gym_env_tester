@@ -1,0 +1,91 @@
+
+ Retrying in 1 seconds
+Episode number:  0
+Episode number:  1
+Episode number:  2
+Episode number:  3
+Episode number:  4
+Episode number:  5
+Episode number:  6
+Episode number:  7
+Episode number:  8
+Episode number:  9
+Episode number:  10
+Episode number:  11
+Episode number:  12
+Episode number:  13
+Episode number:  14
+Episode number:  15
+Episode number:  16
+Episode number:  17
+Episode number:  18
+Episode number:  19
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.shape to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.shape` for environment variables or `env.get_wrapper_attr('shape')` that will search the reminding wrappers.
+  logger.warn(
+Traceback (most recent call last):
+  File "/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/train_pytorch.py", line 159, in train
+    torch.onnx.export(policy_net, state, "model.onnx")
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/onnx/utils.py", line 549, in export
+    _export(
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/onnx/utils.py", line 1641, in _export
+    graph, params_dict, torch_out = _model_to_graph(
+                                    ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/onnx/utils.py", line 1184, in _model_to_graph
+    graph, params, torch_out, module = _create_jit_graph(model, args)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/onnx/utils.py", line 1060, in _create_jit_graph
+    graph, torch_out = _trace_and_get_graph_from_model(model, args)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/onnx/utils.py", line 964, in _trace_and_get_graph_from_model
+    trace_graph, torch_out, inputs_states = torch.jit._get_trace_graph(
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/jit/_trace.py", line 1502, in _get_trace_graph
+    outs = ONNXTracedModule(
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1716, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1727, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/jit/_trace.py", line 141, in forward
+    graph, out = torch._C._create_graph_by_tracing(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/jit/_trace.py", line 132, in wrapper
+    outs.append(self.inner(*trace_inputs))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1716, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1727, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1706, in _slow_forward
+    result = self.forward(*input, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/train_pytorch.py", line 196, in forward
+    occupancy = F.relu(self.fc_occupancy(x['occupancy']))
+                                         ~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable

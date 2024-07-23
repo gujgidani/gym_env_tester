@@ -1,0 +1,70 @@
+2024-07-21 18:33:55,408 INFO    MainThread:4492 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-21 18:33:55,409 INFO    MainThread:4492 [wandb_setup.py:_flush():76] Configure stats pid to 4492
+2024-07-21 18:33:55,409 INFO    MainThread:4492 [wandb_setup.py:_flush():76] Loading settings from /Users/wagnertamas/.config/wandb/settings
+2024-07-21 18:33:55,409 INFO    MainThread:4492 [wandb_setup.py:_flush():76] Loading settings from /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/settings
+2024-07-21 18:33:55,409 INFO    MainThread:4492 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-21 18:33:55,409 INFO    MainThread:4492 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-21 18:33:55,409 INFO    MainThread:4492 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main_pytorch.py', 'program_abspath': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_pytorch.py', 'program': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_pytorch.py'}
+2024-07-21 18:33:55,409 INFO    MainThread:4492 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-21 18:33:55,409 INFO    MainThread:4492 [wandb_init.py:_log_setup():529] Logging user logs to /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240721_183355-tca4wqtd/logs/debug.log
+2024-07-21 18:33:55,409 INFO    MainThread:4492 [wandb_init.py:_log_setup():530] Logging internal logs to /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240721_183355-tca4wqtd/logs/debug-internal.log
+2024-07-21 18:33:55,410 INFO    MainThread:4492 [wandb_init.py:init():569] calling init triggers
+2024-07-21 18:33:55,410 INFO    MainThread:4492 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {'num_episodes': 20, 'TAU': 0.014622523699104623, 'learning_rate': 0.022850574714388262, 'batch_size': 128, 'gamma': 0.05420679682778693, 'eps_start': 0.677398614743279, 'eps_decay': 100, 'fc_layer_size_1': 32, 'fc_layer_size_2': 16}
+2024-07-21 18:33:55,410 INFO    MainThread:4492 [wandb_init.py:init():619] starting backend
+2024-07-21 18:33:55,410 INFO    MainThread:4492 [wandb_init.py:init():623] setting up manager
+2024-07-21 18:33:55,413 INFO    MainThread:4492 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-07-21 18:33:55,423 INFO    MainThread:4492 [wandb_init.py:init():631] backend started and connected
+2024-07-21 18:33:55,427 INFO    MainThread:4492 [wandb_init.py:init():720] updated telemetry
+2024-07-21 18:33:55,465 INFO    MainThread:4492 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-21 18:33:56,000 INFO    MainThread:4492 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-21 18:33:56,102 INFO    MainThread:4492 [wandb_run.py:_on_init():2411] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-21 18:33:56,102 INFO    MainThread:4492 [wandb_init.py:init():804] starting run threads in backend
+2024-07-21 18:33:59,386 INFO    MainThread:4492 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-21 18:33:59,386 INFO    MainThread:4492 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-21 18:33:59,387 INFO    MainThread:4492 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-21 18:33:59,387 INFO    MainThread:4492 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-21 18:33:59,395 INFO    MainThread:4492 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-21 18:33:59,795 INFO    MainThread:4492 [pyagent.py:run():323] Starting sweep agent: entity=None, project=None, count=1
+2024-07-21 18:34:09,219 WARNING MsgRouterThr:4492 [router.py:message_loop():77] message_loop has been closed
+2024-07-21 18:34:12,826 INFO    Thread-8 (_run_job):4492 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-21 18:34:12,826 INFO    Thread-8 (_run_job):4492 [wandb_setup.py:_flush():76] Configure stats pid to 4492
+2024-07-21 18:34:12,826 INFO    Thread-8 (_run_job):4492 [wandb_setup.py:_flush():76] Loading settings from /Users/wagnertamas/.config/wandb/settings
+2024-07-21 18:34:12,827 INFO    Thread-8 (_run_job):4492 [wandb_setup.py:_flush():76] Loading settings from /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/settings
+2024-07-21 18:34:12,827 INFO    Thread-8 (_run_job):4492 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'traffic-light-dqn', 'entity': 'wagnertamas-budapesti-m-szaki-s-gazdas-gtudom-nyi-egyetem', 'root_dir': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester', 'sweep_id': '6taxsvb5', 'run_id': '9u1tk17h', 'sweep_param_path': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/sweep-6taxsvb5/config-9u1tk17h.yaml'}
+2024-07-21 18:34:12,827 INFO    Thread-8 (_run_job):4492 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-21 18:34:12,827 INFO    Thread-8 (_run_job):4492 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main_pytorch.py', 'program_abspath': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_pytorch.py', 'program': '/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_pytorch.py'}
+2024-07-21 18:34:12,827 INFO    Thread-8 (_run_job):4492 [wandb_init.py:_log_setup():529] Logging user logs to /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240721_183412-9u1tk17h/logs/debug.log
+2024-07-21 18:34:12,827 INFO    Thread-8 (_run_job):4492 [wandb_init.py:_log_setup():530] Logging internal logs to /Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/wandb/run-20240721_183412-9u1tk17h/logs/debug-internal.log
+2024-07-21 18:34:12,827 INFO    Thread-8 (_run_job):4492 [wandb_init.py:init():569] calling init triggers
+2024-07-21 18:34:12,828 INFO    Thread-8 (_run_job):4492 [wandb_init.py:init():576] wandb.init called with sweep_config: {'TAU': 0.0368092645984322, 'batch_size': 256, 'eps_decay': 10, 'eps_start': 0.6215089978188089, 'fc_layer_size_1': 32, 'fc_layer_size_2': 128, 'gamma': 0.2018424313161088, 'learning_rate': 0.08621713579478128, 'num_episodes': 650}
+config: {}
+2024-07-21 18:34:12,828 INFO    Thread-8 (_run_job):4492 [wandb_init.py:init():614] wandb.init() called when a run is still active
+2024-07-21 18:34:12,828 ERROR   Thread-8 (_run_job):4492 [wandb_init.py:init():1191] error in wandb.init()
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 615, in init
+    with telemetry.context() as tel:
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 798, in _telemetry_callback
+    self._telemetry_flush()
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 809, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/interface/interface_shared.py", line 101, in _publish_telemetry
+    self._publish(rec)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 221, in send_record_publish
+    self.send_server_request(server_req)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe

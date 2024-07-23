@@ -1,0 +1,33 @@
+program: train_pytorch.py
+name: traffic-light-dqn-v5
+method: bayes
+metric:
+  name: last_mean_reward
+  goal: maximize
+parameters:
+    learning_rate:
+        min: 0.00001
+        max: 0.1
+        distribution: uniform
+    gamma:
+        min: 0.01
+        max: 0.35
+        distribution: uniform
+    eps_start:
+        min: 0.8
+        max: 1.0
+        distribution: uniform
+    eps_decay:
+        values: [500,1000,2000]
+    batch_size:
+        values: [128,256]
+    TAU:
+        min: 0.005
+        max: 0.04
+        distribution: uniform
+    num_episodes:
+        values:  [400,450,500,550,600,650,750]
+    fc_layer_size_1:
+        values: [16,32,48,64,80]
+    fc_layer_size_2:
+        values: [16,32,48,64,80,96,128]

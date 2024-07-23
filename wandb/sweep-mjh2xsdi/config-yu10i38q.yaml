@@ -1,0 +1,20 @@
+wandb_version: 1
+
+TAU:
+  value: 0.02
+batch_size:
+  value: 128
+eps_decay:
+  value: 200
+eps_start:
+  value: 0.575632109361227
+fc_layer_size_1:
+  value: 32
+fc_layer_size_2:
+  value: 32
+gamma:
+  value: 0.8452504138213158
+learning_rate:
+  value: 0.0021817165062739683
+num_episodes:
+  value: 500

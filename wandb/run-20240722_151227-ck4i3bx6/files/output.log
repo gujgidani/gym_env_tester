@@ -1,0 +1,16 @@
+
+ Retrying in 1 seconds
+Episode number:  0
+/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.simulation_time to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.simulation_time` for environment variables or `env.get_wrapper_attr('simulation_time')` that will search the reminding wrappers.
+  logger.warn(
+Traceback (most recent call last):
+  File "/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/train_pytorch.py", line 113, in train
+    wandb.log({"action": action.item()}, step=t+i_episode*env.simulation_time)
+                                                          ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py", line 315, in __getattr__
+    return getattr(self.env, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/gymnasium/core.py", line 315, in __getattr__
+    return getattr(self.env, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TrafficEnv' object has no attribute 'simulation_time'

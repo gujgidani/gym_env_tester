@@ -1,0 +1,37 @@
+{
+    "os": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.9",
+    "heartbeatAt": "2024-07-17T16:07:21.735888",
+    "startedAt": "2024-07-17T16:07:20.754710",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester/main_pytorch.py",
+    "codePathLocal": "main_pytorch.py",
+    "codePath": "main_pytorch.py",
+    "git": {
+        "remote": "https://github.com/wagnertamas/gym_env_tester.git",
+        "commit": "9db7eedea0d1e7aeda87af65fdffde2139416f69"
+    },
+    "email": "wtamas99@yahoo.com",
+    "root": "/Users/wagnertamas/Documents/Munka/SUMO networks/gym_env_tester",
+    "host": "Wagner-MacBook-Pro.local",
+    "username": "wagnertamas",
+    "executable": "/opt/anaconda3/envs/sumo_RL_pytorch/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 12,
+    "disk": {
+        "/": {
+            "total": 926.3517189025879,
+            "used": 567.1416931152344
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M3 Pro",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 18.0
+    }
+}

@@ -1,0 +1,2990 @@
+2024-07-17 02:26:08 ERROR 400 response executing GraphQL.
+2024-07-17 02:26:08 ERROR {"errors":[{"message":"name required for project query","path":["project"]}],"data":{"project":null}}
+2024-07-17 02:26:08 ERROR Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 1060, in sweep
+    response = self.gql(
+               ^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/cli/cli.py", line 108, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/cli/cli.py", line 1827, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return run_agent(
+           ^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/wandb_agent.py", line 528, in run_agent
+    agent.run()
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/wandb_agent.py", line 190, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/apis/internal.py", line 130, in sweep
+    return self.api.sweep(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: name required for project query (Error 400: Bad Request)
+
+2024-07-21 17:34:30 INFO Running runs: []
+2024-07-21 17:34:30 INFO Agent received command: run
+2024-07-21 17:34:30 INFO Agent starting run with config:
+	TAU: 0.04170220047025741
+	batch_size: 256
+	eps_decay: 10
+	eps_start: 0.6511662863159199
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-21 17:34:30 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.04170220047025741 --batch_size=256 --eps_decay=10 --eps_start=0.6511662863159199 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-21 17:34:35 INFO Running runs: ['smudgg09']
+2024-07-21 17:34:35 INFO Cleaning up finished run: smudgg09
+2024-07-21 17:34:35 INFO Agent received command: run
+2024-07-21 17:34:35 INFO Agent starting run with config:
+	TAU: 0.0035107219865002427
+	batch_size: 256
+	eps_decay: 200
+	eps_start: 0.7020964361789219
+	fc_layer_size_1: 64
+	fc_layer_size_2: 32
+	gamma: 0.320182819166295
+	learning_rate: 0.02819938180619464
+	num_episodes: 600
+2024-07-21 17:34:35 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.0035107219865002427 --batch_size=256 --eps_decay=200 --eps_start=0.7020964361789219 --fc_layer_size_1=64 --fc_layer_size_2=32 --gamma=0.320182819166295 --learning_rate=0.02819938180619464 --num_episodes=600
+2024-07-21 17:34:40 INFO Running runs: ['5swxuoiz']
+2024-07-21 17:34:40 INFO Cleaning up finished run: 5swxuoiz
+2024-07-21 17:34:41 INFO Agent received command: run
+2024-07-21 17:34:41 INFO Agent starting run with config:
+	TAU: 0.04583665588889855
+	batch_size: 128
+	eps_decay: 20
+	eps_start: 0.9224064765052926
+	fc_layer_size_1: 64
+	fc_layer_size_2: 128
+	gamma: 0.02294982427269399
+	learning_rate: 0.07637177806482247
+	num_episodes: 450
+2024-07-21 17:34:41 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.04583665588889855 --batch_size=128 --eps_decay=20 --eps_start=0.9224064765052926 --fc_layer_size_1=64 --fc_layer_size_2=128 --gamma=0.02294982427269399 --learning_rate=0.07637177806482247 --num_episodes=450
+2024-07-21 17:34:46 INFO Running runs: ['o8rvgl24']
+2024-07-21 17:34:46 INFO Cleaning up finished run: o8rvgl24
+2024-07-21 17:34:46 INFO Agent received command: run
+2024-07-21 17:34:46 INFO Agent starting run with config:
+	TAU: 0.03908716859837567
+	batch_size: 128
+	eps_decay: 100
+	eps_start: 0.8409819192561321
+	fc_layer_size_1: 48
+	fc_layer_size_2: 64
+	gamma: 0.15929835886293034
+	learning_rate: 0.017278446364705116
+	num_episodes: 550
+2024-07-21 17:34:46 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03908716859837567 --batch_size=128 --eps_decay=100 --eps_start=0.8409819192561321 --fc_layer_size_1=48 --fc_layer_size_2=64 --gamma=0.15929835886293034 --learning_rate=0.017278446364705116 --num_episodes=550
+2024-07-21 17:34:51 INFO Running runs: ['8zz8eutc']
+2024-07-21 17:34:51 INFO Cleaning up finished run: 8zz8eutc
+2024-07-21 17:34:52 INFO Agent received command: run
+2024-07-21 17:34:52 INFO Agent starting run with config:
+	TAU: 0.04010577478003002
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.896553615564051
+	fc_layer_size_1: 48
+	fc_layer_size_2: 64
+	gamma: 0.07297513824323695
+	learning_rate: 0.07461658481013972
+	num_episodes: 400
+2024-07-21 17:34:52 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.04010577478003002 --batch_size=256 --eps_decay=50 --eps_start=0.896553615564051 --fc_layer_size_1=48 --fc_layer_size_2=64 --gamma=0.07297513824323695 --learning_rate=0.07461658481013972 --num_episodes=400
+2024-07-21 17:34:57 INFO Running runs: ['eb8fdlba']
+2024-07-21 17:34:57 INFO Cleaning up finished run: eb8fdlba
+2024-07-21 17:34:57 INFO Agent received command: run
+2024-07-21 17:34:57 INFO Agent starting run with config:
+	TAU: 0.03586565534257996
+	batch_size: 128
+	eps_decay: 10
+	eps_start: 0.7624468177377552
+	fc_layer_size_1: 64
+	fc_layer_size_2: 80
+	gamma: 0.07938801446584132
+	learning_rate: 0.06172703238278601
+	num_episodes: 550
+2024-07-21 17:34:57 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03586565534257996 --batch_size=128 --eps_decay=10 --eps_start=0.7624468177377552 --fc_layer_size_1=64 --fc_layer_size_2=80 --gamma=0.07938801446584132 --learning_rate=0.06172703238278601 --num_episodes=550
+2024-07-21 17:35:02 INFO Running runs: ['mh8gts1l']
+2024-07-21 17:35:02 INFO Cleaning up finished run: mh8gts1l
+2024-07-21 17:35:02 INFO Agent received command: run
+2024-07-21 17:35:02 INFO Agent starting run with config:
+	TAU: 0.09579087762004128
+	batch_size: 256
+	eps_decay: 10
+	eps_start: 0.9057745703737214
+	fc_layer_size_1: 64
+	fc_layer_size_2: 16
+	gamma: 0.02654899222487557
+	learning_rate: 0.08383558809891
+	num_episodes: 650
+2024-07-21 17:35:02 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.09579087762004128 --batch_size=256 --eps_decay=10 --eps_start=0.9057745703737214 --fc_layer_size_1=64 --fc_layer_size_2=16 --gamma=0.02654899222487557 --learning_rate=0.08383558809891 --num_episodes=650
+2024-07-21 17:35:07 INFO Running runs: ['s2z0napm']
+2024-07-21 17:35:07 INFO Cleaning up finished run: s2z0napm
+2024-07-21 17:35:08 INFO Agent received command: run
+2024-07-21 17:35:08 INFO Agent starting run with config:
+	TAU: 0.02939678133592664
+	batch_size: 256
+	eps_decay: 10
+	eps_start: 0.7306074920805956
+	fc_layer_size_1: 32
+	fc_layer_size_2: 32
+	gamma: 0.05586430672387561
+	learning_rate: 0.04123105742900447
+	num_episodes: 750
+2024-07-21 17:35:08 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02939678133592664 --batch_size=256 --eps_decay=10 --eps_start=0.7306074920805956 --fc_layer_size_1=32 --fc_layer_size_2=32 --gamma=0.05586430672387561 --learning_rate=0.04123105742900447 --num_episodes=750
+2024-07-21 17:35:13 INFO Running runs: ['okew6gif']
+2024-07-21 17:35:13 INFO Cleaning up finished run: okew6gif
+2024-07-21 17:35:13 INFO Agent received command: run
+2024-07-21 17:35:13 INFO Agent starting run with config:
+	TAU: 0.01794819339104675
+	batch_size: 128
+	eps_decay: 20
+	eps_start: 0.5692912886590666
+	fc_layer_size_1: 48
+	fc_layer_size_2: 80
+	gamma: 0.2850748695081418
+	learning_rate: 0.04202363279130391
+	num_episodes: 500
+2024-07-21 17:35:13 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01794819339104675 --batch_size=128 --eps_decay=20 --eps_start=0.5692912886590666 --fc_layer_size_1=48 --fc_layer_size_2=80 --gamma=0.2850748695081418 --learning_rate=0.04202363279130391 --num_episodes=500
+2024-07-21 17:35:18 INFO Running runs: ['n8hdf3p5']
+2024-07-21 17:35:18 INFO Cleaning up finished run: n8hdf3p5
+2024-07-21 17:35:19 INFO Agent received command: run
+2024-07-21 17:35:19 INFO Agent starting run with config:
+	TAU: 0.08303830896984257
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.7695363412017169
+	fc_layer_size_1: 80
+	fc_layer_size_2: 128
+	gamma: 0.2509261876400488
+	learning_rate: 0.06659680574811051
+	num_episodes: 600
+2024-07-21 17:35:19 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.08303830896984257 --batch_size=256 --eps_decay=50 --eps_start=0.7695363412017169 --fc_layer_size_1=80 --fc_layer_size_2=128 --gamma=0.2509261876400488 --learning_rate=0.06659680574811051 --num_episodes=600
+2024-07-21 17:35:24 INFO Running runs: ['j60158nn']
+2024-07-21 17:35:24 INFO Cleaning up finished run: j60158nn
+2024-07-21 17:35:24 INFO Agent received command: run
+2024-07-21 17:35:24 INFO Agent starting run with config:
+	TAU: 0.09712496234966957
+	batch_size: 256
+	eps_decay: 20
+	eps_start: 0.829929036124249
+	fc_layer_size_1: 16
+	fc_layer_size_2: 96
+	gamma: 0.1570722830436567
+	learning_rate: 0.046756848192728497
+	num_episodes: 650
+2024-07-21 17:35:24 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.09712496234966957 --batch_size=256 --eps_decay=20 --eps_start=0.829929036124249 --fc_layer_size_1=16 --fc_layer_size_2=96 --gamma=0.1570722830436567 --learning_rate=0.046756848192728497 --num_episodes=650
+2024-07-21 17:35:29 INFO Running runs: ['1511j3u9']
+2024-07-21 17:35:29 INFO Cleaning up finished run: 1511j3u9
+2024-07-21 17:35:35 INFO Agent received command: run
+2024-07-21 17:35:35 INFO Agent starting run with config:
+	TAU: 0.06263019135170943
+	batch_size: 256
+	eps_decay: 200
+	eps_start: 0.8011655234481394
+	fc_layer_size_1: 80
+	fc_layer_size_2: 128
+	gamma: 0.09800320357722749
+	learning_rate: 0.06980420926312153
+	num_episodes: 650
+2024-07-21 17:35:35 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.06263019135170943 --batch_size=256 --eps_decay=200 --eps_start=0.8011655234481394 --fc_layer_size_1=80 --fc_layer_size_2=128 --gamma=0.09800320357722749 --learning_rate=0.06980420926312153 --num_episodes=650
+2024-07-21 17:35:40 INFO Running runs: ['cxlla02t']
+2024-07-21 17:35:40 INFO Cleaning up finished run: cxlla02t
+2024-07-21 17:35:40 INFO Agent received command: run
+2024-07-21 17:35:40 INFO Agent starting run with config:
+	TAU: 0.0794784565752884
+	batch_size: 128
+	eps_decay: 100
+	eps_start: 0.76781148373804
+	fc_layer_size_1: 48
+	fc_layer_size_2: 32
+	gamma: 0.11418023384691556
+	learning_rate: 0.07366226277507677
+	num_episodes: 450
+2024-07-21 17:35:40 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.0794784565752884 --batch_size=128 --eps_decay=100 --eps_start=0.76781148373804 --fc_layer_size_1=48 --fc_layer_size_2=32 --gamma=0.11418023384691556 --learning_rate=0.07366226277507677 --num_episodes=450
+2024-07-21 17:35:45 INFO Running runs: ['1qs8j4m7']
+2024-07-21 17:35:45 INFO Cleaning up finished run: 1qs8j4m7
+2024-07-21 17:35:49 INFO Agent received command: run
+2024-07-21 17:35:49 INFO Agent starting run with config:
+	TAU: 0.041472780749668786
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.7401447840175053
+	fc_layer_size_1: 48
+	fc_layer_size_2: 32
+	gamma: 0.09994864028322883
+	learning_rate: 0.055776330392614905
+	num_episodes: 500
+2024-07-21 17:35:49 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.041472780749668786 --batch_size=256 --eps_decay=50 --eps_start=0.7401447840175053 --fc_layer_size_1=48 --fc_layer_size_2=32 --gamma=0.09994864028322883 --learning_rate=0.055776330392614905 --num_episodes=500
+2024-07-21 17:35:54 INFO Running runs: ['vire97t0']
+2024-07-21 17:35:54 INFO Cleaning up finished run: vire97t0
+2024-07-21 17:35:54 INFO Agent received command: run
+2024-07-21 17:35:54 INFO Agent starting run with config:
+	TAU: 0.0697531857458308
+	batch_size: 128
+	eps_decay: 50
+	eps_start: 0.6270193141860753
+	fc_layer_size_1: 48
+	fc_layer_size_2: 96
+	gamma: 0.2440127809110679
+	learning_rate: 0.046004180939751
+	num_episodes: 550
+2024-07-21 17:35:54 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.0697531857458308 --batch_size=128 --eps_decay=50 --eps_start=0.6270193141860753 --fc_layer_size_1=48 --fc_layer_size_2=96 --gamma=0.2440127809110679 --learning_rate=0.046004180939751 --num_episodes=550
+2024-07-21 17:35:59 INFO Running runs: ['0g3nte2g']
+2024-07-21 17:35:59 INFO Cleaning up finished run: 0g3nte2g
+2024-07-21 17:35:59 INFO Agent received command: run
+2024-07-21 17:35:59 INFO Agent starting run with config:
+	TAU: 0.04797433887684652
+	batch_size: 128
+	eps_decay: 20
+	eps_start: 0.8455007870002075
+	fc_layer_size_1: 48
+	fc_layer_size_2: 32
+	gamma: 0.26655954836913465
+	learning_rate: 0.02998522947535899
+	num_episodes: 400
+2024-07-21 17:35:59 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.04797433887684652 --batch_size=128 --eps_decay=20 --eps_start=0.8455007870002075 --fc_layer_size_1=48 --fc_layer_size_2=32 --gamma=0.26655954836913465 --learning_rate=0.02998522947535899 --num_episodes=400
+2024-07-21 17:36:04 INFO Running runs: ['avm9qyg3']
+2024-07-21 17:36:04 INFO Cleaning up finished run: avm9qyg3
+2024-07-21 17:36:05 INFO Agent received command: run
+2024-07-21 17:36:05 INFO Agent starting run with config:
+	TAU: 0.05464035324480596
+	batch_size: 256
+	eps_decay: 200
+	eps_start: 0.5099878828708033
+	fc_layer_size_1: 80
+	fc_layer_size_2: 48
+	gamma: 0.08621212759349732
+	learning_rate: 0.04759179806756674
+	num_episodes: 550
+2024-07-21 17:36:05 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.05464035324480596 --batch_size=256 --eps_decay=200 --eps_start=0.5099878828708033 --fc_layer_size_1=80 --fc_layer_size_2=48 --gamma=0.08621212759349732 --learning_rate=0.04759179806756674 --num_episodes=550
+2024-07-21 17:36:10 INFO Running runs: ['p2zmc58j']
+2024-07-21 17:36:10 INFO Cleaning up finished run: p2zmc58j
+2024-07-21 17:36:10 INFO Agent received command: run
+2024-07-21 17:36:10 INFO Agent starting run with config:
+	TAU: 0.07155599399617986
+	batch_size: 128
+	eps_decay: 20
+	eps_start: 0.9558135765467656
+	fc_layer_size_1: 32
+	fc_layer_size_2: 64
+	gamma: 0.31426281937484735
+	learning_rate: 0.05186146238915885
+	num_episodes: 400
+2024-07-21 17:36:10 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.07155599399617986 --batch_size=128 --eps_decay=20 --eps_start=0.9558135765467656 --fc_layer_size_1=32 --fc_layer_size_2=64 --gamma=0.31426281937484735 --learning_rate=0.05186146238915885 --num_episodes=400
+2024-07-21 17:36:15 INFO Running runs: ['po8hls5g']
+2024-07-21 17:36:15 INFO Cleaning up finished run: po8hls5g
+2024-07-21 17:36:16 INFO Agent received command: run
+2024-07-21 17:36:16 INFO Agent starting run with config:
+	TAU: 0.0904830518584026
+	batch_size: 128
+	eps_decay: 100
+	eps_start: 0.8561845357529828
+	fc_layer_size_1: 80
+	fc_layer_size_2: 64
+	gamma: 0.1317448690964606
+	learning_rate: 0.08026638294946054
+	num_episodes: 450
+2024-07-21 17:36:16 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.0904830518584026 --batch_size=128 --eps_decay=100 --eps_start=0.8561845357529828 --fc_layer_size_1=80 --fc_layer_size_2=64 --gamma=0.1317448690964606 --learning_rate=0.08026638294946054 --num_episodes=450
+2024-07-21 17:36:21 INFO Running runs: ['07o8tf7j']
+2024-07-21 17:36:21 INFO Cleaning up finished run: 07o8tf7j
+2024-07-21 17:36:21 INFO Agent received command: run
+2024-07-21 17:36:21 INFO Agent starting run with config:
+	TAU: 0.004753725918740959
+	batch_size: 256
+	eps_decay: 20
+	eps_start: 0.8696115113892531
+	fc_layer_size_1: 64
+	fc_layer_size_2: 96
+	gamma: 0.028706011746566187
+	learning_rate: 0.06971270220570308
+	num_episodes: 400
+2024-07-21 17:36:21 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.004753725918740959 --batch_size=256 --eps_decay=20 --eps_start=0.8696115113892531 --fc_layer_size_1=64 --fc_layer_size_2=96 --gamma=0.028706011746566187 --learning_rate=0.06971270220570308 --num_episodes=400
+2024-07-21 17:36:26 INFO Running runs: ['e8fxxo36']
+2024-07-21 17:36:26 INFO Cleaning up finished run: e8fxxo36
+2024-07-21 17:36:26 INFO Agent received command: run
+2024-07-21 17:36:26 INFO Agent starting run with config:
+	TAU: 0.03668566482558833
+	batch_size: 128
+	eps_decay: 100
+	eps_start: 0.83189325974024
+	fc_layer_size_1: 32
+	fc_layer_size_2: 128
+	gamma: 0.2042103279307619
+	learning_rate: 0.04534893073716508
+	num_episodes: 400
+2024-07-21 17:36:26 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03668566482558833 --batch_size=128 --eps_decay=100 --eps_start=0.83189325974024 --fc_layer_size_1=32 --fc_layer_size_2=128 --gamma=0.2042103279307619 --learning_rate=0.04534893073716508 --num_episodes=400
+2024-07-21 17:36:31 INFO Running runs: ['5ajfmwb3']
+2024-07-21 17:36:31 INFO Cleaning up finished run: 5ajfmwb3
+2024-07-21 17:36:32 INFO Agent received command: run
+2024-07-21 17:36:32 INFO Agent starting run with config:
+	TAU: 0.06642098964637062
+	batch_size: 256
+	eps_decay: 20
+	eps_start: 0.6678489630837092
+	fc_layer_size_1: 80
+	fc_layer_size_2: 16
+	gamma: 0.2541795373507657
+	learning_rate: 0.03494936943763277
+	num_episodes: 400
+2024-07-21 17:36:32 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.06642098964637062 --batch_size=256 --eps_decay=20 --eps_start=0.6678489630837092 --fc_layer_size_1=80 --fc_layer_size_2=16 --gamma=0.2541795373507657 --learning_rate=0.03494936943763277 --num_episodes=400
+2024-07-21 17:36:37 INFO Running runs: ['0e1mhhmj']
+2024-07-21 17:36:37 INFO Cleaning up finished run: 0e1mhhmj
+2024-07-21 17:36:37 INFO Agent received command: run
+2024-07-21 17:36:37 INFO Agent starting run with config:
+	TAU: 0.011993663783058262
+	batch_size: 256
+	eps_decay: 100
+	eps_start: 0.903386974392151
+	fc_layer_size_1: 48
+	fc_layer_size_2: 128
+	gamma: 0.2663685065556662
+	learning_rate: 0.028840669937815807
+	num_episodes: 450
+2024-07-21 17:36:37 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.011993663783058262 --batch_size=256 --eps_decay=100 --eps_start=0.903386974392151 --fc_layer_size_1=48 --fc_layer_size_2=128 --gamma=0.2663685065556662 --learning_rate=0.028840669937815807 --num_episodes=450
+2024-07-21 17:36:42 INFO Running runs: ['q8s9e9n9']
+2024-07-21 17:36:42 INFO Cleaning up finished run: q8s9e9n9
+2024-07-21 17:36:42 INFO Agent received command: run
+2024-07-21 17:36:42 INFO Agent starting run with config:
+	TAU: 0.05964518720813755
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.7851560468163359
+	fc_layer_size_1: 32
+	fc_layer_size_2: 16
+	gamma: 0.3167421146401335
+	learning_rate: 0.005727538955111415
+	num_episodes: 750
+2024-07-21 17:36:42 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.05964518720813755 --batch_size=256 --eps_decay=50 --eps_start=0.7851560468163359 --fc_layer_size_1=32 --fc_layer_size_2=16 --gamma=0.3167421146401335 --learning_rate=0.005727538955111415 --num_episodes=750
+2024-07-21 17:36:47 INFO Running runs: ['mrrvv5gw']
+2024-07-21 17:36:47 INFO Cleaning up finished run: mrrvv5gw
+2024-07-21 17:36:48 INFO Agent received command: run
+2024-07-21 17:36:48 INFO Agent starting run with config:
+	TAU: 0.06666854859445574
+	batch_size: 256
+	eps_decay: 100
+	eps_start: 0.5310811089891916
+	fc_layer_size_1: 48
+	fc_layer_size_2: 32
+	gamma: 0.06135018268579032
+	learning_rate: 0.0247625611069374
+	num_episodes: 550
+2024-07-21 17:36:48 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.06666854859445574 --batch_size=256 --eps_decay=100 --eps_start=0.5310811089891916 --fc_layer_size_1=48 --fc_layer_size_2=32 --gamma=0.06135018268579032 --learning_rate=0.0247625611069374 --num_episodes=550
+2024-07-21 17:36:53 INFO Running runs: ['kskpftx3']
+2024-07-21 17:36:53 INFO Cleaning up finished run: kskpftx3
+2024-07-21 17:36:58 INFO Running runs: []
+2024-07-21 17:44:17 INFO Running runs: []
+2024-07-21 17:44:43 INFO Agent received command: run
+2024-07-21 17:44:43 INFO Agent starting run with config:
+	TAU: 0.056597282905560965
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.7786392091218277
+	fc_layer_size_1: 32
+	fc_layer_size_2: 48
+	gamma: 0.19454573490502527
+	learning_rate: 0.04505867948611101
+	num_episodes: 650
+2024-07-21 17:44:43 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.056597282905560965 --batch_size=256 --eps_decay=50 --eps_start=0.7786392091218277 --fc_layer_size_1=32 --fc_layer_size_2=48 --gamma=0.19454573490502527 --learning_rate=0.04505867948611101 --num_episodes=650
+2024-07-21 17:44:48 INFO Running runs: ['ub1uqve7']
+2024-07-21 17:44:49 INFO Agent received command: exit
+2024-07-21 17:44:49 INFO Received exit command. Killing runs and quitting.
+2024-07-21 17:45:56 INFO Running runs: []
+2024-07-21 17:45:57 INFO Agent received command: run
+2024-07-21 17:45:57 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 10
+	eps_start: 0.6511662863159199
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-21 17:45:57 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=10 --eps_start=0.6511662863159199 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-21 17:46:02 INFO Running runs: ['jiq8kh1v']
+2024-07-21 18:00:34 INFO Cleaning up finished run: jiq8kh1v
+2024-07-21 18:00:35 INFO Agent received command: run
+2024-07-21 18:00:35 INFO Agent starting run with config:
+	TAU: 0.010365295002188028
+	batch_size: 256
+	eps_decay: 200
+	eps_start: 0.5413446001390008
+	fc_layer_size_1: 48
+	fc_layer_size_2: 64
+	gamma: 0.02023171420129563
+	learning_rate: 0.026221715704292364
+	num_episodes: 450
+2024-07-21 18:00:35 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.010365295002188028 --batch_size=256 --eps_decay=200 --eps_start=0.5413446001390008 --fc_layer_size_1=48 --fc_layer_size_2=64 --gamma=0.02023171420129563 --learning_rate=0.026221715704292364 --num_episodes=450
+2024-07-21 18:00:40 INFO Running runs: ['l0ag6mnz']
+2024-07-21 18:03:43 INFO Agent received command: exit
+2024-07-21 18:03:43 INFO Received exit command. Killing runs and quitting.
+2024-07-21 18:09:35 INFO Running runs: []
+2024-07-21 18:09:35 INFO Agent received command: run
+2024-07-21 18:09:35 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 10
+	eps_start: 0.6511662863159199
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-21 18:09:35 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=10 --eps_start=0.6511662863159199 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-21 18:09:40 INFO Running runs: ['5jl8zp9w']
+2024-07-21 18:17:19 INFO Running runs: []
+2024-07-21 18:17:19 INFO Agent received command: run
+2024-07-21 18:17:19 INFO Agent starting run with config:
+	TAU: 0.020015491701650553
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.9867230188390792
+	fc_layer_size_1: 16
+	fc_layer_size_2: 64
+	gamma: 0.3446749313010949
+	learning_rate: 0.08198088208420339
+	num_episodes: 500
+2024-07-21 18:17:19 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.020015491701650553 --batch_size=256 --eps_decay=50 --eps_start=0.9867230188390792 --fc_layer_size_1=16 --fc_layer_size_2=64 --gamma=0.3446749313010949 --learning_rate=0.08198088208420339 --num_episodes=500
+2024-07-21 18:17:20 INFO Running runs: []
+2024-07-21 18:17:20 INFO Agent received command: run
+2024-07-21 18:17:20 INFO Agent starting run with config:
+	TAU: 0.015468129477421998
+	batch_size: 128
+	eps_decay: 10
+	eps_start: 0.6222320455834423
+	fc_layer_size_1: 32
+	fc_layer_size_2: 80
+	gamma: 0.06049431628406892
+	learning_rate: 0.055670267046681765
+	num_episodes: 500
+2024-07-21 18:17:20 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.015468129477421998 --batch_size=128 --eps_decay=10 --eps_start=0.6222320455834423 --fc_layer_size_1=32 --fc_layer_size_2=80 --gamma=0.06049431628406892 --learning_rate=0.055670267046681765 --num_episodes=500
+2024-07-21 18:17:24 INFO Running runs: ['8d2au5zw']
+2024-07-21 18:17:25 INFO Running runs: ['x8i8p2hu']
+2024-07-21 18:17:26 INFO Running runs: []
+2024-07-21 18:17:26 INFO Agent received command: run
+2024-07-21 18:17:26 INFO Agent starting run with config:
+	TAU: 0.015826675822604056
+	batch_size: 128
+	eps_decay: 20
+	eps_start: 0.8360805194254917
+	fc_layer_size_1: 80
+	fc_layer_size_2: 48
+	gamma: 0.16387970473276686
+	learning_rate: 0.042138779962378727
+	num_episodes: 750
+2024-07-21 18:17:26 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.015826675822604056 --batch_size=128 --eps_decay=20 --eps_start=0.8360805194254917 --fc_layer_size_1=80 --fc_layer_size_2=48 --gamma=0.16387970473276686 --learning_rate=0.042138779962378727 --num_episodes=750
+2024-07-21 18:17:31 INFO Running runs: ['sn3fxg78']
+2024-07-21 18:20:08 INFO Running runs: []
+2024-07-21 18:20:08 INFO Agent received command: run
+2024-07-21 18:20:08 INFO Agent starting run with config:
+	TAU: 0.016783935787155316
+	batch_size: 256
+	eps_decay: 200
+	eps_start: 0.7889742112805729
+	fc_layer_size_1: 48
+	fc_layer_size_2: 128
+	gamma: 0.32321688735221804
+	learning_rate: 0.04646117634379677
+	num_episodes: 650
+2024-07-21 18:20:08 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.016783935787155316 --batch_size=256 --eps_decay=200 --eps_start=0.7889742112805729 --fc_layer_size_1=48 --fc_layer_size_2=128 --gamma=0.32321688735221804 --learning_rate=0.04646117634379677 --num_episodes=650
+2024-07-21 18:20:13 INFO Running runs: ['hprnlxo4']
+2024-07-21 18:25:35 INFO Cleaning up finished run: 5jl8zp9w
+2024-07-21 18:25:36 INFO Agent received command: run
+2024-07-21 18:25:36 INFO Agent starting run with config:
+	TAU: 0.02349128319353719
+	batch_size: 256
+	eps_decay: 200
+	eps_start: 0.8260831584192653
+	fc_layer_size_1: 80
+	fc_layer_size_2: 64
+	gamma: 0.24220427519319424
+	learning_rate: 0.019385148689089145
+	num_episodes: 600
+2024-07-21 18:25:36 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02349128319353719 --batch_size=256 --eps_decay=200 --eps_start=0.8260831584192653 --fc_layer_size_1=80 --fc_layer_size_2=64 --gamma=0.24220427519319424 --learning_rate=0.019385148689089145 --num_episodes=600
+2024-07-21 18:25:41 INFO Running runs: ['sesd0nvw']
+2024-07-21 18:30:44 INFO Agent received command: exit
+2024-07-21 18:30:44 INFO Received exit command. Killing runs and quitting.
+2024-07-21 18:30:45 INFO Agent received command: exit
+2024-07-21 18:30:45 INFO Received exit command. Killing runs and quitting.
+2024-07-21 18:30:46 INFO Agent received command: exit
+2024-07-21 18:30:46 INFO Received exit command. Killing runs and quitting.
+2024-07-21 18:30:46 INFO Agent received command: exit
+2024-07-21 18:30:46 INFO Received exit command. Killing runs and quitting.
+2024-07-21 18:30:46 INFO Agent received command: exit
+2024-07-21 18:30:46 INFO Received exit command. Killing runs and quitting.
+2024-07-21 19:19:03 ERROR 400 response executing GraphQL.
+2024-07-21 19:19:03 ERROR {"errors":[{"message":"Sweep wagnertamas-budapesti-m-szaki-s-gazdas-gtudom-nyi-egyetem/traffic-light-dqn/vbkepvtu is not running","path":["createAgent"]}],"data":{"createAgent":null}}
+2024-07-21 19:19:03 ERROR Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/cli/cli.py", line 108, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/cli/cli.py", line 1827, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/wandb_agent.py", line 570, in agent
+    return run_agent(
+           ^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/wandb_agent.py", line 528, in run_agent
+    agent.run()
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/wandb_agent.py", line 201, in run
+    agent = self._api.register_agent(socket.gethostname(), sweep_id=self._sweep_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/apis/internal.py", line 154, in register_agent
+    return self.api.register_agent(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2959, in register_agent
+    response = self.gql(
+               ^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 317, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+                                ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/util.py", line 881, in no_retry_4xx
+    raise UsageError(body["errors"][0]["message"])
+wandb.errors.UsageError: Sweep wagnertamas-budapesti-m-szaki-s-gazdas-gtudom-nyi-egyetem/traffic-light-dqn/vbkepvtu is not running
+
+2024-07-21 19:19:57 INFO Running runs: []
+2024-07-21 19:19:57 INFO Agent received command: run
+2024-07-21 19:19:57 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.6511662863159199
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-21 19:19:57 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=50 --eps_start=0.6511662863159199 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-21 19:20:00 INFO Running runs: []
+2024-07-21 19:20:01 INFO Agent received command: run
+2024-07-21 19:20:01 INFO Agent starting run with config:
+	TAU: 0.008645955299861952
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.730362176093563
+	fc_layer_size_1: 16
+	fc_layer_size_2: 32
+	gamma: 0.3253850148554192
+	learning_rate: 0.07989772306219609
+	num_episodes: 600
+2024-07-21 19:20:01 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.008645955299861952 --batch_size=128 --eps_decay=1000 --eps_start=0.730362176093563 --fc_layer_size_1=16 --fc_layer_size_2=32 --gamma=0.3253850148554192 --learning_rate=0.07989772306219609 --num_episodes=600
+2024-07-21 19:20:02 INFO Running runs: ['4vmwngzb']
+2024-07-21 19:20:03 INFO Running runs: []
+2024-07-21 19:20:03 INFO Agent received command: run
+2024-07-21 19:20:03 INFO Agent starting run with config:
+	TAU: 0.01648951992742812
+	batch_size: 128
+	eps_decay: 100
+	eps_start: 0.7427554923242894
+	fc_layer_size_1: 48
+	fc_layer_size_2: 128
+	gamma: 0.1865845518570466
+	learning_rate: 0.02858063287833276
+	num_episodes: 600
+2024-07-21 19:20:03 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01648951992742812 --batch_size=128 --eps_decay=100 --eps_start=0.7427554923242894 --fc_layer_size_1=48 --fc_layer_size_2=128 --gamma=0.1865845518570466 --learning_rate=0.02858063287833276 --num_episodes=600
+2024-07-21 19:20:05 INFO Running runs: []
+2024-07-21 19:20:05 INFO Agent received command: run
+2024-07-21 19:20:05 INFO Agent starting run with config:
+	TAU: 0.018311886661665253
+	batch_size: 256
+	eps_decay: 100
+	eps_start: 0.9334564040508132
+	fc_layer_size_1: 48
+	fc_layer_size_2: 16
+	gamma: 0.07105219415463472
+	learning_rate: 0.05822668682485359
+	num_episodes: 650
+2024-07-21 19:20:05 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.018311886661665253 --batch_size=256 --eps_decay=100 --eps_start=0.9334564040508132 --fc_layer_size_1=48 --fc_layer_size_2=16 --gamma=0.07105219415463472 --learning_rate=0.05822668682485359 --num_episodes=650
+2024-07-21 19:20:06 INFO Running runs: ['zu9hhnr8']
+2024-07-21 19:20:07 INFO Running runs: []
+2024-07-21 19:20:08 INFO Agent received command: run
+2024-07-21 19:20:08 INFO Agent starting run with config:
+	TAU: 0.00904664543747814
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.99065394858526
+	fc_layer_size_1: 80
+	fc_layer_size_2: 16
+	gamma: 0.33221336343958735
+	learning_rate: 0.030090200526911807
+	num_episodes: 600
+2024-07-21 19:20:08 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.00904664543747814 --batch_size=256 --eps_decay=50 --eps_start=0.99065394858526 --fc_layer_size_1=80 --fc_layer_size_2=16 --gamma=0.33221336343958735 --learning_rate=0.030090200526911807 --num_episodes=600
+2024-07-21 19:20:08 INFO Running runs: ['xhz86qlo']
+2024-07-21 19:20:10 INFO Running runs: ['jra99jf9']
+2024-07-21 19:20:13 INFO Running runs: ['bbuqt757']
+2024-07-21 19:20:50 INFO Running runs: []
+2024-07-21 19:20:51 INFO Agent received command: run
+2024-07-21 19:20:51 INFO Agent starting run with config:
+	TAU: 0.03748380797783353
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.9712847314393352
+	fc_layer_size_1: 32
+	fc_layer_size_2: 48
+	gamma: 0.28331607421074023
+	learning_rate: 0.05480040007129788
+	num_episodes: 600
+2024-07-21 19:20:51 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03748380797783353 --batch_size=256 --eps_decay=50 --eps_start=0.9712847314393352 --fc_layer_size_1=32 --fc_layer_size_2=48 --gamma=0.28331607421074023 --learning_rate=0.05480040007129788 --num_episodes=600
+2024-07-21 19:20:53 INFO Running runs: []
+2024-07-21 19:20:53 INFO Agent received command: run
+2024-07-21 19:20:53 INFO Agent starting run with config:
+	TAU: 0.03764133198148737
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.983013003404619
+	fc_layer_size_1: 80
+	fc_layer_size_2: 96
+	gamma: 0.2772827456742532
+	learning_rate: 0.03169595970346365
+	num_episodes: 400
+2024-07-21 19:20:53 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03764133198148737 --batch_size=128 --eps_decay=500 --eps_start=0.983013003404619 --fc_layer_size_1=80 --fc_layer_size_2=96 --gamma=0.2772827456742532 --learning_rate=0.03169595970346365 --num_episodes=400
+2024-07-21 19:20:56 INFO Running runs: ['f993hop3']
+2024-07-21 19:20:56 INFO Running runs: []
+2024-07-21 19:20:56 INFO Agent received command: run
+2024-07-21 19:20:56 INFO Agent starting run with config:
+	TAU: 0.006387089588298447
+	batch_size: 128
+	eps_decay: 200
+	eps_start: 0.9928684495688708
+	fc_layer_size_1: 32
+	fc_layer_size_2: 128
+	gamma: 0.07956225146679852
+	learning_rate: 0.002100833939600304
+	num_episodes: 650
+2024-07-21 19:20:56 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.006387089588298447 --batch_size=128 --eps_decay=200 --eps_start=0.9928684495688708 --fc_layer_size_1=32 --fc_layer_size_2=128 --gamma=0.07956225146679852 --learning_rate=0.002100833939600304 --num_episodes=650
+2024-07-21 19:20:58 INFO Running runs: ['hmy7tavj']
+2024-07-21 19:21:01 INFO Running runs: ['1fjzmcih']
+2024-07-21 19:36:06 INFO Running runs: []
+2024-07-21 19:36:06 INFO Agent received command: run
+2024-07-21 19:36:06 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 10
+	eps_start: 0.6511662863159199
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-21 19:36:06 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=10 --eps_start=0.6511662863159199 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-21 19:36:10 INFO Running runs: []
+2024-07-21 19:36:10 INFO Agent received command: run
+2024-07-21 19:36:10 INFO Agent starting run with config:
+	TAU: 0.024214669260859013
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.5266099171220529
+	fc_layer_size_1: 80
+	fc_layer_size_2: 32
+	gamma: 0.2499216132535462
+	learning_rate: 0.0030562906810298286
+	num_episodes: 550
+2024-07-21 19:36:10 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.024214669260859013 --batch_size=256 --eps_decay=1000 --eps_start=0.5266099171220529 --fc_layer_size_1=80 --fc_layer_size_2=32 --gamma=0.2499216132535462 --learning_rate=0.0030562906810298286 --num_episodes=550
+2024-07-21 19:36:11 INFO Running runs: []
+2024-07-21 19:36:11 INFO Running runs: ['386rprmp']
+2024-07-21 19:36:12 INFO Agent received command: run
+2024-07-21 19:36:12 INFO Agent starting run with config:
+	TAU: 0.03228587449934108
+	batch_size: 128
+	eps_decay: 50
+	eps_start: 0.7984565677648758
+	fc_layer_size_1: 16
+	fc_layer_size_2: 48
+	gamma: 0.13962450450946265
+	learning_rate: 0.010407315739062627
+	num_episodes: 650
+2024-07-21 19:36:12 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03228587449934108 --batch_size=128 --eps_decay=50 --eps_start=0.7984565677648758 --fc_layer_size_1=16 --fc_layer_size_2=48 --gamma=0.13962450450946265 --learning_rate=0.010407315739062627 --num_episodes=650
+2024-07-21 19:36:14 INFO Running runs: []
+2024-07-21 19:36:14 INFO Agent received command: run
+2024-07-21 19:36:14 INFO Agent starting run with config:
+	TAU: 0.03394031895639821
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.9977887816467726
+	fc_layer_size_1: 32
+	fc_layer_size_2: 80
+	gamma: 0.1473546961896174
+	learning_rate: 0.07109451559822741
+	num_episodes: 500
+2024-07-21 19:36:14 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03394031895639821 --batch_size=256 --eps_decay=500 --eps_start=0.9977887816467726 --fc_layer_size_1=32 --fc_layer_size_2=80 --gamma=0.1473546961896174 --learning_rate=0.07109451559822741 --num_episodes=500
+2024-07-21 19:36:15 INFO Running runs: []
+2024-07-21 19:36:15 INFO Running runs: ['1huuefgw']
+2024-07-21 19:36:15 INFO Agent received command: run
+2024-07-21 19:36:15 INFO Agent starting run with config:
+	TAU: 0.0276336198454368
+	batch_size: 128
+	eps_decay: 10
+	eps_start: 0.9702601628207788
+	fc_layer_size_1: 16
+	fc_layer_size_2: 80
+	gamma: 0.2775129491955731
+	learning_rate: 0.02115043284826342
+	num_episodes: 650
+2024-07-21 19:36:15 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.0276336198454368 --batch_size=128 --eps_decay=10 --eps_start=0.9702601628207788 --fc_layer_size_1=16 --fc_layer_size_2=80 --gamma=0.2775129491955731 --learning_rate=0.02115043284826342 --num_episodes=650
+2024-07-21 19:36:17 INFO Running runs: ['hr4ny8qd']
+2024-07-21 19:36:19 INFO Running runs: []
+2024-07-21 19:36:19 INFO Running runs: ['v7ntmsgg']
+2024-07-21 19:36:19 INFO Agent received command: run
+2024-07-21 19:36:19 INFO Agent starting run with config:
+	TAU: 0.03822841656051095
+	batch_size: 256
+	eps_decay: 200
+	eps_start: 0.7930727619108546
+	fc_layer_size_1: 64
+	fc_layer_size_2: 80
+	gamma: 0.11367482598443213
+	learning_rate: 0.034607707890081114
+	num_episodes: 450
+2024-07-21 19:36:19 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03822841656051095 --batch_size=256 --eps_decay=200 --eps_start=0.7930727619108546 --fc_layer_size_1=64 --fc_layer_size_2=80 --gamma=0.11367482598443213 --learning_rate=0.034607707890081114 --num_episodes=450
+2024-07-21 19:36:20 INFO Running runs: ['uj1i16pq']
+2024-07-21 19:36:21 INFO Running runs: []
+2024-07-21 19:36:21 INFO Agent received command: run
+2024-07-21 19:36:21 INFO Agent starting run with config:
+	TAU: 0.030967558060086383
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.7759734618317106
+	fc_layer_size_1: 16
+	fc_layer_size_2: 64
+	gamma: 0.0748131812722797
+	learning_rate: 0.05048738917502755
+	num_episodes: 600
+2024-07-21 19:36:21 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.030967558060086383 --batch_size=256 --eps_decay=1000 --eps_start=0.7759734618317106 --fc_layer_size_1=16 --fc_layer_size_2=64 --gamma=0.0748131812722797 --learning_rate=0.05048738917502755 --num_episodes=600
+2024-07-21 19:36:23 INFO Running runs: []
+2024-07-21 19:36:24 INFO Running runs: ['jthuoz86']
+2024-07-21 19:36:26 INFO Running runs: ['syuiikfb']
+2024-07-21 19:36:27 INFO Agent received command: run
+2024-07-21 19:36:27 INFO Agent starting run with config:
+	TAU: 0.03029759938594897
+	batch_size: 128
+	eps_decay: 50
+	eps_start: 0.8869151799616057
+	fc_layer_size_1: 64
+	fc_layer_size_2: 32
+	gamma: 0.21739402305261143
+	learning_rate: 0.02865979307136325
+	num_episodes: 600
+2024-07-21 19:36:27 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03029759938594897 --batch_size=128 --eps_decay=50 --eps_start=0.8869151799616057 --fc_layer_size_1=64 --fc_layer_size_2=32 --gamma=0.21739402305261143 --learning_rate=0.02865979307136325 --num_episodes=600
+2024-07-21 19:36:32 INFO Running runs: ['rp5uyr2e']
+2024-07-21 20:08:27 INFO Cleaning up finished run: jthuoz86
+2024-07-21 20:08:28 INFO Agent received command: run
+2024-07-21 20:08:28 INFO Agent starting run with config:
+	TAU: 0.027350876957854712
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.5528461287698558
+	fc_layer_size_1: 64
+	fc_layer_size_2: 32
+	gamma: 0.1613837900684633
+	learning_rate: 0.055540372006134674
+	num_episodes: 750
+2024-07-21 20:08:28 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.027350876957854712 --batch_size=256 --eps_decay=500 --eps_start=0.5528461287698558 --fc_layer_size_1=64 --fc_layer_size_2=32 --gamma=0.1613837900684633 --learning_rate=0.055540372006134674 --num_episodes=750
+2024-07-21 20:08:33 INFO Running runs: ['am56m60m']
+2024-07-21 20:11:25 INFO Cleaning up finished run: 386rprmp
+2024-07-21 20:11:27 INFO Agent received command: run
+2024-07-21 20:11:27 INFO Agent starting run with config:
+	TAU: 0.011695766360915264
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.9145955661422608
+	fc_layer_size_1: 80
+	fc_layer_size_2: 96
+	gamma: 0.24096824858189697
+	learning_rate: 0.08401841412763242
+	num_episodes: 450
+2024-07-21 20:11:27 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.011695766360915264 --batch_size=256 --eps_decay=50 --eps_start=0.9145955661422608 --fc_layer_size_1=80 --fc_layer_size_2=96 --gamma=0.24096824858189697 --learning_rate=0.08401841412763242 --num_episodes=450
+2024-07-21 20:11:32 INFO Running runs: ['s2w4qsgo']
+2024-07-21 20:11:43 INFO Cleaning up finished run: v7ntmsgg
+2024-07-21 20:11:45 INFO Agent received command: run
+2024-07-21 20:11:45 INFO Agent starting run with config:
+	TAU: 0.028230167293282062
+	batch_size: 256
+	eps_decay: 200
+	eps_start: 0.6861424915999366
+	fc_layer_size_1: 80
+	fc_layer_size_2: 16
+	gamma: 0.05334555687538613
+	learning_rate: 0.015438678181715664
+	num_episodes: 600
+2024-07-21 20:11:45 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.028230167293282062 --batch_size=256 --eps_decay=200 --eps_start=0.6861424915999366 --fc_layer_size_1=80 --fc_layer_size_2=16 --gamma=0.05334555687538613 --learning_rate=0.015438678181715664 --num_episodes=600
+2024-07-21 20:11:50 INFO Running runs: ['o6pyaf59']
+2024-07-21 20:15:20 INFO Cleaning up finished run: 1huuefgw
+2024-07-21 20:15:21 INFO Agent received command: run
+2024-07-21 20:15:21 INFO Agent starting run with config:
+	TAU: 0.02862617456822207
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.9863524257851156
+	fc_layer_size_1: 32
+	fc_layer_size_2: 96
+	gamma: 0.10653159546250024
+	learning_rate: 0.09599041422225718
+	num_episodes: 750
+2024-07-21 20:15:21 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02862617456822207 --batch_size=256 --eps_decay=500 --eps_start=0.9863524257851156 --fc_layer_size_1=32 --fc_layer_size_2=96 --gamma=0.10653159546250024 --learning_rate=0.09599041422225718 --num_episodes=750
+2024-07-21 20:15:26 INFO Running runs: ['z1m7nam5']
+2024-07-21 20:19:16 INFO Cleaning up finished run: rp5uyr2e
+2024-07-21 20:19:17 INFO Agent received command: run
+2024-07-21 20:19:17 INFO Agent starting run with config:
+	TAU: 0.005328825153791461
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.6180733261518234
+	fc_layer_size_1: 80
+	fc_layer_size_2: 16
+	gamma: 0.31137005909214266
+	learning_rate: 0.01991573966077318
+	num_episodes: 750
+2024-07-21 20:19:17 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.005328825153791461 --batch_size=128 --eps_decay=500 --eps_start=0.6180733261518234 --fc_layer_size_1=80 --fc_layer_size_2=16 --gamma=0.31137005909214266 --learning_rate=0.01991573966077318 --num_episodes=750
+2024-07-21 20:19:22 INFO Running runs: ['00sj87p4']
+2024-07-21 20:20:13 INFO Cleaning up finished run: syuiikfb
+2024-07-21 20:20:14 INFO Agent received command: run
+2024-07-21 20:20:14 INFO Agent starting run with config:
+	TAU: 0.025974915710771783
+	batch_size: 128
+	eps_decay: 10
+	eps_start: 0.6756518581343091
+	fc_layer_size_1: 32
+	fc_layer_size_2: 32
+	gamma: 0.12249644856723851
+	learning_rate: 0.04589686791987909
+	num_episodes: 450
+2024-07-21 20:20:14 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.025974915710771783 --batch_size=128 --eps_decay=10 --eps_start=0.6756518581343091 --fc_layer_size_1=32 --fc_layer_size_2=32 --gamma=0.12249644856723851 --learning_rate=0.04589686791987909 --num_episodes=450
+2024-07-21 20:20:19 INFO Running runs: ['69fs5nu3']
+2024-07-21 20:21:54 INFO Cleaning up finished run: uj1i16pq
+2024-07-21 20:21:55 INFO Agent received command: run
+2024-07-21 20:21:55 INFO Agent starting run with config:
+	TAU: 0.013290702154632753
+	batch_size: 256
+	eps_decay: 100
+	eps_start: 0.5238771342545441
+	fc_layer_size_1: 64
+	fc_layer_size_2: 64
+	gamma: 0.30780024390981564
+	learning_rate: 0.07763045213947764
+	num_episodes: 600
+2024-07-21 20:21:55 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.013290702154632753 --batch_size=256 --eps_decay=100 --eps_start=0.5238771342545441 --fc_layer_size_1=64 --fc_layer_size_2=64 --gamma=0.30780024390981564 --learning_rate=0.07763045213947764 --num_episodes=600
+2024-07-21 20:21:56 INFO Cleaning up finished run: hr4ny8qd
+2024-07-21 20:21:57 INFO Agent received command: run
+2024-07-21 20:21:57 INFO Agent starting run with config:
+	TAU: 0.036135670315421344
+	batch_size: 128
+	eps_decay: 10
+	eps_start: 0.8164757320182165
+	fc_layer_size_1: 32
+	fc_layer_size_2: 96
+	gamma: 0.24310422470216805
+	learning_rate: 0.0670840678183235
+	num_episodes: 600
+2024-07-21 20:21:57 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.036135670315421344 --batch_size=128 --eps_decay=10 --eps_start=0.8164757320182165 --fc_layer_size_1=32 --fc_layer_size_2=96 --gamma=0.24310422470216805 --learning_rate=0.0670840678183235 --num_episodes=600
+2024-07-21 20:22:00 INFO Running runs: ['otseeako']
+2024-07-21 20:22:02 INFO Running runs: ['2hkai4wf']
+2024-07-21 20:41:10 INFO Cleaning up finished run: s2w4qsgo
+2024-07-21 20:41:10 INFO Agent received command: run
+2024-07-21 20:41:10 INFO Agent starting run with config:
+	TAU: 0.0130715613889037
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.5234387196495618
+	fc_layer_size_1: 80
+	fc_layer_size_2: 32
+	gamma: 0.0942668907224117
+	learning_rate: 0.00867081299917693
+	num_episodes: 400
+2024-07-21 20:41:10 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.0130715613889037 --batch_size=256 --eps_decay=50 --eps_start=0.5234387196495618 --fc_layer_size_1=80 --fc_layer_size_2=32 --gamma=0.0942668907224117 --learning_rate=0.00867081299917693 --num_episodes=400
+2024-07-21 20:41:15 INFO Running runs: ['mhh2zhli']
+2024-07-21 20:47:21 INFO Cleaning up finished run: 69fs5nu3
+2024-07-21 20:47:21 INFO Agent received command: run
+2024-07-21 20:47:21 INFO Agent starting run with config:
+	TAU: 0.020073649246682052
+	batch_size: 256
+	eps_decay: 100
+	eps_start: 0.6260817034602149
+	fc_layer_size_1: 64
+	fc_layer_size_2: 32
+	gamma: 0.1625311165573079
+	learning_rate: 0.017278807681584536
+	num_episodes: 400
+2024-07-21 20:47:21 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.020073649246682052 --batch_size=256 --eps_decay=100 --eps_start=0.6260817034602149 --fc_layer_size_1=64 --fc_layer_size_2=32 --gamma=0.1625311165573079 --learning_rate=0.017278807681584536 --num_episodes=400
+2024-07-21 20:47:26 INFO Running runs: ['mmfev83z']
+2024-07-21 20:50:37 INFO Cleaning up finished run: o6pyaf59
+2024-07-21 20:50:37 INFO Agent received command: run
+2024-07-21 20:50:37 INFO Agent starting run with config:
+	TAU: 0.02607492687030182
+	batch_size: 128
+	eps_decay: 50
+	eps_start: 0.5596588148027806
+	fc_layer_size_1: 64
+	fc_layer_size_2: 48
+	gamma: 0.3133290315967096
+	learning_rate: 0.0905110651885366
+	num_episodes: 450
+2024-07-21 20:50:37 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02607492687030182 --batch_size=128 --eps_decay=50 --eps_start=0.5596588148027806 --fc_layer_size_1=64 --fc_layer_size_2=48 --gamma=0.3133290315967096 --learning_rate=0.0905110651885366 --num_episodes=450
+2024-07-21 20:50:42 INFO Running runs: ['9jmzncao']
+2024-07-21 20:57:45 INFO Cleaning up finished run: am56m60m
+2024-07-21 20:57:46 INFO Agent received command: run
+2024-07-21 20:57:46 INFO Agent starting run with config:
+	TAU: 0.031108987230819236
+	batch_size: 128
+	eps_decay: 200
+	eps_start: 0.5456433543217942
+	fc_layer_size_1: 64
+	fc_layer_size_2: 96
+	gamma: 0.09238615123194942
+	learning_rate: 0.04676215002483501
+	num_episodes: 650
+2024-07-21 20:57:46 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.031108987230819236 --batch_size=128 --eps_decay=200 --eps_start=0.5456433543217942 --fc_layer_size_1=64 --fc_layer_size_2=96 --gamma=0.09238615123194942 --learning_rate=0.04676215002483501 --num_episodes=650
+2024-07-21 20:57:50 INFO Cleaning up finished run: 2hkai4wf
+2024-07-21 20:57:51 INFO Running runs: ['r153t4rg']
+2024-07-21 20:57:51 INFO Agent received command: run
+2024-07-21 20:57:51 INFO Agent starting run with config:
+	TAU: 0.02637730508797682
+	batch_size: 128
+	eps_decay: 100
+	eps_start: 0.6625076499553288
+	fc_layer_size_1: 64
+	fc_layer_size_2: 128
+	gamma: 0.19899702614185807
+	learning_rate: 0.08332691524602774
+	num_episodes: 600
+2024-07-21 20:57:51 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02637730508797682 --batch_size=128 --eps_decay=100 --eps_start=0.6625076499553288 --fc_layer_size_1=64 --fc_layer_size_2=128 --gamma=0.19899702614185807 --learning_rate=0.08332691524602774 --num_episodes=600
+2024-07-21 20:57:56 INFO Running runs: ['aw7rv4p4']
+2024-07-21 20:58:24 INFO Cleaning up finished run: otseeako
+2024-07-21 20:58:25 INFO Agent received command: run
+2024-07-21 20:58:25 INFO Agent starting run with config:
+	TAU: 0.022441850842903375
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.7486370122125257
+	fc_layer_size_1: 80
+	fc_layer_size_2: 96
+	gamma: 0.1110929979887874
+	learning_rate: 0.0024996269690177133
+	num_episodes: 750
+2024-07-21 20:58:25 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.022441850842903375 --batch_size=128 --eps_decay=500 --eps_start=0.7486370122125257 --fc_layer_size_1=80 --fc_layer_size_2=96 --gamma=0.1110929979887874 --learning_rate=0.0024996269690177133 --num_episodes=750
+2024-07-21 20:58:30 INFO Running runs: ['l4ywb6u2']
+2024-07-21 21:02:38 INFO Cleaning up finished run: z1m7nam5
+2024-07-21 21:02:39 INFO Agent received command: run
+2024-07-21 21:02:39 INFO Agent starting run with config:
+	TAU: 0.030756857214804388
+	batch_size: 128
+	eps_decay: 10
+	eps_start: 0.8961432011088672
+	fc_layer_size_1: 80
+	fc_layer_size_2: 32
+	gamma: 0.1791903810579073
+	learning_rate: 0.00033210347674375465
+	num_episodes: 550
+2024-07-21 21:02:39 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.030756857214804388 --batch_size=128 --eps_decay=10 --eps_start=0.8961432011088672 --fc_layer_size_1=80 --fc_layer_size_2=32 --gamma=0.1791903810579073 --learning_rate=0.00033210347674375465 --num_episodes=550
+2024-07-21 21:02:44 INFO Running runs: ['cnxzvmd4']
+2024-07-21 21:04:33 INFO Cleaning up finished run: 00sj87p4
+2024-07-21 21:04:34 INFO Agent received command: run
+2024-07-21 21:04:34 INFO Agent starting run with config:
+	TAU: 0.007302752949085259
+	batch_size: 128
+	eps_decay: 10
+	eps_start: 0.5616337737047861
+	fc_layer_size_1: 16
+	fc_layer_size_2: 64
+	gamma: 0.19885726292877423
+	learning_rate: 0.004463038402989625
+	num_episodes: 500
+2024-07-21 21:04:34 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.007302752949085259 --batch_size=128 --eps_decay=10 --eps_start=0.5616337737047861 --fc_layer_size_1=16 --fc_layer_size_2=64 --gamma=0.19885726292877423 --learning_rate=0.004463038402989625 --num_episodes=500
+2024-07-21 21:04:39 INFO Running runs: ['5lq0fsbg']
+2024-07-21 21:05:37 INFO Cleaning up finished run: mhh2zhli
+2024-07-21 21:05:38 INFO Agent received command: run
+2024-07-21 21:05:38 INFO Agent starting run with config:
+	TAU: 0.01820996289399019
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8363667376861004
+	fc_layer_size_1: 16
+	fc_layer_size_2: 80
+	gamma: 0.26660648073881765
+	learning_rate: 0.037635152239732926
+	num_episodes: 600
+2024-07-21 21:05:38 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01820996289399019 --batch_size=256 --eps_decay=1000 --eps_start=0.8363667376861004 --fc_layer_size_1=16 --fc_layer_size_2=80 --gamma=0.26660648073881765 --learning_rate=0.037635152239732926 --num_episodes=600
+2024-07-21 21:05:43 INFO Running runs: ['ghn85qas']
+2024-07-21 21:11:32 INFO Cleaning up finished run: mmfev83z
+2024-07-21 21:11:32 INFO Agent received command: run
+2024-07-21 21:11:32 INFO Agent starting run with config:
+	TAU: 0.028424067538686756
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8127432537203785
+	fc_layer_size_1: 80
+	fc_layer_size_2: 16
+	gamma: 0.11601235250091618
+	learning_rate: 0.034692032110640016
+	num_episodes: 750
+2024-07-21 21:11:32 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.028424067538686756 --batch_size=256 --eps_decay=500 --eps_start=0.8127432537203785 --fc_layer_size_1=80 --fc_layer_size_2=16 --gamma=0.11601235250091618 --learning_rate=0.034692032110640016 --num_episodes=750
+2024-07-21 21:11:37 INFO Running runs: ['5rur7z7b']
+2024-07-21 21:17:12 INFO Cleaning up finished run: 9jmzncao
+2024-07-21 21:17:15 INFO Agent received command: run
+2024-07-21 21:17:15 INFO Agent starting run with config:
+	TAU: 0.02454531944769578
+	batch_size: 128
+	eps_decay: 50
+	eps_start: 0.7501034121641939
+	fc_layer_size_1: 48
+	fc_layer_size_2: 64
+	gamma: 0.316524598515743
+	learning_rate: 0.06180669519135922
+	num_episodes: 650
+2024-07-21 21:17:15 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02454531944769578 --batch_size=128 --eps_decay=50 --eps_start=0.7501034121641939 --fc_layer_size_1=48 --fc_layer_size_2=64 --gamma=0.316524598515743 --learning_rate=0.06180669519135922 --num_episodes=650
+2024-07-21 21:17:20 INFO Running runs: ['kdfu6b0o']
+2024-07-21 21:33:20 INFO Cleaning up finished run: aw7rv4p4
+2024-07-21 21:33:20 INFO Agent received command: run
+2024-07-21 21:33:20 INFO Agent starting run with config:
+	TAU: 0.023644237246826127
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.5656478068046331
+	fc_layer_size_1: 16
+	fc_layer_size_2: 48
+	gamma: 0.021374908079161672
+	learning_rate: 0.005581353957935741
+	num_episodes: 500
+2024-07-21 21:33:20 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.023644237246826127 --batch_size=128 --eps_decay=1000 --eps_start=0.5656478068046331 --fc_layer_size_1=16 --fc_layer_size_2=48 --gamma=0.021374908079161672 --learning_rate=0.005581353957935741 --num_episodes=500
+2024-07-21 21:33:25 INFO Running runs: ['lj631c1j']
+2024-07-21 21:34:15 INFO Cleaning up finished run: 5lq0fsbg
+2024-07-21 21:34:16 INFO Agent received command: run
+2024-07-21 21:34:16 INFO Agent starting run with config:
+	TAU: 0.028956613111334996
+	batch_size: 128
+	eps_decay: 50
+	eps_start: 0.5423896477863916
+	fc_layer_size_1: 48
+	fc_layer_size_2: 16
+	gamma: 0.1460821753316851
+	learning_rate: 0.0734632371924056
+	num_episodes: 750
+2024-07-21 21:34:16 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.028956613111334996 --batch_size=128 --eps_decay=50 --eps_start=0.5423896477863916 --fc_layer_size_1=48 --fc_layer_size_2=16 --gamma=0.1460821753316851 --learning_rate=0.0734632371924056 --num_episodes=750
+2024-07-21 21:34:21 INFO Running runs: ['ct9pbrkb']
+2024-07-21 21:35:15 INFO Cleaning up finished run: cnxzvmd4
+2024-07-21 21:35:16 INFO Agent received command: run
+2024-07-21 21:35:16 INFO Agent starting run with config:
+	TAU: 0.03378484262633473
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.9574133322100598
+	fc_layer_size_1: 80
+	fc_layer_size_2: 64
+	gamma: 0.10086761479518536
+	learning_rate: 0.002262383774406907
+	num_episodes: 450
+2024-07-21 21:35:16 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03378484262633473 --batch_size=256 --eps_decay=1000 --eps_start=0.9574133322100598 --fc_layer_size_1=80 --fc_layer_size_2=64 --gamma=0.10086761479518536 --learning_rate=0.002262383774406907 --num_episodes=450
+2024-07-21 21:35:21 INFO Running runs: ['yufjl87p']
+2024-07-21 21:36:19 INFO Cleaning up finished run: r153t4rg
+2024-07-21 21:36:19 INFO Agent received command: run
+2024-07-21 21:36:19 INFO Agent starting run with config:
+	TAU: 0.030715063261040107
+	batch_size: 256
+	eps_decay: 200
+	eps_start: 0.8022183813598729
+	fc_layer_size_1: 64
+	fc_layer_size_2: 16
+	gamma: 0.12842310838873391
+	learning_rate: 0.06809029449702324
+	num_episodes: 500
+2024-07-21 21:36:19 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.030715063261040107 --batch_size=256 --eps_decay=200 --eps_start=0.8022183813598729 --fc_layer_size_1=64 --fc_layer_size_2=16 --gamma=0.12842310838873391 --learning_rate=0.06809029449702324 --num_episodes=500
+2024-07-21 21:36:24 INFO Running runs: ['pjp8ip0r']
+2024-07-21 21:42:22 INFO Cleaning up finished run: ghn85qas
+2024-07-21 21:42:23 INFO Agent received command: run
+2024-07-21 21:42:23 INFO Agent starting run with config:
+	TAU: 0.03277528442691979
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.6803977198854012
+	fc_layer_size_1: 16
+	fc_layer_size_2: 128
+	gamma: 0.32405224921543496
+	learning_rate: 0.06601028202322712
+	num_episodes: 650
+2024-07-21 21:42:23 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03277528442691979 --batch_size=256 --eps_decay=50 --eps_start=0.6803977198854012 --fc_layer_size_1=16 --fc_layer_size_2=128 --gamma=0.32405224921543496 --learning_rate=0.06601028202322712 --num_episodes=650
+2024-07-21 21:42:28 INFO Running runs: ['x7laombr']
+2024-07-21 21:42:44 INFO Cleaning up finished run: l4ywb6u2
+2024-07-21 21:42:44 INFO Agent received command: run
+2024-07-21 21:42:44 INFO Agent starting run with config:
+	TAU: 0.0084340796984883
+	batch_size: 128
+	eps_decay: 10
+	eps_start: 0.7982168072895341
+	fc_layer_size_1: 16
+	fc_layer_size_2: 96
+	gamma: 0.25315036985840234
+	learning_rate: 0.07430882288419156
+	num_episodes: 550
+2024-07-21 21:42:44 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.0084340796984883 --batch_size=128 --eps_decay=10 --eps_start=0.7982168072895341 --fc_layer_size_1=16 --fc_layer_size_2=96 --gamma=0.25315036985840234 --learning_rate=0.07430882288419156 --num_episodes=550
+2024-07-21 21:42:49 INFO Running runs: ['od1slnh5']
+2024-07-21 21:55:22 INFO Cleaning up finished run: kdfu6b0o
+2024-07-21 21:55:23 INFO Agent received command: run
+2024-07-21 21:55:23 INFO Agent starting run with config:
+	TAU: 0.02665877249116425
+	batch_size: 256
+	eps_decay: 200
+	eps_start: 0.7370486890665351
+	fc_layer_size_1: 32
+	fc_layer_size_2: 32
+	gamma: 0.0481448642458094
+	learning_rate: 0.01842478094474202
+	num_episodes: 750
+2024-07-21 21:55:23 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02665877249116425 --batch_size=256 --eps_decay=200 --eps_start=0.7370486890665351 --fc_layer_size_1=32 --fc_layer_size_2=32 --gamma=0.0481448642458094 --learning_rate=0.01842478094474202 --num_episodes=750
+2024-07-21 21:55:28 INFO Running runs: ['18f7gu4g']
+2024-07-21 21:56:55 INFO Cleaning up finished run: 5rur7z7b
+2024-07-21 21:56:55 INFO Agent received command: run
+2024-07-21 21:56:55 INFO Agent starting run with config:
+	TAU: 0.026618291210773862
+	batch_size: 128
+	eps_decay: 100
+	eps_start: 0.9515143949129194
+	fc_layer_size_1: 32
+	fc_layer_size_2: 64
+	gamma: 0.1189921764946617
+	learning_rate: 0.007843282105153776
+	num_episodes: 650
+2024-07-21 21:56:55 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.026618291210773862 --batch_size=128 --eps_decay=100 --eps_start=0.9515143949129194 --fc_layer_size_1=32 --fc_layer_size_2=64 --gamma=0.1189921764946617 --learning_rate=0.007843282105153776 --num_episodes=650
+2024-07-21 21:57:00 INFO Running runs: ['40nnaoj2']
+2024-07-21 22:02:38 INFO Cleaning up finished run: yufjl87p
+2024-07-21 22:02:39 INFO Agent received command: run
+2024-07-21 22:02:39 INFO Agent starting run with config:
+	TAU: 0.03727211834910193
+	batch_size: 128
+	eps_decay: 10
+	eps_start: 0.8887440787896184
+	fc_layer_size_1: 32
+	fc_layer_size_2: 48
+	gamma: 0.036408045650167205
+	learning_rate: 0.00602150965217544
+	num_episodes: 600
+2024-07-21 22:02:39 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03727211834910193 --batch_size=128 --eps_decay=10 --eps_start=0.8887440787896184 --fc_layer_size_1=32 --fc_layer_size_2=48 --gamma=0.036408045650167205 --learning_rate=0.00602150965217544 --num_episodes=600
+2024-07-21 22:02:44 INFO Running runs: ['i31yss2t']
+2024-07-21 22:02:56 INFO Cleaning up finished run: lj631c1j
+2024-07-21 22:02:56 INFO Agent received command: run
+2024-07-21 22:02:56 INFO Agent starting run with config:
+	TAU: 0.016038157675192594
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.7562050969804928
+	fc_layer_size_1: 64
+	fc_layer_size_2: 80
+	gamma: 0.014780854932398602
+	learning_rate: 0.003587049602685727
+	num_episodes: 750
+2024-07-21 22:02:56 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.016038157675192594 --batch_size=128 --eps_decay=500 --eps_start=0.7562050969804928 --fc_layer_size_1=64 --fc_layer_size_2=80 --gamma=0.014780854932398602 --learning_rate=0.003587049602685727 --num_episodes=750
+2024-07-21 22:03:01 INFO Running runs: ['2izokwkw']
+2024-07-21 22:06:26 INFO Cleaning up finished run: pjp8ip0r
+2024-07-21 22:06:27 INFO Agent received command: run
+2024-07-21 22:06:27 INFO Agent starting run with config:
+	TAU: 0.03573436011867702
+	batch_size: 128
+	eps_decay: 100
+	eps_start: 0.8664885814714436
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.12918471848530946
+	learning_rate: 0.004576367447458008
+	num_episodes: 600
+2024-07-21 22:06:27 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03573436011867702 --batch_size=128 --eps_decay=100 --eps_start=0.8664885814714436 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.12918471848530946 --learning_rate=0.004576367447458008 --num_episodes=600
+2024-07-21 22:06:32 INFO Running runs: ['9n1s2xry']
+2024-07-21 22:15:00 INFO Cleaning up finished run: od1slnh5
+2024-07-21 22:15:06 INFO Agent received command: run
+2024-07-21 22:15:06 INFO Agent starting run with config:
+	TAU: 0.005553744605384815
+	batch_size: 256
+	eps_decay: 100
+	eps_start: 0.6104900787544121
+	fc_layer_size_1: 80
+	fc_layer_size_2: 16
+	gamma: 0.014020068707717156
+	learning_rate: 0.020101328596600403
+	num_episodes: 450
+2024-07-21 22:15:06 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.005553744605384815 --batch_size=256 --eps_decay=100 --eps_start=0.6104900787544121 --fc_layer_size_1=80 --fc_layer_size_2=16 --gamma=0.014020068707717156 --learning_rate=0.020101328596600403 --num_episodes=450
+2024-07-21 22:15:11 INFO Running runs: ['9mf8dlkg']
+2024-07-21 22:18:26 INFO Cleaning up finished run: ct9pbrkb
+2024-07-21 22:18:27 INFO Agent received command: run
+2024-07-21 22:18:27 INFO Agent starting run with config:
+	TAU: 0.02861905856071119
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.8550886185429813
+	fc_layer_size_1: 48
+	fc_layer_size_2: 64
+	gamma: 0.1236936948287176
+	learning_rate: 0.005494432435243259
+	num_episodes: 750
+2024-07-21 22:18:27 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02861905856071119 --batch_size=128 --eps_decay=500 --eps_start=0.8550886185429813 --fc_layer_size_1=48 --fc_layer_size_2=64 --gamma=0.1236936948287176 --learning_rate=0.005494432435243259 --num_episodes=750
+2024-07-21 22:18:32 INFO Running runs: ['p2r3umjp']
+2024-07-21 22:21:12 INFO Cleaning up finished run: x7laombr
+2024-07-21 22:21:15 INFO Agent received command: run
+2024-07-21 22:21:15 INFO Agent starting run with config:
+	TAU: 0.01614313455504803
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.8779736579963098
+	fc_layer_size_1: 80
+	fc_layer_size_2: 96
+	gamma: 0.16322080307386738
+	learning_rate: 0.003395435831512362
+	num_episodes: 750
+2024-07-21 22:21:15 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01614313455504803 --batch_size=128 --eps_decay=500 --eps_start=0.8779736579963098 --fc_layer_size_1=80 --fc_layer_size_2=96 --gamma=0.16322080307386738 --learning_rate=0.003395435831512362 --num_episodes=750
+2024-07-21 22:21:20 INFO Running runs: ['kb4re78z']
+2024-07-21 22:34:54 INFO Cleaning up finished run: 40nnaoj2
+2024-07-21 22:34:55 INFO Agent received command: run
+2024-07-21 22:34:55 INFO Agent starting run with config:
+	TAU: 0.030862493436427923
+	batch_size: 128
+	eps_decay: 100
+	eps_start: 0.8039160316616122
+	fc_layer_size_1: 16
+	fc_layer_size_2: 48
+	gamma: 0.012463667191515718
+	learning_rate: 0.000997653644538896
+	num_episodes: 650
+2024-07-21 22:34:55 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.030862493436427923 --batch_size=128 --eps_decay=100 --eps_start=0.8039160316616122 --fc_layer_size_1=16 --fc_layer_size_2=48 --gamma=0.012463667191515718 --learning_rate=0.000997653644538896 --num_episodes=650
+2024-07-21 22:35:00 INFO Running runs: ['rgzscidw']
+2024-07-21 22:37:26 INFO Cleaning up finished run: i31yss2t
+2024-07-21 22:37:26 INFO Agent received command: run
+2024-07-21 22:37:26 INFO Agent starting run with config:
+	TAU: 0.03921890276161556
+	batch_size: 256
+	eps_decay: 10
+	eps_start: 0.7796333925403871
+	fc_layer_size_1: 16
+	fc_layer_size_2: 80
+	gamma: 0.02427572888374565
+	learning_rate: 0.005375189631642862
+	num_episodes: 650
+2024-07-21 22:37:26 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03921890276161556 --batch_size=256 --eps_decay=10 --eps_start=0.7796333925403871 --fc_layer_size_1=16 --fc_layer_size_2=80 --gamma=0.02427572888374565 --learning_rate=0.005375189631642862 --num_episodes=650
+2024-07-21 22:37:31 INFO Running runs: ['lpi5jm0i']
+2024-07-21 22:40:19 INFO Cleaning up finished run: 18f7gu4g
+2024-07-21 22:40:20 INFO Agent received command: run
+2024-07-21 22:40:20 INFO Agent starting run with config:
+	TAU: 0.035655473443658894
+	batch_size: 128
+	eps_decay: 10
+	eps_start: 0.6949818911373532
+	fc_layer_size_1: 16
+	fc_layer_size_2: 32
+	gamma: 0.170629831174139
+	learning_rate: 0.002892645808599959
+	num_episodes: 650
+2024-07-21 22:40:20 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.035655473443658894 --batch_size=128 --eps_decay=10 --eps_start=0.6949818911373532 --fc_layer_size_1=16 --fc_layer_size_2=32 --gamma=0.170629831174139 --learning_rate=0.002892645808599959 --num_episodes=650
+2024-07-21 22:40:25 INFO Running runs: ['u8enu47e']
+2024-07-21 22:41:34 INFO Cleaning up finished run: 9n1s2xry
+2024-07-21 22:41:36 INFO Agent received command: run
+2024-07-21 22:41:36 INFO Agent starting run with config:
+	TAU: 0.01242725437091692
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.52122005512575
+	fc_layer_size_1: 80
+	fc_layer_size_2: 96
+	gamma: 0.04717597552518926
+	learning_rate: 0.009963023126992848
+	num_episodes: 400
+2024-07-21 22:41:36 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01242725437091692 --batch_size=256 --eps_decay=50 --eps_start=0.52122005512575 --fc_layer_size_1=80 --fc_layer_size_2=96 --gamma=0.04717597552518926 --learning_rate=0.009963023126992848 --num_episodes=400
+2024-07-21 22:41:41 INFO Running runs: ['fjkz744a']
+2024-07-21 22:41:57 INFO Cleaning up finished run: 9mf8dlkg
+2024-07-21 22:41:58 INFO Agent received command: run
+2024-07-21 22:41:58 INFO Agent starting run with config:
+	TAU: 0.02171739959740836
+	batch_size: 256
+	eps_decay: 50
+	eps_start: 0.7662041113831244
+	fc_layer_size_1: 16
+	fc_layer_size_2: 32
+	gamma: 0.04122977150965373
+	learning_rate: 0.025730277799112165
+	num_episodes: 750
+2024-07-21 22:41:58 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02171739959740836 --batch_size=256 --eps_decay=50 --eps_start=0.7662041113831244 --fc_layer_size_1=16 --fc_layer_size_2=32 --gamma=0.04122977150965373 --learning_rate=0.025730277799112165 --num_episodes=750
+2024-07-21 22:42:03 INFO Running runs: ['hw9p9gbo']
+2024-07-21 22:46:52 INFO Cleaning up finished run: 2izokwkw
+2024-07-21 22:46:53 INFO Agent received command: exit
+2024-07-21 22:46:53 INFO Received exit command. Killing runs and quitting.
+2024-07-21 23:01:24 INFO Cleaning up finished run: p2r3umjp
+2024-07-21 23:01:24 INFO Agent received command: exit
+2024-07-21 23:01:24 INFO Received exit command. Killing runs and quitting.
+2024-07-21 23:03:25 INFO Cleaning up finished run: kb4re78z
+2024-07-21 23:03:25 INFO Agent received command: exit
+2024-07-21 23:03:25 INFO Received exit command. Killing runs and quitting.
+2024-07-21 23:03:53 INFO Cleaning up finished run: fjkz744a
+2024-07-21 23:03:53 INFO Agent received command: exit
+2024-07-21 23:03:53 INFO Received exit command. Killing runs and quitting.
+2024-07-21 23:07:37 INFO Cleaning up finished run: rgzscidw
+2024-07-21 23:07:37 INFO Agent received command: exit
+2024-07-21 23:07:37 INFO Received exit command. Killing runs and quitting.
+2024-07-21 23:09:52 INFO Cleaning up finished run: lpi5jm0i
+2024-07-21 23:09:52 INFO Agent received command: exit
+2024-07-21 23:09:52 INFO Received exit command. Killing runs and quitting.
+2024-07-21 23:10:27 INFO Cleaning up finished run: u8enu47e
+2024-07-21 23:10:28 INFO Agent received command: exit
+2024-07-21 23:10:28 INFO Received exit command. Killing runs and quitting.
+2024-07-21 23:15:15 INFO Cleaning up finished run: hw9p9gbo
+2024-07-21 23:15:15 INFO Agent received command: exit
+2024-07-21 23:15:15 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:01:34 INFO Running runs: []
+2024-07-22 15:01:34 INFO Agent received command: run
+2024-07-22 15:01:34 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 10
+	eps_start: 0.6511662863159199
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-22 15:01:34 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=10 --eps_start=0.6511662863159199 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-22 15:01:39 INFO Running runs: []
+2024-07-22 15:01:39 INFO Agent received command: run
+2024-07-22 15:01:39 INFO Agent starting run with config:
+	TAU: 0.03897261007297491
+	batch_size: 128
+	eps_decay: 50
+	eps_start: 0.9737247475106344
+	fc_layer_size_1: 80
+	fc_layer_size_2: 48
+	gamma: 0.34063574335483776
+	learning_rate: 0.011243848529264758
+	num_episodes: 600
+2024-07-22 15:01:39 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03897261007297491 --batch_size=128 --eps_decay=50 --eps_start=0.9737247475106344 --fc_layer_size_1=80 --fc_layer_size_2=48 --gamma=0.34063574335483776 --learning_rate=0.011243848529264758 --num_episodes=600
+2024-07-22 15:01:39 INFO Running runs: ['fhe2kazx']
+2024-07-22 15:01:42 INFO Running runs: []
+2024-07-22 15:01:42 INFO Agent received command: run
+2024-07-22 15:01:42 INFO Agent starting run with config:
+	TAU: 0.027337734376546494
+	batch_size: 256
+	eps_decay: 10
+	eps_start: 0.7398787317307666
+	fc_layer_size_1: 48
+	fc_layer_size_2: 96
+	gamma: 0.16379592095797438
+	learning_rate: 0.0026420561301663432
+	num_episodes: 450
+2024-07-22 15:01:42 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.027337734376546494 --batch_size=256 --eps_decay=10 --eps_start=0.7398787317307666 --fc_layer_size_1=48 --fc_layer_size_2=96 --gamma=0.16379592095797438 --learning_rate=0.0026420561301663432 --num_episodes=450
+2024-07-22 15:01:44 INFO Running runs: ['iuch4fkt']
+2024-07-22 15:01:47 INFO Running runs: ['ob8pbg8q']
+2024-07-22 15:04:14 INFO Agent received command: exit
+2024-07-22 15:04:14 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:04:15 INFO Agent received command: exit
+2024-07-22 15:04:15 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:04:17 INFO Agent received command: exit
+2024-07-22 15:04:17 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:05:13 INFO Running runs: []
+2024-07-22 15:05:13 INFO Agent received command: run
+2024-07-22 15:05:13 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 200
+	eps_start: 0.860466514526368
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-22 15:05:13 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=200 --eps_start=0.860466514526368 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-22 15:05:18 INFO Running runs: ['4xkrf6gz']
+2024-07-22 15:05:18 INFO Running runs: []
+2024-07-22 15:05:19 INFO Agent received command: run
+2024-07-22 15:05:19 INFO Agent starting run with config:
+	TAU: 0.03260972401668549
+	batch_size: 128
+	eps_decay: 200
+	eps_start: 0.8698684374671837
+	fc_layer_size_1: 16
+	fc_layer_size_2: 64
+	gamma: 0.21055371912778173
+	learning_rate: 0.03490991702985864
+	num_episodes: 650
+2024-07-22 15:05:19 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03260972401668549 --batch_size=128 --eps_decay=200 --eps_start=0.8698684374671837 --fc_layer_size_1=16 --fc_layer_size_2=64 --gamma=0.21055371912778173 --learning_rate=0.03490991702985864 --num_episodes=650
+2024-07-22 15:05:22 INFO Running runs: []
+2024-07-22 15:05:23 INFO Agent received command: run
+2024-07-22 15:05:23 INFO Agent starting run with config:
+	TAU: 0.023597347644111033
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.9999026684460144
+	fc_layer_size_1: 64
+	fc_layer_size_2: 16
+	gamma: 0.18168962738855704
+	learning_rate: 0.06926987079325599
+	num_episodes: 600
+2024-07-22 15:05:23 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.023597347644111033 --batch_size=128 --eps_decay=500 --eps_start=0.9999026684460144 --fc_layer_size_1=64 --fc_layer_size_2=16 --gamma=0.18168962738855704 --learning_rate=0.06926987079325599 --num_episodes=600
+2024-07-22 15:05:24 INFO Running runs: ['3wnjtgqt']
+2024-07-22 15:05:28 INFO Running runs: ['qnqlfr68']
+2024-07-22 15:10:33 INFO Agent received command: exit
+2024-07-22 15:10:33 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:10:33 INFO Agent received command: exit
+2024-07-22 15:10:33 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:10:34 INFO Agent received command: exit
+2024-07-22 15:10:34 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:11:25 INFO Running runs: []
+2024-07-22 15:11:25 INFO Agent received command: run
+2024-07-22 15:11:25 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.860466514526368
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-22 15:11:25 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=500 --eps_start=0.860466514526368 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-22 15:11:27 INFO Running runs: []
+2024-07-22 15:11:27 INFO Agent received command: run
+2024-07-22 15:11:27 INFO Agent starting run with config:
+	TAU: 0.023094950464659203
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.913997757436537
+	fc_layer_size_1: 64
+	fc_layer_size_2: 16
+	gamma: 0.03060026064929878
+	learning_rate: 0.007937623214877131
+	num_episodes: 450
+2024-07-22 15:11:27 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.023094950464659203 --batch_size=256 --eps_decay=500 --eps_start=0.913997757436537 --fc_layer_size_1=64 --fc_layer_size_2=16 --gamma=0.03060026064929878 --learning_rate=0.007937623214877131 --num_episodes=450
+2024-07-22 15:11:29 INFO Running runs: []
+2024-07-22 15:11:29 INFO Agent received command: run
+2024-07-22 15:11:29 INFO Agent starting run with config:
+	TAU: 0.010946862646261896
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8808010131276003
+	fc_layer_size_1: 16
+	fc_layer_size_2: 96
+	gamma: 0.2833257689627689
+	learning_rate: 0.08723944212964393
+	num_episodes: 650
+2024-07-22 15:11:29 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.010946862646261896 --batch_size=256 --eps_decay=2000 --eps_start=0.8808010131276003 --fc_layer_size_1=16 --fc_layer_size_2=96 --gamma=0.2833257689627689 --learning_rate=0.08723944212964393 --num_episodes=650
+2024-07-22 15:11:30 INFO Running runs: ['hm1vf7ov']
+2024-07-22 15:11:32 INFO Running runs: []
+2024-07-22 15:11:32 INFO Running runs: ['6ksgpyhk']
+2024-07-22 15:11:32 INFO Agent received command: run
+2024-07-22 15:11:32 INFO Agent starting run with config:
+	TAU: 0.0117105221685092
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.8419183245241731
+	fc_layer_size_1: 48
+	fc_layer_size_2: 32
+	gamma: 0.24675206894642596
+	learning_rate: 0.06475875613565449
+	num_episodes: 500
+2024-07-22 15:11:32 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.0117105221685092 --batch_size=128 --eps_decay=1000 --eps_start=0.8419183245241731 --fc_layer_size_1=48 --fc_layer_size_2=32 --gamma=0.24675206894642596 --learning_rate=0.06475875613565449 --num_episodes=500
+2024-07-22 15:11:34 INFO Running runs: ['rtwpa6uv']
+2024-07-22 15:11:37 INFO Running runs: ['wujhfgr4']
+2024-07-22 15:11:40 INFO Cleaning up finished run: hm1vf7ov
+2024-07-22 15:11:42 INFO Agent received command: run
+2024-07-22 15:11:42 INFO Agent starting run with config:
+	TAU: 0.034060274553741374
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.8398704645844511
+	fc_layer_size_1: 64
+	fc_layer_size_2: 48
+	gamma: 0.182331413466469
+	learning_rate: 0.08413255027322586
+	num_episodes: 600
+2024-07-22 15:11:42 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.034060274553741374 --batch_size=128 --eps_decay=1000 --eps_start=0.8398704645844511 --fc_layer_size_1=64 --fc_layer_size_2=48 --gamma=0.182331413466469 --learning_rate=0.08413255027322586 --num_episodes=600
+2024-07-22 15:11:42 INFO Cleaning up finished run: 6ksgpyhk
+2024-07-22 15:11:44 INFO Agent received command: run
+2024-07-22 15:11:44 INFO Agent starting run with config:
+	TAU: 0.010169777524425104
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.9769932246119852
+	fc_layer_size_1: 16
+	fc_layer_size_2: 48
+	gamma: 0.097084244056014
+	learning_rate: 0.06362989766572845
+	num_episodes: 400
+2024-07-22 15:11:44 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.010169777524425104 --batch_size=128 --eps_decay=1000 --eps_start=0.9769932246119852 --fc_layer_size_1=16 --fc_layer_size_2=48 --gamma=0.097084244056014 --learning_rate=0.06362989766572845 --num_episodes=400
+2024-07-22 15:11:45 INFO Cleaning up finished run: rtwpa6uv
+2024-07-22 15:11:47 INFO Running runs: ['5lrkeeqj']
+2024-07-22 15:11:47 INFO Agent received command: run
+2024-07-22 15:11:47 INFO Agent starting run with config:
+	TAU: 0.031781820428345195
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.9787699464899356
+	fc_layer_size_1: 80
+	fc_layer_size_2: 64
+	gamma: 0.01412646018828299
+	learning_rate: 0.0680039645742856
+	num_episodes: 750
+2024-07-22 15:11:47 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.031781820428345195 --batch_size=128 --eps_decay=1000 --eps_start=0.9787699464899356 --fc_layer_size_1=80 --fc_layer_size_2=64 --gamma=0.01412646018828299 --learning_rate=0.0680039645742856 --num_episodes=750
+2024-07-22 15:11:48 INFO Cleaning up finished run: wujhfgr4
+2024-07-22 15:11:49 INFO Agent received command: run
+2024-07-22 15:11:49 INFO Agent starting run with config:
+	TAU: 0.009896560292377746
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.826654792419772
+	fc_layer_size_1: 64
+	fc_layer_size_2: 128
+	gamma: 0.1011701848294434
+	learning_rate: 0.09046546860629652
+	num_episodes: 450
+2024-07-22 15:11:49 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.009896560292377746 --batch_size=128 --eps_decay=500 --eps_start=0.826654792419772 --fc_layer_size_1=64 --fc_layer_size_2=128 --gamma=0.1011701848294434 --learning_rate=0.09046546860629652 --num_episodes=450
+2024-07-22 15:11:49 INFO Running runs: ['05z7s0sv']
+2024-07-22 15:11:52 INFO Running runs: ['fy1ybbft']
+2024-07-22 15:11:54 INFO Running runs: ['d4n33zpp']
+2024-07-22 15:12:02 INFO Cleaning up finished run: 5lrkeeqj
+2024-07-22 15:12:03 INFO Agent received command: run
+2024-07-22 15:12:03 INFO Agent starting run with config:
+	TAU: 0.013029726246025768
+	batch_size: 128
+	eps_decay: 2000
+	eps_start: 0.8406455185872767
+	fc_layer_size_1: 16
+	fc_layer_size_2: 128
+	gamma: 0.21764280296100735
+	learning_rate: 0.01157338002749709
+	num_episodes: 450
+2024-07-22 15:12:03 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.013029726246025768 --batch_size=128 --eps_decay=2000 --eps_start=0.8406455185872767 --fc_layer_size_1=16 --fc_layer_size_2=128 --gamma=0.21764280296100735 --learning_rate=0.01157338002749709 --num_episodes=450
+2024-07-22 15:12:04 INFO Cleaning up finished run: 05z7s0sv
+2024-07-22 15:12:05 INFO Agent received command: run
+2024-07-22 15:12:05 INFO Agent starting run with config:
+	TAU: 0.03657507176712317
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8344941569035846
+	fc_layer_size_1: 48
+	fc_layer_size_2: 48
+	gamma: 0.17755217274110888
+	learning_rate: 0.004533282329019174
+	num_episodes: 500
+2024-07-22 15:12:05 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03657507176712317 --batch_size=256 --eps_decay=2000 --eps_start=0.8344941569035846 --fc_layer_size_1=48 --fc_layer_size_2=48 --gamma=0.17755217274110888 --learning_rate=0.004533282329019174 --num_episodes=500
+2024-07-22 15:12:08 INFO Running runs: ['va6ytyqb']
+2024-07-22 15:12:08 INFO Cleaning up finished run: fy1ybbft
+2024-07-22 15:12:09 INFO Agent received command: run
+2024-07-22 15:12:09 INFO Agent starting run with config:
+	TAU: 0.01723392971678655
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.9328012813780444
+	fc_layer_size_1: 64
+	fc_layer_size_2: 128
+	gamma: 0.024845682653720995
+	learning_rate: 0.06121389795217003
+	num_episodes: 450
+2024-07-22 15:12:09 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01723392971678655 --batch_size=128 --eps_decay=1000 --eps_start=0.9328012813780444 --fc_layer_size_1=64 --fc_layer_size_2=128 --gamma=0.024845682653720995 --learning_rate=0.06121389795217003 --num_episodes=450
+2024-07-22 15:12:09 INFO Cleaning up finished run: d4n33zpp
+2024-07-22 15:12:10 INFO Running runs: ['19n1y047']
+2024-07-22 15:12:10 INFO Agent received command: run
+2024-07-22 15:12:10 INFO Agent starting run with config:
+	TAU: 0.01769196338097339
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8392845446307108
+	fc_layer_size_1: 16
+	fc_layer_size_2: 32
+	gamma: 0.14763021384629657
+	learning_rate: 0.00580674384957514
+	num_episodes: 450
+2024-07-22 15:12:10 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01769196338097339 --batch_size=256 --eps_decay=2000 --eps_start=0.8392845446307108 --fc_layer_size_1=16 --fc_layer_size_2=32 --gamma=0.14763021384629657 --learning_rate=0.00580674384957514 --num_episodes=450
+2024-07-22 15:12:14 INFO Running runs: ['hslsiltr']
+2024-07-22 15:12:15 INFO Running runs: ['gmc5ctow']
+2024-07-22 15:12:23 INFO Cleaning up finished run: va6ytyqb
+2024-07-22 15:12:24 INFO Agent received command: run
+2024-07-22 15:12:24 INFO Agent starting run with config:
+	TAU: 0.02625575925579388
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.9217927743347196
+	fc_layer_size_1: 48
+	fc_layer_size_2: 80
+	gamma: 0.23225625676664585
+	learning_rate: 0.021581978870335812
+	num_episodes: 550
+2024-07-22 15:12:24 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02625575925579388 --batch_size=256 --eps_decay=500 --eps_start=0.9217927743347196 --fc_layer_size_1=48 --fc_layer_size_2=80 --gamma=0.23225625676664585 --learning_rate=0.021581978870335812 --num_episodes=550
+2024-07-22 15:12:25 INFO Cleaning up finished run: 19n1y047
+2024-07-22 15:12:26 INFO Agent received command: run
+2024-07-22 15:12:26 INFO Agent starting run with config:
+	TAU: 0.03666114886726506
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8093421605943063
+	fc_layer_size_1: 48
+	fc_layer_size_2: 16
+	gamma: 0.017478930724850114
+	learning_rate: 0.03663980775093093
+	num_episodes: 550
+2024-07-22 15:12:26 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03666114886726506 --batch_size=256 --eps_decay=2000 --eps_start=0.8093421605943063 --fc_layer_size_1=48 --fc_layer_size_2=16 --gamma=0.017478930724850114 --learning_rate=0.03663980775093093 --num_episodes=550
+2024-07-22 15:12:29 INFO Running runs: ['ck4i3bx6']
+2024-07-22 15:12:29 INFO Cleaning up finished run: hslsiltr
+2024-07-22 15:12:30 INFO Agent received command: run
+2024-07-22 15:12:30 INFO Agent starting run with config:
+	TAU: 0.019814582278881145
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8911882705311005
+	fc_layer_size_1: 32
+	fc_layer_size_2: 16
+	gamma: 0.013981358545854567
+	learning_rate: 0.0033551906800797704
+	num_episodes: 600
+2024-07-22 15:12:30 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.019814582278881145 --batch_size=256 --eps_decay=1000 --eps_start=0.8911882705311005 --fc_layer_size_1=32 --fc_layer_size_2=16 --gamma=0.013981358545854567 --learning_rate=0.0033551906800797704 --num_episodes=600
+2024-07-22 15:12:31 INFO Running runs: ['cxqu7nye']
+2024-07-22 15:12:35 INFO Running runs: ['iyxrh1zr']
+2024-07-22 15:12:36 INFO Cleaning up finished run: gmc5ctow
+2024-07-22 15:12:36 INFO Agent received command: run
+2024-07-22 15:12:36 INFO Agent starting run with config:
+	TAU: 0.021708437816758117
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.9122939565760572
+	fc_layer_size_1: 80
+	fc_layer_size_2: 48
+	gamma: 0.25331402276227555
+	learning_rate: 0.06493146591984912
+	num_episodes: 400
+2024-07-22 15:12:36 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.021708437816758117 --batch_size=256 --eps_decay=2000 --eps_start=0.9122939565760572 --fc_layer_size_1=80 --fc_layer_size_2=48 --gamma=0.25331402276227555 --learning_rate=0.06493146591984912 --num_episodes=400
+2024-07-22 15:12:41 INFO Running runs: ['2rne9upk']
+2024-07-22 15:12:44 INFO Cleaning up finished run: ck4i3bx6
+2024-07-22 15:12:45 INFO Agent received command: run
+2024-07-22 15:12:45 INFO Agent starting run with config:
+	TAU: 0.03388584446653161
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.8836670800146917
+	fc_layer_size_1: 80
+	fc_layer_size_2: 80
+	gamma: 0.1581461416436976
+	learning_rate: 0.0880115974388024
+	num_episodes: 400
+2024-07-22 15:12:45 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03388584446653161 --batch_size=128 --eps_decay=1000 --eps_start=0.8836670800146917 --fc_layer_size_1=80 --fc_layer_size_2=80 --gamma=0.1581461416436976 --learning_rate=0.0880115974388024 --num_episodes=400
+2024-07-22 15:12:47 INFO Cleaning up finished run: cxqu7nye
+2024-07-22 15:12:47 INFO Agent received command: run
+2024-07-22 15:12:47 INFO Agent starting run with config:
+	TAU: 0.0067613774501147
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.8848665187962507
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.11933510728454716
+	learning_rate: 0.0392624189454122
+	num_episodes: 650
+2024-07-22 15:12:47 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.0067613774501147 --batch_size=128 --eps_decay=500 --eps_start=0.8848665187962507 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.11933510728454716 --learning_rate=0.0392624189454122 --num_episodes=650
+2024-07-22 15:12:50 INFO Running runs: ['qtwxtzmb']
+2024-07-22 15:12:50 INFO Cleaning up finished run: iyxrh1zr
+2024-07-22 15:12:50 INFO Agent received command: exit
+2024-07-22 15:12:50 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:12:50 INFO Agent received command: exit
+2024-07-22 15:12:50 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:12:52 INFO Agent received command: exit
+2024-07-22 15:12:52 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:12:52 INFO Running runs: ['7gdsvtih']
+2024-07-22 15:12:52 INFO Agent received command: exit
+2024-07-22 15:12:52 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:13:18 INFO Running runs: []
+2024-07-22 15:13:18 INFO Agent received command: run
+2024-07-22 15:13:18 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.860466514526368
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-22 15:13:18 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=500 --eps_start=0.860466514526368 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-22 15:13:19 INFO Running runs: []
+2024-07-22 15:13:20 INFO Agent received command: run
+2024-07-22 15:13:20 INFO Agent starting run with config:
+	TAU: 0.02665056419383262
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.9953560496793292
+	fc_layer_size_1: 64
+	fc_layer_size_2: 64
+	gamma: 0.027273060732255723
+	learning_rate: 0.09640694657820634
+	num_episodes: 500
+2024-07-22 15:13:20 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02665056419383262 --batch_size=256 --eps_decay=1000 --eps_start=0.9953560496793292 --fc_layer_size_1=64 --fc_layer_size_2=64 --gamma=0.027273060732255723 --learning_rate=0.09640694657820634 --num_episodes=500
+2024-07-22 15:13:21 INFO Running runs: []
+2024-07-22 15:13:21 INFO Agent received command: run
+2024-07-22 15:13:21 INFO Agent starting run with config:
+	TAU: 0.027615349996364412
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.9778646732535066
+	fc_layer_size_1: 48
+	fc_layer_size_2: 16
+	gamma: 0.23580344546571985
+	learning_rate: 0.007552525410378159
+	num_episodes: 400
+2024-07-22 15:13:21 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.027615349996364412 --batch_size=256 --eps_decay=500 --eps_start=0.9778646732535066 --fc_layer_size_1=48 --fc_layer_size_2=16 --gamma=0.23580344546571985 --learning_rate=0.007552525410378159 --num_episodes=400
+2024-07-22 15:13:23 INFO Running runs: ['sy5i43yq']
+2024-07-22 15:13:24 INFO Running runs: []
+2024-07-22 15:13:25 INFO Agent received command: run
+2024-07-22 15:13:25 INFO Agent starting run with config:
+	TAU: 0.0092171460105058
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.9132504678334974
+	fc_layer_size_1: 80
+	fc_layer_size_2: 128
+	gamma: 0.2402483240642538
+	learning_rate: 0.06661358865889919
+	num_episodes: 750
+2024-07-22 15:13:25 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.0092171460105058 --batch_size=128 --eps_decay=1000 --eps_start=0.9132504678334974 --fc_layer_size_1=80 --fc_layer_size_2=128 --gamma=0.2402483240642538 --learning_rate=0.06661358865889919 --num_episodes=750
+2024-07-22 15:13:25 INFO Running runs: ['n8mrw400']
+2024-07-22 15:13:26 INFO Running runs: ['iemta61i']
+2024-07-22 15:13:30 INFO Running runs: ['77ifdsn8']
+2024-07-22 15:14:56 INFO Agent received command: exit
+2024-07-22 15:14:56 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:14:58 INFO Agent received command: exit
+2024-07-22 15:14:58 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:14:58 INFO Agent received command: exit
+2024-07-22 15:14:58 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:14:59 INFO Agent received command: exit
+2024-07-22 15:14:59 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:15:40 INFO Running runs: []
+2024-07-22 15:15:41 INFO Agent received command: run
+2024-07-22 15:15:41 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.860466514526368
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-22 15:15:41 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=500 --eps_start=0.860466514526368 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-22 15:15:46 INFO Running runs: ['ds2pqtjw']
+2024-07-22 15:16:19 INFO Running runs: []
+2024-07-22 15:16:20 INFO Agent received command: run
+2024-07-22 15:16:20 INFO Agent starting run with config:
+	TAU: 0.030743899200154
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.9802707445372496
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.3057943552998558
+	learning_rate: 0.01711020494687451
+	num_episodes: 400
+2024-07-22 15:16:20 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.030743899200154 --batch_size=128 --eps_decay=500 --eps_start=0.9802707445372496 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.3057943552998558 --learning_rate=0.01711020494687451 --num_episodes=400
+2024-07-22 15:16:21 INFO Running runs: []
+2024-07-22 15:16:21 INFO Agent received command: run
+2024-07-22 15:16:21 INFO Agent starting run with config:
+	TAU: 0.03674984565754123
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8831584401167203
+	fc_layer_size_1: 64
+	fc_layer_size_2: 64
+	gamma: 0.31718783268549133
+	learning_rate: 0.03794829908284263
+	num_episodes: 500
+2024-07-22 15:16:21 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03674984565754123 --batch_size=256 --eps_decay=1000 --eps_start=0.8831584401167203 --fc_layer_size_1=64 --fc_layer_size_2=64 --gamma=0.31718783268549133 --learning_rate=0.03794829908284263 --num_episodes=500
+2024-07-22 15:16:23 INFO Running runs: []
+2024-07-22 15:16:23 INFO Agent received command: run
+2024-07-22 15:16:23 INFO Agent starting run with config:
+	TAU: 0.02192803149773142
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.9030380243523374
+	fc_layer_size_1: 80
+	fc_layer_size_2: 32
+	gamma: 0.08674718191728152
+	learning_rate: 0.02701761638791109
+	num_episodes: 650
+2024-07-22 15:16:23 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02192803149773142 --batch_size=128 --eps_decay=1000 --eps_start=0.9030380243523374 --fc_layer_size_1=80 --fc_layer_size_2=32 --gamma=0.08674718191728152 --learning_rate=0.02701761638791109 --num_episodes=650
+2024-07-22 15:16:25 INFO Running runs: ['2t3ux64e']
+2024-07-22 15:16:26 INFO Running runs: ['zvj6fixi']
+2024-07-22 15:16:28 INFO Running runs: ['0qw5qbuu']
+2024-07-22 15:19:34 INFO Agent received command: exit
+2024-07-22 15:19:34 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:19:35 INFO Agent received command: exit
+2024-07-22 15:19:35 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:19:36 INFO Agent received command: exit
+2024-07-22 15:19:36 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:19:38 INFO Agent received command: exit
+2024-07-22 15:19:38 INFO Received exit command. Killing runs and quitting.
+2024-07-22 15:20:03 INFO Running runs: []
+2024-07-22 15:20:03 INFO Agent received command: run
+2024-07-22 15:20:03 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.860466514526368
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-22 15:20:03 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=500 --eps_start=0.860466514526368 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-22 15:20:08 INFO Running runs: ['jzxib71u']
+2024-07-22 15:36:05 INFO Cleaning up finished run: jzxib71u
+2024-07-22 15:36:06 INFO Agent received command: run
+2024-07-22 15:36:06 INFO Agent starting run with config:
+	TAU: 0.010413266147920732
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8443989996148578
+	fc_layer_size_1: 64
+	fc_layer_size_2: 16
+	gamma: 0.10862880579662368
+	learning_rate: 0.001062519260020298
+	num_episodes: 750
+2024-07-22 15:36:06 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.010413266147920732 --batch_size=256 --eps_decay=500 --eps_start=0.8443989996148578 --fc_layer_size_1=64 --fc_layer_size_2=16 --gamma=0.10862880579662368 --learning_rate=0.001062519260020298 --num_episodes=750
+2024-07-22 15:36:11 INFO Running runs: ['7e7iyn0b']
+2024-07-22 15:59:27 INFO Cleaning up finished run: 7e7iyn0b
+2024-07-22 15:59:28 INFO Agent received command: run
+2024-07-22 15:59:28 INFO Agent starting run with config:
+	TAU: 0.024941725981255537
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.9840721819268544
+	fc_layer_size_1: 16
+	fc_layer_size_2: 80
+	gamma: 0.2544500761284327
+	learning_rate: 0.06591761223951581
+	num_episodes: 500
+2024-07-22 15:59:28 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.024941725981255537 --batch_size=256 --eps_decay=2000 --eps_start=0.9840721819268544 --fc_layer_size_1=16 --fc_layer_size_2=80 --gamma=0.2544500761284327 --learning_rate=0.06591761223951581 --num_episodes=500
+2024-07-22 15:59:33 INFO Running runs: ['vua1lydf']
+2024-07-22 16:08:16 INFO Agent received command: exit
+2024-07-22 16:08:16 INFO Received exit command. Killing runs and quitting.
+2024-07-22 16:10:00 INFO Running runs: []
+2024-07-22 16:10:00 INFO Agent received command: run
+2024-07-22 16:10:00 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.860466514526368
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-22 16:10:00 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=500 --eps_start=0.860466514526368 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-22 16:10:05 INFO Running runs: ['ihakp1bt']
+2024-07-22 16:16:03 INFO Agent received command: exit
+2024-07-22 16:16:03 INFO Received exit command. Killing runs and quitting.
+2024-07-22 16:16:50 INFO Running runs: []
+2024-07-22 16:16:51 INFO Agent received command: run
+2024-07-22 16:16:51 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.860466514526368
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-07-22 16:16:51 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=500 --eps_start=0.860466514526368 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-07-22 16:16:56 INFO Running runs: ['rjega6kn']
+2024-07-22 16:21:02 INFO Running runs: []
+2024-07-22 16:21:02 INFO Agent received command: run
+2024-07-22 16:21:02 INFO Agent starting run with config:
+	TAU: 0.0376392188334872
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.8736524062485498
+	fc_layer_size_1: 48
+	fc_layer_size_2: 128
+	gamma: 0.026857543637152752
+	learning_rate: 0.08078235026434684
+	num_episodes: 550
+2024-07-22 16:21:02 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.0376392188334872 --batch_size=128 --eps_decay=500 --eps_start=0.8736524062485498 --fc_layer_size_1=48 --fc_layer_size_2=128 --gamma=0.026857543637152752 --learning_rate=0.08078235026434684 --num_episodes=550
+2024-07-22 16:21:04 INFO Running runs: []
+2024-07-22 16:21:05 INFO Agent received command: run
+2024-07-22 16:21:05 INFO Agent starting run with config:
+	TAU: 0.030021322056270283
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8585202680033084
+	fc_layer_size_1: 80
+	fc_layer_size_2: 32
+	gamma: 0.2930516676069143
+	learning_rate: 0.06436495714288167
+	num_episodes: 750
+2024-07-22 16:21:05 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.030021322056270283 --batch_size=256 --eps_decay=500 --eps_start=0.8585202680033084 --fc_layer_size_1=80 --fc_layer_size_2=32 --gamma=0.2930516676069143 --learning_rate=0.06436495714288167 --num_episodes=750
+2024-07-22 16:21:07 INFO Running runs: ['9pyoks5v']
+2024-07-22 16:21:08 INFO Running runs: []
+2024-07-22 16:21:09 INFO Agent received command: run
+2024-07-22 16:21:09 INFO Agent starting run with config:
+	TAU: 0.01525411921743965
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.8734466638781438
+	fc_layer_size_1: 64
+	fc_layer_size_2: 32
+	gamma: 0.1538926300525057
+	learning_rate: 0.009649274501493322
+	num_episodes: 400
+2024-07-22 16:21:09 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01525411921743965 --batch_size=128 --eps_decay=1000 --eps_start=0.8734466638781438 --fc_layer_size_1=64 --fc_layer_size_2=32 --gamma=0.1538926300525057 --learning_rate=0.009649274501493322 --num_episodes=400
+2024-07-22 16:21:10 INFO Running runs: ['aob5l0mh']
+2024-07-22 16:21:14 INFO Running runs: ['gb0b8w4e']
+2024-07-22 17:09:03 INFO Cleaning up finished run: gb0b8w4e
+2024-07-22 17:09:04 INFO Agent received command: run
+2024-07-22 17:09:04 INFO Agent starting run with config:
+	TAU: 0.021859043807220403
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.910529483737087
+	fc_layer_size_1: 48
+	fc_layer_size_2: 96
+	gamma: 0.2443742902521823
+	learning_rate: 0.06065321475829547
+	num_episodes: 400
+2024-07-22 17:09:04 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.021859043807220403 --batch_size=256 --eps_decay=1000 --eps_start=0.910529483737087 --fc_layer_size_1=48 --fc_layer_size_2=96 --gamma=0.2443742902521823 --learning_rate=0.06065321475829547 --num_episodes=400
+2024-07-22 17:09:09 INFO Running runs: ['7ankzxcb']
+2024-07-22 17:14:49 INFO Cleaning up finished run: rjega6kn
+2024-07-22 17:14:51 INFO Agent received command: run
+2024-07-22 17:14:51 INFO Agent starting run with config:
+	TAU: 0.019234805756301477
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.8897030712156403
+	fc_layer_size_1: 32
+	fc_layer_size_2: 32
+	gamma: 0.15750236331902884
+	learning_rate: 0.06529545914211549
+	num_episodes: 550
+2024-07-22 17:14:51 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.019234805756301477 --batch_size=128 --eps_decay=500 --eps_start=0.8897030712156403 --fc_layer_size_1=32 --fc_layer_size_2=32 --gamma=0.15750236331902884 --learning_rate=0.06529545914211549 --num_episodes=550
+2024-07-22 17:14:56 INFO Running runs: ['2x6dcmbi']
+2024-07-22 17:24:41 INFO Cleaning up finished run: 9pyoks5v
+2024-07-22 17:24:42 INFO Agent received command: run
+2024-07-22 17:24:42 INFO Agent starting run with config:
+	TAU: 0.01778149926739827
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8254805650335633
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.14974901272660351
+	learning_rate: 0.0379439631306341
+	num_episodes: 450
+2024-07-22 17:24:42 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01778149926739827 --batch_size=256 --eps_decay=1000 --eps_start=0.8254805650335633 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.14974901272660351 --learning_rate=0.0379439631306341 --num_episodes=450
+2024-07-22 17:24:47 INFO Running runs: ['lp7je40k']
+2024-07-22 17:49:39 INFO Cleaning up finished run: aob5l0mh
+2024-07-22 17:49:41 INFO Agent received command: run
+2024-07-22 17:49:41 INFO Agent starting run with config:
+	TAU: 0.015976494524089602
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.9415322907243456
+	fc_layer_size_1: 48
+	fc_layer_size_2: 32
+	gamma: 0.1458196695517661
+	learning_rate: 0.09594538325856056
+	num_episodes: 750
+2024-07-22 17:49:41 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.015976494524089602 --batch_size=128 --eps_decay=500 --eps_start=0.9415322907243456 --fc_layer_size_1=48 --fc_layer_size_2=32 --gamma=0.1458196695517661 --learning_rate=0.09594538325856056 --num_episodes=750
+2024-07-22 17:49:46 INFO Running runs: ['5pn4okvf']
+2024-07-22 17:56:14 INFO Cleaning up finished run: 7ankzxcb
+2024-07-22 17:56:15 INFO Agent received command: run
+2024-07-22 17:56:15 INFO Agent starting run with config:
+	TAU: 0.01353034753719658
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.8821085761905006
+	fc_layer_size_1: 16
+	fc_layer_size_2: 64
+	gamma: 0.30980471064506787
+	learning_rate: 0.01538447965804154
+	num_episodes: 400
+2024-07-22 17:56:15 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01353034753719658 --batch_size=128 --eps_decay=500 --eps_start=0.8821085761905006 --fc_layer_size_1=16 --fc_layer_size_2=64 --gamma=0.30980471064506787 --learning_rate=0.01538447965804154 --num_episodes=400
+2024-07-22 17:56:20 INFO Running runs: ['p7ybj3iw']
+2024-07-22 18:04:49 INFO Running runs: []
+2024-07-22 18:04:50 INFO Agent received command: run
+2024-07-22 18:04:50 INFO Agent starting run with config:
+	TAU: 0.020074591074565388
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.83236361340283
+	fc_layer_size_1: 16
+	fc_layer_size_2: 32
+	gamma: 0.06958422249458589
+	learning_rate: 0.018553116311878476
+	num_episodes: 550
+2024-07-22 18:04:50 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.020074591074565388 --batch_size=128 --eps_decay=500 --eps_start=0.83236361340283 --fc_layer_size_1=16 --fc_layer_size_2=32 --gamma=0.06958422249458589 --learning_rate=0.018553116311878476 --num_episodes=550
+2024-07-22 18:04:55 INFO Running runs: ['o7rdy3v7']
+2024-07-22 18:05:21 INFO Running runs: []
+2024-07-22 18:05:22 INFO Agent received command: run
+2024-07-22 18:05:22 INFO Agent starting run with config:
+	TAU: 0.012335660909582848
+	batch_size: 128
+	eps_decay: 2000
+	eps_start: 0.8553434775832772
+	fc_layer_size_1: 64
+	fc_layer_size_2: 48
+	gamma: 0.026426172475076504
+	learning_rate: 0.04226023532476628
+	num_episodes: 650
+2024-07-22 18:05:22 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.012335660909582848 --batch_size=128 --eps_decay=2000 --eps_start=0.8553434775832772 --fc_layer_size_1=64 --fc_layer_size_2=48 --gamma=0.026426172475076504 --learning_rate=0.04226023532476628 --num_episodes=650
+2024-07-22 18:05:27 INFO Running runs: ['851igosw']
+2024-07-22 18:20:27 INFO Cleaning up finished run: lp7je40k
+2024-07-22 18:20:27 INFO Agent received command: run
+2024-07-22 18:20:27 INFO Agent starting run with config:
+	TAU: 0.02904976533385988
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8217054550263633
+	fc_layer_size_1: 32
+	fc_layer_size_2: 16
+	gamma: 0.01953908252583708
+	learning_rate: 0.013633178640528924
+	num_episodes: 400
+2024-07-22 18:20:27 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02904976533385988 --batch_size=256 --eps_decay=1000 --eps_start=0.8217054550263633 --fc_layer_size_1=32 --fc_layer_size_2=16 --gamma=0.01953908252583708 --learning_rate=0.013633178640528924 --num_episodes=400
+2024-07-22 18:20:33 INFO Running runs: ['cvl488s1']
+2024-07-22 18:22:31 INFO Cleaning up finished run: 2x6dcmbi
+2024-07-22 18:22:31 INFO Agent received command: run
+2024-07-22 18:22:31 INFO Agent starting run with config:
+	TAU: 0.006468327644679016
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8687899566261996
+	fc_layer_size_1: 32
+	fc_layer_size_2: 32
+	gamma: 0.14993388379110803
+	learning_rate: 0.06924271498035467
+	num_episodes: 600
+2024-07-22 18:22:31 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.006468327644679016 --batch_size=256 --eps_decay=1000 --eps_start=0.8687899566261996 --fc_layer_size_1=32 --fc_layer_size_2=32 --gamma=0.14993388379110803 --learning_rate=0.06924271498035467 --num_episodes=600
+2024-07-22 18:22:37 INFO Running runs: ['fyj6y5u2']
+2024-07-22 18:51:52 INFO Cleaning up finished run: p7ybj3iw
+2024-07-22 18:51:53 INFO Agent received command: run
+2024-07-22 18:51:53 INFO Agent starting run with config:
+	TAU: 0.016323349865199226
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.847476360946518
+	fc_layer_size_1: 32
+	fc_layer_size_2: 16
+	gamma: 0.09522185477507532
+	learning_rate: 0.08301504780280479
+	num_episodes: 550
+2024-07-22 18:51:53 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.016323349865199226 --batch_size=128 --eps_decay=1000 --eps_start=0.847476360946518 --fc_layer_size_1=32 --fc_layer_size_2=16 --gamma=0.09522185477507532 --learning_rate=0.08301504780280479 --num_episodes=550
+2024-07-22 18:51:58 INFO Running runs: ['vihosaa6']
+2024-07-22 19:17:32 INFO Cleaning up finished run: cvl488s1
+2024-07-22 19:17:32 INFO Agent received command: run
+2024-07-22 19:17:32 INFO Agent starting run with config:
+	TAU: 0.01923811412206681
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8299169918202419
+	fc_layer_size_1: 32
+	fc_layer_size_2: 16
+	gamma: 0.10664542444624976
+	learning_rate: 0.048404387486858325
+	num_episodes: 550
+2024-07-22 19:17:32 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01923811412206681 --batch_size=256 --eps_decay=1000 --eps_start=0.8299169918202419 --fc_layer_size_1=32 --fc_layer_size_2=16 --gamma=0.10664542444624976 --learning_rate=0.048404387486858325 --num_episodes=550
+2024-07-22 19:17:37 INFO Running runs: ['nef1v2qd']
+2024-07-22 19:21:01 INFO Cleaning up finished run: o7rdy3v7
+2024-07-22 19:21:03 INFO Agent received command: run
+2024-07-22 19:21:03 INFO Agent starting run with config:
+	TAU: 0.01599589014812429
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8993093899760429
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.010444031760899312
+	learning_rate: 0.07792819205244357
+	num_episodes: 650
+2024-07-22 19:21:03 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01599589014812429 --batch_size=256 --eps_decay=500 --eps_start=0.8993093899760429 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.010444031760899312 --learning_rate=0.07792819205244357 --num_episodes=650
+2024-07-22 19:21:08 INFO Running runs: ['w479q8tg']
+2024-07-22 19:33:06 INFO Cleaning up finished run: 5pn4okvf
+2024-07-22 19:33:06 INFO Agent received command: run
+2024-07-22 19:33:06 INFO Agent starting run with config:
+	TAU: 0.02712605928475109
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.8805910488884036
+	fc_layer_size_1: 16
+	fc_layer_size_2: 48
+	gamma: 0.09208652840425938
+	learning_rate: 0.061049514978284335
+	num_episodes: 550
+2024-07-22 19:33:06 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02712605928475109 --batch_size=128 --eps_decay=500 --eps_start=0.8805910488884036 --fc_layer_size_1=16 --fc_layer_size_2=48 --gamma=0.09208652840425938 --learning_rate=0.061049514978284335 --num_episodes=550
+2024-07-22 19:33:11 INFO Running runs: ['h0hpz0y9']
+2024-07-22 19:38:37 INFO Cleaning up finished run: 851igosw
+2024-07-22 19:38:39 INFO Agent received command: run
+2024-07-22 19:38:39 INFO Agent starting run with config:
+	TAU: 0.012521058220268609
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8376792905773739
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.08260399746836261
+	learning_rate: 0.010492772140055857
+	num_episodes: 650
+2024-07-22 19:38:39 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.012521058220268609 --batch_size=256 --eps_decay=500 --eps_start=0.8376792905773739 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.08260399746836261 --learning_rate=0.010492772140055857 --num_episodes=650
+2024-07-22 19:38:44 INFO Running runs: ['uemdacvh']
+2024-07-22 19:48:23 INFO Cleaning up finished run: fyj6y5u2
+2024-07-22 19:48:27 INFO Agent received command: run
+2024-07-22 19:48:27 INFO Agent starting run with config:
+	TAU: 0.01573401116048599
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8258546906700919
+	fc_layer_size_1: 32
+	fc_layer_size_2: 32
+	gamma: 0.15384270812395331
+	learning_rate: 0.050022326904473016
+	num_episodes: 600
+2024-07-22 19:48:27 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01573401116048599 --batch_size=256 --eps_decay=500 --eps_start=0.8258546906700919 --fc_layer_size_1=32 --fc_layer_size_2=32 --gamma=0.15384270812395331 --learning_rate=0.050022326904473016 --num_episodes=600
+2024-07-22 19:48:32 INFO Running runs: ['6dgihexv']
+2024-07-22 20:08:37 INFO Cleaning up finished run: vihosaa6
+2024-07-22 20:08:37 INFO Agent received command: run
+2024-07-22 20:08:37 INFO Agent starting run with config:
+	TAU: 0.023872093691569323
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.829771554854635
+	fc_layer_size_1: 32
+	fc_layer_size_2: 16
+	gamma: 0.07750747198570526
+	learning_rate: 0.04486746193283361
+	num_episodes: 400
+2024-07-22 20:08:37 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.023872093691569323 --batch_size=256 --eps_decay=1000 --eps_start=0.829771554854635 --fc_layer_size_1=32 --fc_layer_size_2=16 --gamma=0.07750747198570526 --learning_rate=0.04486746193283361 --num_episodes=400
+2024-07-22 20:08:42 INFO Running runs: ['tvml31fo']
+2024-07-22 20:32:23 INFO Cleaning up finished run: nef1v2qd
+2024-07-22 20:32:23 INFO Agent received command: run
+2024-07-22 20:32:23 INFO Agent starting run with config:
+	TAU: 0.016529530391153804
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.870558077631927
+	fc_layer_size_1: 16
+	fc_layer_size_2: 64
+	gamma: 0.08356814663287618
+	learning_rate: 0.04204207837506428
+	num_episodes: 550
+2024-07-22 20:32:23 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.016529530391153804 --batch_size=256 --eps_decay=1000 --eps_start=0.870558077631927 --fc_layer_size_1=16 --fc_layer_size_2=64 --gamma=0.08356814663287618 --learning_rate=0.04204207837506428 --num_episodes=550
+2024-07-22 20:32:28 INFO Running runs: ['0un8xahq']
+2024-07-22 20:47:16 INFO Cleaning up finished run: h0hpz0y9
+2024-07-22 20:47:16 INFO Agent received command: run
+2024-07-22 20:47:16 INFO Agent starting run with config:
+	TAU: 0.014087401310786462
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.9007058982208952
+	fc_layer_size_1: 16
+	fc_layer_size_2: 32
+	gamma: 0.07537139099000789
+	learning_rate: 0.04783790460543573
+	num_episodes: 550
+2024-07-22 20:47:16 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.014087401310786462 --batch_size=256 --eps_decay=1000 --eps_start=0.9007058982208952 --fc_layer_size_1=16 --fc_layer_size_2=32 --gamma=0.07537139099000789 --learning_rate=0.04783790460543573 --num_episodes=550
+2024-07-22 20:47:21 INFO Running runs: ['inpwvxcz']
+2024-07-22 20:51:44 INFO Cleaning up finished run: w479q8tg
+2024-07-22 20:51:45 INFO Agent received command: run
+2024-07-22 20:51:45 INFO Agent starting run with config:
+	TAU: 0.01628125211027187
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.820001626194102
+	fc_layer_size_1: 32
+	fc_layer_size_2: 48
+	gamma: 0.13909827060060914
+	learning_rate: 0.07273968738807036
+	num_episodes: 600
+2024-07-22 20:51:45 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01628125211027187 --batch_size=256 --eps_decay=1000 --eps_start=0.820001626194102 --fc_layer_size_1=32 --fc_layer_size_2=48 --gamma=0.13909827060060914 --learning_rate=0.07273968738807036 --num_episodes=600
+2024-07-22 20:51:50 INFO Running runs: ['9aeiye4f']
+2024-07-22 21:09:12 INFO Cleaning up finished run: tvml31fo
+2024-07-22 21:09:12 INFO Agent received command: run
+2024-07-22 21:09:12 INFO Agent starting run with config:
+	TAU: 0.01721657392872857
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.9042257876498871
+	fc_layer_size_1: 32
+	fc_layer_size_2: 16
+	gamma: 0.2064917111470728
+	learning_rate: 0.0620282812671812
+	num_episodes: 500
+2024-07-22 21:09:12 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01721657392872857 --batch_size=256 --eps_decay=1000 --eps_start=0.9042257876498871 --fc_layer_size_1=32 --fc_layer_size_2=16 --gamma=0.2064917111470728 --learning_rate=0.0620282812671812 --num_episodes=500
+2024-07-22 21:09:17 INFO Running runs: ['f3ehegop']
+2024-07-22 21:12:13 INFO Cleaning up finished run: uemdacvh
+2024-07-22 21:12:14 INFO Agent received command: run
+2024-07-22 21:12:14 INFO Agent starting run with config:
+	TAU: 0.02255853813364963
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8825831601622554
+	fc_layer_size_1: 32
+	fc_layer_size_2: 16
+	gamma: 0.096225086870119
+	learning_rate: 0.007938243494876103
+	num_episodes: 550
+2024-07-22 21:12:14 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02255853813364963 --batch_size=256 --eps_decay=500 --eps_start=0.8825831601622554 --fc_layer_size_1=32 --fc_layer_size_2=16 --gamma=0.096225086870119 --learning_rate=0.007938243494876103 --num_episodes=550
+2024-07-22 21:12:19 INFO Running runs: ['zp1y2x2t']
+2024-07-22 21:17:14 INFO Cleaning up finished run: 6dgihexv
+2024-07-22 21:17:17 INFO Agent received command: run
+2024-07-22 21:17:17 INFO Agent starting run with config:
+	TAU: 0.005494110206482692
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8388936052688821
+	fc_layer_size_1: 48
+	fc_layer_size_2: 32
+	gamma: 0.16798265145105248
+	learning_rate: 0.06299877813402903
+	num_episodes: 650
+2024-07-22 21:17:17 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.005494110206482692 --batch_size=256 --eps_decay=2000 --eps_start=0.8388936052688821 --fc_layer_size_1=48 --fc_layer_size_2=32 --gamma=0.16798265145105248 --learning_rate=0.06299877813402903 --num_episodes=650
+2024-07-22 21:17:22 INFO Running runs: ['jzh6bgpq']
+2024-07-22 22:07:08 INFO Cleaning up finished run: 0un8xahq
+2024-07-22 22:07:08 INFO Agent received command: run
+2024-07-22 22:07:08 INFO Agent starting run with config:
+	TAU: 0.005140406030748897
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8398167800595496
+	fc_layer_size_1: 32
+	fc_layer_size_2: 32
+	gamma: 0.09637428058235754
+	learning_rate: 0.01672232576403995
+	num_episodes: 650
+2024-07-22 22:07:08 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.005140406030748897 --batch_size=256 --eps_decay=500 --eps_start=0.8398167800595496 --fc_layer_size_1=32 --fc_layer_size_2=32 --gamma=0.09637428058235754 --learning_rate=0.01672232576403995 --num_episodes=650
+2024-07-22 22:07:13 INFO Running runs: ['la4jdmb7']
+2024-07-22 22:25:56 INFO Cleaning up finished run: inpwvxcz
+2024-07-22 22:25:57 INFO Agent received command: run
+2024-07-22 22:25:57 INFO Agent starting run with config:
+	TAU: 0.012347741579502743
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.9265124734465534
+	fc_layer_size_1: 32
+	fc_layer_size_2: 64
+	gamma: 0.13121100108468417
+	learning_rate: 0.062303685938898595
+	num_episodes: 550
+2024-07-22 22:25:57 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.012347741579502743 --batch_size=128 --eps_decay=500 --eps_start=0.9265124734465534 --fc_layer_size_1=32 --fc_layer_size_2=64 --gamma=0.13121100108468417 --learning_rate=0.062303685938898595 --num_episodes=550
+2024-07-22 22:26:02 INFO Running runs: ['4g8metqw']
+2024-07-22 22:39:02 INFO Cleaning up finished run: f3ehegop
+2024-07-22 22:39:03 INFO Agent received command: run
+2024-07-22 22:39:03 INFO Agent starting run with config:
+	TAU: 0.023106963509656
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.808040317289567
+	fc_layer_size_1: 64
+	fc_layer_size_2: 32
+	gamma: 0.06620792894731825
+	learning_rate: 0.037335100490143755
+	num_episodes: 400
+2024-07-22 22:39:03 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.023106963509656 --batch_size=256 --eps_decay=2000 --eps_start=0.808040317289567 --fc_layer_size_1=64 --fc_layer_size_2=32 --gamma=0.06620792894731825 --learning_rate=0.037335100490143755 --num_episodes=400
+2024-07-22 22:39:08 INFO Running runs: ['1bqzknfs']
+2024-07-22 22:39:12 INFO Cleaning up finished run: 9aeiye4f
+2024-07-22 22:39:14 INFO Agent received command: run
+2024-07-22 22:39:14 INFO Agent starting run with config:
+	TAU: 0.02996845281601219
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.9227126068704848
+	fc_layer_size_1: 32
+	fc_layer_size_2: 32
+	gamma: 0.23077902979081535
+	learning_rate: 0.06418962325091082
+	num_episodes: 650
+2024-07-22 22:39:14 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02996845281601219 --batch_size=256 --eps_decay=500 --eps_start=0.9227126068704848 --fc_layer_size_1=32 --fc_layer_size_2=32 --gamma=0.23077902979081535 --learning_rate=0.06418962325091082 --num_episodes=650
+2024-07-22 22:39:19 INFO Running runs: ['jtwfc0bk']
+2024-07-22 22:50:30 INFO Cleaning up finished run: zp1y2x2t
+2024-07-22 22:50:31 INFO Agent received command: run
+2024-07-22 22:50:31 INFO Agent starting run with config:
+	TAU: 0.02163681901540736
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.835284383039992
+	fc_layer_size_1: 32
+	fc_layer_size_2: 16
+	gamma: 0.15018123506502565
+	learning_rate: 0.03844838530940541
+	num_episodes: 400
+2024-07-22 22:50:31 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02163681901540736 --batch_size=256 --eps_decay=1000 --eps_start=0.835284383039992 --fc_layer_size_1=32 --fc_layer_size_2=16 --gamma=0.15018123506502565 --learning_rate=0.03844838530940541 --num_episodes=400
+2024-07-22 22:50:36 INFO Running runs: ['r5esmdxt']
+2024-07-22 23:14:37 INFO Cleaning up finished run: jzh6bgpq
+2024-07-22 23:14:38 INFO Agent received command: run
+2024-07-22 23:14:38 INFO Agent starting run with config:
+	TAU: 0.01878485318504322
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8440260713194091
+	fc_layer_size_1: 16
+	fc_layer_size_2: 32
+	gamma: 0.02196713632948008
+	learning_rate: 0.02476986087798996
+	num_episodes: 500
+2024-07-22 23:14:38 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01878485318504322 --batch_size=256 --eps_decay=1000 --eps_start=0.8440260713194091 --fc_layer_size_1=16 --fc_layer_size_2=32 --gamma=0.02196713632948008 --learning_rate=0.02476986087798996 --num_episodes=500
+2024-07-22 23:14:43 INFO Running runs: ['wi3e1we0']
+2024-07-22 23:51:55 INFO Cleaning up finished run: 1bqzknfs
+2024-07-22 23:51:56 INFO Agent received command: run
+2024-07-22 23:51:56 INFO Agent starting run with config:
+	TAU: 0.006640661607457828
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8558777062382752
+	fc_layer_size_1: 32
+	fc_layer_size_2: 16
+	gamma: 0.12678346418706646
+	learning_rate: 0.015505030659741058
+	num_episodes: 750
+2024-07-22 23:51:56 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.006640661607457828 --batch_size=256 --eps_decay=1000 --eps_start=0.8558777062382752 --fc_layer_size_1=32 --fc_layer_size_2=16 --gamma=0.12678346418706646 --learning_rate=0.015505030659741058 --num_episodes=750
+2024-07-22 23:52:01 INFO Running runs: ['246qcyzt']
+2024-07-23 00:03:00 INFO Cleaning up finished run: 4g8metqw
+2024-07-23 00:03:01 INFO Agent received command: run
+2024-07-23 00:03:01 INFO Agent starting run with config:
+	TAU: 0.02028180432276769
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.9807665727932277
+	fc_layer_size_1: 80
+	fc_layer_size_2: 64
+	gamma: 0.11206457031649115
+	learning_rate: 0.0775240975951225
+	num_episodes: 650
+2024-07-23 00:03:01 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02028180432276769 --batch_size=256 --eps_decay=2000 --eps_start=0.9807665727932277 --fc_layer_size_1=80 --fc_layer_size_2=64 --gamma=0.11206457031649115 --learning_rate=0.0775240975951225 --num_episodes=650
+2024-07-23 00:03:02 INFO Cleaning up finished run: r5esmdxt
+2024-07-23 00:03:03 INFO Agent received command: run
+2024-07-23 00:03:03 INFO Agent starting run with config:
+	TAU: 0.005707201224371133
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.8241721498962535
+	fc_layer_size_1: 16
+	fc_layer_size_2: 80
+	gamma: 0.2443988425682598
+	learning_rate: 0.053604845172356
+	num_episodes: 450
+2024-07-23 00:03:03 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.005707201224371133 --batch_size=128 --eps_decay=500 --eps_start=0.8241721498962535 --fc_layer_size_1=16 --fc_layer_size_2=80 --gamma=0.2443988425682598 --learning_rate=0.053604845172356 --num_episodes=450
+2024-07-23 00:03:06 INFO Running runs: ['zi9c5ys4']
+2024-07-23 00:03:08 INFO Running runs: ['l3u7q2vq']
+2024-07-23 00:04:38 INFO Cleaning up finished run: la4jdmb7
+2024-07-23 00:04:39 INFO Agent received command: run
+2024-07-23 00:04:39 INFO Agent starting run with config:
+	TAU: 0.02079347241555966
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.9082220026966168
+	fc_layer_size_1: 64
+	fc_layer_size_2: 48
+	gamma: 0.2547132005117174
+	learning_rate: 0.07758759559655655
+	num_episodes: 400
+2024-07-23 00:04:39 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02079347241555966 --batch_size=256 --eps_decay=2000 --eps_start=0.9082220026966168 --fc_layer_size_1=64 --fc_layer_size_2=48 --gamma=0.2547132005117174 --learning_rate=0.07758759559655655 --num_episodes=400
+2024-07-23 00:04:44 INFO Running runs: ['bh0ylnz8']
+2024-07-23 00:36:55 INFO Cleaning up finished run: jtwfc0bk
+2024-07-23 00:36:56 INFO Agent received command: run
+2024-07-23 00:36:56 INFO Agent starting run with config:
+	TAU: 0.02521474116879951
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8700673332534372
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.04644729134640021
+	learning_rate: 0.048887320036450216
+	num_episodes: 550
+2024-07-23 00:36:56 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02521474116879951 --batch_size=256 --eps_decay=500 --eps_start=0.8700673332534372 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.04644729134640021 --learning_rate=0.048887320036450216 --num_episodes=550
+2024-07-23 00:37:01 INFO Running runs: ['n5bcvvh9']
+2024-07-23 00:45:00 INFO Cleaning up finished run: wi3e1we0
+2024-07-23 00:45:01 INFO Agent received command: run
+2024-07-23 00:45:01 INFO Agent starting run with config:
+	TAU: 0.02574680622676715
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8496480204007796
+	fc_layer_size_1: 32
+	fc_layer_size_2: 16
+	gamma: 0.10506798357496672
+	learning_rate: 0.020074864590156578
+	num_episodes: 550
+2024-07-23 00:45:01 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02574680622676715 --batch_size=256 --eps_decay=2000 --eps_start=0.8496480204007796 --fc_layer_size_1=32 --fc_layer_size_2=16 --gamma=0.10506798357496672 --learning_rate=0.020074864590156578 --num_episodes=550
+2024-07-23 01:01:13 INFO Running runs: ['4hdn42ss']
+2024-07-23 04:33:48 INFO Cleaning up finished run: bh0ylnz8
+2024-07-23 04:33:50 INFO Agent received command: run
+2024-07-23 04:33:50 INFO Agent starting run with config:
+	TAU: 0.012503327697989095
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8342901700100995
+	fc_layer_size_1: 48
+	fc_layer_size_2: 32
+	gamma: 0.052124236547784794
+	learning_rate: 0.006809797427046141
+	num_episodes: 550
+2024-07-23 04:33:50 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.012503327697989095 --batch_size=256 --eps_decay=2000 --eps_start=0.8342901700100995 --fc_layer_size_1=48 --fc_layer_size_2=32 --gamma=0.052124236547784794 --learning_rate=0.006809797427046141 --num_episodes=550
+2024-07-23 04:33:55 INFO Running runs: ['jm6xznnt']
+2024-07-23 05:25:34 INFO Cleaning up finished run: l3u7q2vq
+2024-07-23 05:25:34 INFO Agent received command: run
+2024-07-23 05:25:34 INFO Agent starting run with config:
+	TAU: 0.02406026622482189
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.9279085473180726
+	fc_layer_size_1: 16
+	fc_layer_size_2: 64
+	gamma: 0.011100001520655165
+	learning_rate: 0.00814602451817519
+	num_episodes: 550
+2024-07-23 05:25:34 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02406026622482189 --batch_size=256 --eps_decay=2000 --eps_start=0.9279085473180726 --fc_layer_size_1=16 --fc_layer_size_2=64 --gamma=0.011100001520655165 --learning_rate=0.00814602451817519 --num_episodes=550
+2024-07-23 05:25:39 INFO Running runs: ['p32rt1dq']
+2024-07-23 09:09:14 INFO Cleaning up finished run: zi9c5ys4
+2024-07-23 09:09:14 INFO Agent received command: run
+2024-07-23 09:09:14 INFO Agent starting run with config:
+	TAU: 0.024277284011563177
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8772604209020844
+	fc_layer_size_1: 32
+	fc_layer_size_2: 16
+	gamma: 0.13533488793375653
+	learning_rate: 0.009584953888854608
+	num_episodes: 750
+2024-07-23 09:09:14 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.024277284011563177 --batch_size=256 --eps_decay=1000 --eps_start=0.8772604209020844 --fc_layer_size_1=32 --fc_layer_size_2=16 --gamma=0.13533488793375653 --learning_rate=0.009584953888854608 --num_episodes=750
+2024-07-23 09:09:19 INFO Running runs: ['mxga7kol']
+2024-07-23 09:32:29 INFO Retry attempt failed:
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x160a44850>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/adapters.py", line 589, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x160a44850>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/adapters.py", line 622, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x160a44850>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-07-23 09:32:36 INFO Retry attempt failed:
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x12e946010>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/adapters.py", line 589, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x12e946010>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/adapters.py", line 622, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x12e946010>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-07-23 09:32:36 INFO Retry attempt failed:
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x14f54f750>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/adapters.py", line 589, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x14f54f750>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/adapters.py", line 622, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x14f54f750>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-07-23 09:32:36 INFO Retry attempt failed:
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x12fd44d90>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/adapters.py", line 589, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x12fd44d90>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/adapters.py", line 622, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x12fd44d90>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-07-23 09:32:37 INFO Retry attempt failed:
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x109646d50>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/adapters.py", line 589, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x109646d50>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/adapters.py", line 622, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x109646d50>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-07-23 09:32:37 INFO Retry attempt failed:
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x136d46c90>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/adapters.py", line 589, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x136d46c90>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/sumo_RL_pytorch/lib/python3.11/site-packages/requests/adapters.py", line 622, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x136d46c90>: Failed to resolve 'api.wandb.ai' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-07-23 10:09:30 INFO Cleaning up finished run: 246qcyzt
+2024-07-23 10:09:30 INFO Agent received command: run
+2024-07-23 10:09:30 INFO Agent starting run with config:
+	TAU: 0.018154780257454595
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8572316054856871
+	fc_layer_size_1: 16
+	fc_layer_size_2: 32
+	gamma: 0.14820825694325898
+	learning_rate: 0.006540807584492852
+	num_episodes: 750
+2024-07-23 10:09:31 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.018154780257454595 --batch_size=256 --eps_decay=500 --eps_start=0.8572316054856871 --fc_layer_size_1=16 --fc_layer_size_2=32 --gamma=0.14820825694325898 --learning_rate=0.006540807584492852 --num_episodes=750
+2024-07-23 10:09:36 INFO Running runs: ['ccnfrtnx']
+2024-07-23 10:25:40 INFO Cleaning up finished run: n5bcvvh9
+2024-07-23 10:25:40 INFO Agent received command: exit
+2024-07-23 10:25:40 INFO Received exit command. Killing runs and quitting.
+2024-07-23 10:32:57 INFO Cleaning up finished run: 4hdn42ss
+2024-07-23 10:32:57 INFO Agent received command: exit
+2024-07-23 10:32:57 INFO Received exit command. Killing runs and quitting.
+2024-07-23 10:57:12 INFO Cleaning up finished run: jm6xznnt
+2024-07-23 10:57:12 INFO Agent received command: exit
+2024-07-23 10:57:12 INFO Received exit command. Killing runs and quitting.
+2024-07-23 11:01:23 INFO Cleaning up finished run: p32rt1dq
+2024-07-23 11:01:23 INFO Agent received command: exit
+2024-07-23 11:01:23 INFO Received exit command. Killing runs and quitting.
+2024-07-23 11:45:33 INFO Cleaning up finished run: mxga7kol
+2024-07-23 11:45:33 INFO Agent received command: exit
+2024-07-23 11:45:33 INFO Received exit command. Killing runs and quitting.
+2024-07-23 11:50:08 INFO Cleaning up finished run: ccnfrtnx
+2024-07-23 11:50:09 INFO Agent received command: exit
+2024-07-23 11:50:09 INFO Received exit command. Killing runs and quitting.
