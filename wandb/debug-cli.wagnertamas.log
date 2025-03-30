@@ -2988,3 +2988,701 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', po
 2024-07-23 11:50:08 INFO Cleaning up finished run: ccnfrtnx
 2024-07-23 11:50:09 INFO Agent received command: exit
 2024-07-23 11:50:09 INFO Received exit command. Killing runs and quitting.
+2024-10-17 10:53:50 INFO Running runs: []
+2024-10-17 10:53:51 INFO Agent received command: run
+2024-10-17 10:53:51 INFO Agent starting run with config:
+	TAU: 0.01959577016459009
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.860466514526368
+	fc_layer_size_1: 16
+	fc_layer_size_2: 16
+	gamma: 0.0733284718684081
+	learning_rate: 0.03456261709703435
+	num_episodes: 500
+2024-10-17 10:53:51 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01959577016459009 --batch_size=256 --eps_decay=500 --eps_start=0.860466514526368 --fc_layer_size_1=16 --fc_layer_size_2=16 --gamma=0.0733284718684081 --learning_rate=0.03456261709703435 --num_episodes=500
+2024-10-17 10:53:56 INFO Running runs: ['r3q9jvt5']
+2024-10-17 10:54:23 INFO Running runs: []
+2024-10-17 10:54:25 INFO Agent received command: run
+2024-10-17 10:54:25 INFO Agent starting run with config:
+	TAU: 0.02391140594894038
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.899874658936635
+	fc_layer_size_1: 32
+	fc_layer_size_2: 64
+	gamma: 0.18852051976160444
+	learning_rate: 0.012212106556041142
+	num_episodes: 650
+2024-10-17 10:54:25 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02391140594894038 --batch_size=256 --eps_decay=500 --eps_start=0.899874658936635 --fc_layer_size_1=32 --fc_layer_size_2=64 --gamma=0.18852051976160444 --learning_rate=0.012212106556041142 --num_episodes=650
+2024-10-17 10:54:30 INFO Running runs: ['t3ka1f81']
+2024-10-17 10:54:41 INFO Running runs: []
+2024-10-17 10:54:41 INFO Agent received command: run
+2024-10-17 10:54:41 INFO Agent starting run with config:
+	TAU: 0.020110085335263726
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.806935677924659
+	fc_layer_size_1: 64
+	fc_layer_size_2: 16
+	gamma: 0.043788909665620594
+	learning_rate: 0.08449585998590117
+	num_episodes: 600
+2024-10-17 10:54:41 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.020110085335263726 --batch_size=256 --eps_decay=500 --eps_start=0.806935677924659 --fc_layer_size_1=64 --fc_layer_size_2=16 --gamma=0.043788909665620594 --learning_rate=0.08449585998590117 --num_episodes=600
+2024-10-17 10:54:46 INFO Running runs: ['33um4l6k']
+2024-10-17 10:54:51 INFO Running runs: []
+2024-10-17 10:54:51 INFO Agent received command: run
+2024-10-17 10:54:51 INFO Agent starting run with config:
+	TAU: 0.01421107472298875
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8640564173881453
+	fc_layer_size_1: 80
+	fc_layer_size_2: 80
+	gamma: 0.05054666705354219
+	learning_rate: 0.06445742893180731
+	num_episodes: 550
+2024-10-17 10:54:51 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01421107472298875 --batch_size=256 --eps_decay=500 --eps_start=0.8640564173881453 --fc_layer_size_1=80 --fc_layer_size_2=80 --gamma=0.05054666705354219 --learning_rate=0.06445742893180731 --num_episodes=550
+2024-10-17 10:54:56 INFO Running runs: ['kkk906dy']
+2024-10-17 10:55:26 INFO Running runs: []
+2024-10-17 10:55:27 INFO Agent received command: run
+2024-10-17 10:55:27 INFO Agent starting run with config:
+	TAU: 0.03866469015683596
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.8422016624135015
+	fc_layer_size_1: 32
+	fc_layer_size_2: 80
+	gamma: 0.29958000495195175
+	learning_rate: 0.0606333847772872
+	num_episodes: 600
+2024-10-17 10:55:27 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03866469015683596 --batch_size=128 --eps_decay=1000 --eps_start=0.8422016624135015 --fc_layer_size_1=32 --fc_layer_size_2=80 --gamma=0.29958000495195175 --learning_rate=0.0606333847772872 --num_episodes=600
+2024-10-17 10:55:32 INFO Running runs: ['yn5crzod']
+2024-10-17 10:55:33 INFO Running runs: []
+2024-10-17 10:55:33 INFO Agent received command: run
+2024-10-17 10:55:33 INFO Agent starting run with config:
+	TAU: 0.011941583955046737
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.8057256114455599
+	fc_layer_size_1: 80
+	fc_layer_size_2: 64
+	gamma: 0.26568937474146287
+	learning_rate: 0.0025474013689203152
+	num_episodes: 750
+2024-10-17 10:55:33 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.011941583955046737 --batch_size=128 --eps_decay=1000 --eps_start=0.8057256114455599 --fc_layer_size_1=80 --fc_layer_size_2=64 --gamma=0.26568937474146287 --learning_rate=0.0025474013689203152 --num_episodes=750
+2024-10-17 10:55:39 INFO Running runs: ['hl1s9709']
+2024-10-17 10:56:36 INFO Running runs: []
+2024-10-17 10:56:38 INFO Agent received command: run
+2024-10-17 10:56:38 INFO Agent starting run with config:
+	TAU: 0.03448456731853989
+	batch_size: 128
+	eps_decay: 1000
+	eps_start: 0.9715119385678886
+	fc_layer_size_1: 16
+	fc_layer_size_2: 48
+	gamma: 0.19750728984205287
+	learning_rate: 0.0404979879166418
+	num_episodes: 650
+2024-10-17 10:56:38 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03448456731853989 --batch_size=128 --eps_decay=1000 --eps_start=0.9715119385678886 --fc_layer_size_1=16 --fc_layer_size_2=48 --gamma=0.19750728984205287 --learning_rate=0.0404979879166418 --num_episodes=650
+2024-10-17 10:56:43 INFO Running runs: ['de7199q6']
+2024-10-17 12:29:03 ERROR 502 response executing GraphQL.
+2024-10-17 12:29:03 ERROR 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2024-10-17 12:35:38 INFO Cleaning up finished run: r3q9jvt5
+2024-10-17 12:35:41 INFO Agent received command: run
+2024-10-17 12:35:41 INFO Agent starting run with config:
+	TAU: 0.027593229547452466
+	batch_size: 128
+	eps_decay: 2000
+	eps_start: 0.8310452912135583
+	fc_layer_size_1: 32
+	fc_layer_size_2: 64
+	gamma: 0.04560334961283224
+	learning_rate: 0.010294152454858535
+	num_episodes: 650
+2024-10-17 12:35:41 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.027593229547452466 --batch_size=128 --eps_decay=2000 --eps_start=0.8310452912135583 --fc_layer_size_1=32 --fc_layer_size_2=64 --gamma=0.04560334961283224 --learning_rate=0.010294152454858535 --num_episodes=650
+2024-10-17 12:35:46 INFO Running runs: ['emt01mr3']
+2024-10-17 12:46:31 INFO Cleaning up finished run: kkk906dy
+2024-10-17 12:46:32 INFO Agent received command: run
+2024-10-17 12:46:32 INFO Agent starting run with config:
+	TAU: 0.01744320137090989
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8469774600095425
+	fc_layer_size_1: 48
+	fc_layer_size_2: 48
+	gamma: 0.22594972221874937
+	learning_rate: 0.04054902018039249
+	num_episodes: 750
+2024-10-17 12:46:32 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01744320137090989 --batch_size=256 --eps_decay=500 --eps_start=0.8469774600095425 --fc_layer_size_1=48 --fc_layer_size_2=48 --gamma=0.22594972221874937 --learning_rate=0.04054902018039249 --num_episodes=750
+2024-10-17 12:46:37 INFO Running runs: ['l6k3ueed']
+2024-10-17 12:55:50 INFO Cleaning up finished run: 33um4l6k
+2024-10-17 12:55:51 INFO Agent received command: run
+2024-10-17 12:55:51 INFO Agent starting run with config:
+	TAU: 0.008509781308082715
+	batch_size: 128
+	eps_decay: 2000
+	eps_start: 0.9021583385763235
+	fc_layer_size_1: 80
+	fc_layer_size_2: 80
+	gamma: 0.10586030149311644
+	learning_rate: 0.04337880874638879
+	num_episodes: 450
+2024-10-17 12:55:51 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.008509781308082715 --batch_size=128 --eps_decay=2000 --eps_start=0.9021583385763235 --fc_layer_size_1=80 --fc_layer_size_2=80 --gamma=0.10586030149311644 --learning_rate=0.04337880874638879 --num_episodes=450
+2024-10-17 12:55:56 INFO Running runs: ['mbr03bj7']
+2024-10-17 12:57:39 INFO Cleaning up finished run: yn5crzod
+2024-10-17 12:57:40 INFO Agent received command: run
+2024-10-17 12:57:40 INFO Agent starting run with config:
+	TAU: 0.01987855485413305
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.870560291772401
+	fc_layer_size_1: 64
+	fc_layer_size_2: 32
+	gamma: 0.3313049527128107
+	learning_rate: 0.0959064937096278
+	num_episodes: 650
+2024-10-17 12:57:40 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01987855485413305 --batch_size=256 --eps_decay=2000 --eps_start=0.870560291772401 --fc_layer_size_1=64 --fc_layer_size_2=32 --gamma=0.3313049527128107 --learning_rate=0.0959064937096278 --num_episodes=650
+2024-10-17 12:57:45 INFO Running runs: ['tco1mxff']
+2024-10-17 13:06:18 INFO Cleaning up finished run: t3ka1f81
+2024-10-17 13:06:20 INFO Agent received command: run
+2024-10-17 13:06:20 INFO Agent starting run with config:
+	TAU: 0.02471991646686463
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.9355429259846632
+	fc_layer_size_1: 64
+	fc_layer_size_2: 16
+	gamma: 0.2004358708265481
+	learning_rate: 0.04800460552246774
+	num_episodes: 750
+2024-10-17 13:06:20 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02471991646686463 --batch_size=128 --eps_decay=500 --eps_start=0.9355429259846632 --fc_layer_size_1=64 --fc_layer_size_2=16 --gamma=0.2004358708265481 --learning_rate=0.04800460552246774 --num_episodes=750
+2024-10-17 13:06:25 INFO Running runs: ['rfhksw0t']
+2024-10-17 13:08:12 INFO Cleaning up finished run: de7199q6
+2024-10-17 13:08:14 INFO Agent received command: run
+2024-10-17 13:08:14 INFO Agent starting run with config:
+	TAU: 0.014286798842213306
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.865163006034377
+	fc_layer_size_1: 64
+	fc_layer_size_2: 32
+	gamma: 0.12276679387655838
+	learning_rate: 0.051246414701446086
+	num_episodes: 550
+2024-10-17 13:08:14 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.014286798842213306 --batch_size=128 --eps_decay=500 --eps_start=0.865163006034377 --fc_layer_size_1=64 --fc_layer_size_2=32 --gamma=0.12276679387655838 --learning_rate=0.051246414701446086 --num_episodes=550
+2024-10-17 13:08:19 INFO Running runs: ['szq9tpng']
+2024-10-17 13:28:16 INFO Cleaning up finished run: hl1s9709
+2024-10-17 13:28:18 INFO Agent received command: run
+2024-10-17 13:28:18 INFO Agent starting run with config:
+	TAU: 0.03816855624377181
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.8618030993814313
+	fc_layer_size_1: 80
+	fc_layer_size_2: 80
+	gamma: 0.04898134928021593
+	learning_rate: 0.029520246362965578
+	num_episodes: 750
+2024-10-17 13:28:18 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03816855624377181 --batch_size=128 --eps_decay=500 --eps_start=0.8618030993814313 --fc_layer_size_1=80 --fc_layer_size_2=80 --gamma=0.04898134928021593 --learning_rate=0.029520246362965578 --num_episodes=750
+2024-10-17 13:28:23 INFO Running runs: ['vxf477a0']
+2024-10-17 14:29:34 INFO Cleaning up finished run: mbr03bj7
+2024-10-17 14:29:35 INFO Agent received command: run
+2024-10-17 14:29:35 INFO Agent starting run with config:
+	TAU: 0.014834110443423507
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.8616450375793264
+	fc_layer_size_1: 64
+	fc_layer_size_2: 32
+	gamma: 0.15465809724752408
+	learning_rate: 0.05217461968957194
+	num_episodes: 450
+2024-10-17 14:29:35 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.014834110443423507 --batch_size=128 --eps_decay=500 --eps_start=0.8616450375793264 --fc_layer_size_1=64 --fc_layer_size_2=32 --gamma=0.15465809724752408 --learning_rate=0.05217461968957194 --num_episodes=450
+2024-10-17 14:29:40 INFO Running runs: ['mj4sw40j']
+2024-10-17 14:48:56 INFO Cleaning up finished run: emt01mr3
+2024-10-17 14:48:57 INFO Agent received command: run
+2024-10-17 14:48:57 INFO Agent starting run with config:
+	TAU: 0.01470560158844498
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8623692706397482
+	fc_layer_size_1: 48
+	fc_layer_size_2: 96
+	gamma: 0.18894941837119095
+	learning_rate: 0.025354379755117583
+	num_episodes: 750
+2024-10-17 14:48:57 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01470560158844498 --batch_size=256 --eps_decay=500 --eps_start=0.8623692706397482 --fc_layer_size_1=48 --fc_layer_size_2=96 --gamma=0.18894941837119095 --learning_rate=0.025354379755117583 --num_episodes=750
+2024-10-17 14:49:02 INFO Running runs: ['jf5nuvk8']
+2024-10-17 15:00:51 INFO Cleaning up finished run: szq9tpng
+2024-10-17 15:00:52 INFO Agent received command: run
+2024-10-17 15:00:52 INFO Agent starting run with config:
+	TAU: 0.03624350345800073
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.9156657045516896
+	fc_layer_size_1: 32
+	fc_layer_size_2: 96
+	gamma: 0.3230382073744658
+	learning_rate: 0.059440945907407464
+	num_episodes: 550
+2024-10-17 15:00:52 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03624350345800073 --batch_size=128 --eps_decay=500 --eps_start=0.9156657045516896 --fc_layer_size_1=32 --fc_layer_size_2=96 --gamma=0.3230382073744658 --learning_rate=0.059440945907407464 --num_episodes=550
+2024-10-17 15:00:57 INFO Running runs: ['y5zligrs']
+2024-10-17 15:12:08 INFO Cleaning up finished run: tco1mxff
+2024-10-17 15:12:09 INFO Agent received command: run
+2024-10-17 15:12:09 INFO Agent starting run with config:
+	TAU: 0.016716170036474513
+	batch_size: 128
+	eps_decay: 500
+	eps_start: 0.809080689011074
+	fc_layer_size_1: 32
+	fc_layer_size_2: 96
+	gamma: 0.0612713201147879
+	learning_rate: 0.06830433057992674
+	num_episodes: 400
+2024-10-17 15:12:09 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.016716170036474513 --batch_size=128 --eps_decay=500 --eps_start=0.809080689011074 --fc_layer_size_1=32 --fc_layer_size_2=96 --gamma=0.0612713201147879 --learning_rate=0.06830433057992674 --num_episodes=400
+2024-10-17 15:12:14 INFO Running runs: ['qqcwbpud']
+2024-10-17 15:20:51 INFO Cleaning up finished run: l6k3ueed
+2024-10-17 15:20:51 INFO Agent received command: run
+2024-10-17 15:20:51 INFO Agent starting run with config:
+	TAU: 0.023184456411819907
+	batch_size: 128
+	eps_decay: 2000
+	eps_start: 0.8431521921031445
+	fc_layer_size_1: 32
+	fc_layer_size_2: 128
+	gamma: 0.11722405707487522
+	learning_rate: 0.002024687433707629
+	num_episodes: 650
+2024-10-17 15:20:51 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.023184456411819907 --batch_size=128 --eps_decay=2000 --eps_start=0.8431521921031445 --fc_layer_size_1=32 --fc_layer_size_2=128 --gamma=0.11722405707487522 --learning_rate=0.002024687433707629 --num_episodes=650
+2024-10-17 15:20:56 INFO Running runs: ['p9z0invw']
+2024-10-18 00:14:34 INFO Running runs: []
+2024-10-18 00:14:35 INFO Agent received command: run
+2024-10-18 00:14:35 INFO Agent starting run with config:
+	TAU: 0.019505858267099135
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.9329494872055696
+	fc_layer_size_1: 48
+	fc_layer_size_2: 64
+	gamma: 0.1562962790539366
+	learning_rate: 0.0022827030604354345
+	num_episodes: 650
+2024-10-18 00:14:35 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.019505858267099135 --batch_size=256 --eps_decay=1000 --eps_start=0.9329494872055696 --fc_layer_size_1=48 --fc_layer_size_2=64 --gamma=0.1562962790539366 --learning_rate=0.0022827030604354345 --num_episodes=650
+2024-10-18 00:14:40 INFO Running runs: ['vf2yrec1']
+2024-10-18 00:15:12 INFO Running runs: []
+2024-10-18 00:15:13 INFO Agent received command: run
+2024-10-18 00:15:13 INFO Agent starting run with config:
+	TAU: 0.017022037706206312
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8522892908839146
+	fc_layer_size_1: 80
+	fc_layer_size_2: 64
+	gamma: 0.08040684418111853
+	learning_rate: 0.0737186626020319
+	num_episodes: 550
+2024-10-18 00:15:13 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.017022037706206312 --batch_size=256 --eps_decay=500 --eps_start=0.8522892908839146 --fc_layer_size_1=80 --fc_layer_size_2=64 --gamma=0.08040684418111853 --learning_rate=0.0737186626020319 --num_episodes=550
+2024-10-18 00:15:18 INFO Running runs: []
+2024-10-18 00:15:18 INFO Running runs: ['tzztsm92']
+2024-10-18 00:15:18 INFO Agent received command: run
+2024-10-18 00:15:18 INFO Agent starting run with config:
+	TAU: 0.012312618198443
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8669013544757438
+	fc_layer_size_1: 64
+	fc_layer_size_2: 48
+	gamma: 0.15336710739682807
+	learning_rate: 0.01876570318092718
+	num_episodes: 750
+2024-10-18 00:15:18 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.012312618198443 --batch_size=256 --eps_decay=500 --eps_start=0.8669013544757438 --fc_layer_size_1=64 --fc_layer_size_2=48 --gamma=0.15336710739682807 --learning_rate=0.01876570318092718 --num_episodes=750
+2024-10-18 00:15:22 INFO Running runs: []
+2024-10-18 00:15:23 INFO Agent received command: run
+2024-10-18 00:15:23 INFO Agent starting run with config:
+	TAU: 0.016407773928534847
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8319598020551745
+	fc_layer_size_1: 48
+	fc_layer_size_2: 64
+	gamma: 0.034933748112885105
+	learning_rate: 0.019554549825071873
+	num_episodes: 600
+2024-10-18 00:15:23 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.016407773928534847 --batch_size=256 --eps_decay=2000 --eps_start=0.8319598020551745 --fc_layer_size_1=48 --fc_layer_size_2=64 --gamma=0.034933748112885105 --learning_rate=0.019554549825071873 --num_episodes=600
+2024-10-18 00:15:23 INFO Running runs: ['7768khxw']
+2024-10-18 00:15:24 INFO Running runs: []
+2024-10-18 00:15:24 INFO Agent received command: run
+2024-10-18 00:15:24 INFO Agent starting run with config:
+	TAU: 0.01673616315031351
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.844000748541879
+	fc_layer_size_1: 48
+	fc_layer_size_2: 64
+	gamma: 0.03281872652872188
+	learning_rate: 0.035497406304494765
+	num_episodes: 650
+2024-10-18 00:15:24 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01673616315031351 --batch_size=256 --eps_decay=2000 --eps_start=0.844000748541879 --fc_layer_size_1=48 --fc_layer_size_2=64 --gamma=0.03281872652872188 --learning_rate=0.035497406304494765 --num_episodes=650
+2024-10-18 00:15:25 INFO Running runs: []
+2024-10-18 00:15:25 INFO Agent received command: run
+2024-10-18 00:15:25 INFO Agent starting run with config:
+	TAU: 0.02416148717610845
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8692040391744529
+	fc_layer_size_1: 48
+	fc_layer_size_2: 32
+	gamma: 0.15238145799397643
+	learning_rate: 0.020850185290196024
+	num_episodes: 750
+2024-10-18 00:15:25 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02416148717610845 --batch_size=256 --eps_decay=1000 --eps_start=0.8692040391744529 --fc_layer_size_1=48 --fc_layer_size_2=32 --gamma=0.15238145799397643 --learning_rate=0.020850185290196024 --num_episodes=750
+2024-10-18 00:15:26 INFO Running runs: []
+2024-10-18 00:15:27 INFO Agent received command: run
+2024-10-18 00:15:27 INFO Agent starting run with config:
+	TAU: 0.03160977231851947
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.941507027049237
+	fc_layer_size_1: 32
+	fc_layer_size_2: 80
+	gamma: 0.24513532278099603
+	learning_rate: 0.02204738401841289
+	num_episodes: 600
+2024-10-18 00:15:27 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03160977231851947 --batch_size=256 --eps_decay=1000 --eps_start=0.941507027049237 --fc_layer_size_1=32 --fc_layer_size_2=80 --gamma=0.24513532278099603 --learning_rate=0.02204738401841289 --num_episodes=600
+2024-10-18 00:15:28 INFO Running runs: ['e8nzryfu']
+2024-10-18 00:15:28 INFO Running runs: []
+2024-10-18 00:15:29 INFO Running runs: ['9jt6zvhn']
+2024-10-18 00:15:30 INFO Running runs: ['14xq8n6m']
+2024-10-18 00:15:31 INFO Agent received command: run
+2024-10-18 00:15:31 INFO Agent starting run with config:
+	TAU: 0.02847875397536503
+	batch_size: 128
+	eps_decay: 2000
+	eps_start: 0.8242158240491658
+	fc_layer_size_1: 32
+	fc_layer_size_2: 80
+	gamma: 0.10546929546477073
+	learning_rate: 0.02102748203772557
+	num_episodes: 650
+2024-10-18 00:15:31 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02847875397536503 --batch_size=128 --eps_decay=2000 --eps_start=0.8242158240491658 --fc_layer_size_1=32 --fc_layer_size_2=80 --gamma=0.10546929546477073 --learning_rate=0.02102748203772557 --num_episodes=650
+2024-10-18 00:15:32 INFO Running runs: ['7xgyee9v']
+2024-10-18 00:15:36 INFO Running runs: ['an8ryqwk']
+2024-10-18 03:06:35 INFO Cleaning up finished run: tzztsm92
+2024-10-18 03:06:36 INFO Agent received command: run
+2024-10-18 03:06:36 INFO Agent starting run with config:
+	TAU: 0.026702128958347664
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.9098832627700626
+	fc_layer_size_1: 32
+	fc_layer_size_2: 64
+	gamma: 0.13379725500589934
+	learning_rate: 0.02301742913406121
+	num_episodes: 650
+2024-10-18 03:06:36 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.026702128958347664 --batch_size=256 --eps_decay=1000 --eps_start=0.9098832627700626 --fc_layer_size_1=32 --fc_layer_size_2=64 --gamma=0.13379725500589934 --learning_rate=0.02301742913406121 --num_episodes=650
+2024-10-18 03:06:41 INFO Running runs: ['15u2np5c']
+2024-10-18 03:25:15 INFO Cleaning up finished run: e8nzryfu
+2024-10-18 03:25:17 INFO Agent received command: run
+2024-10-18 03:25:17 INFO Agent starting run with config:
+	TAU: 0.025712750052334275
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8441681290688258
+	fc_layer_size_1: 48
+	fc_layer_size_2: 64
+	gamma: 0.1934364084449107
+	learning_rate: 0.06613004458339261
+	num_episodes: 750
+2024-10-18 03:25:17 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.025712750052334275 --batch_size=256 --eps_decay=500 --eps_start=0.8441681290688258 --fc_layer_size_1=48 --fc_layer_size_2=64 --gamma=0.1934364084449107 --learning_rate=0.06613004458339261 --num_episodes=750
+2024-10-18 03:25:22 INFO Running runs: ['6ih618o4']
+2024-10-18 03:28:45 INFO Cleaning up finished run: 7xgyee9v
+2024-10-18 03:28:46 INFO Agent received command: run
+2024-10-18 03:28:46 INFO Agent starting run with config:
+	TAU: 0.027227612252263736
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8940599709146593
+	fc_layer_size_1: 48
+	fc_layer_size_2: 48
+	gamma: 0.06518033576293031
+	learning_rate: 0.008201679623832695
+	num_episodes: 650
+2024-10-18 03:28:46 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.027227612252263736 --batch_size=256 --eps_decay=2000 --eps_start=0.8940599709146593 --fc_layer_size_1=48 --fc_layer_size_2=48 --gamma=0.06518033576293031 --learning_rate=0.008201679623832695 --num_episodes=650
+2024-10-18 03:28:51 INFO Running runs: ['4ltsm5ga']
+2024-10-18 03:40:48 INFO Cleaning up finished run: vf2yrec1
+2024-10-18 03:40:51 INFO Agent received command: run
+2024-10-18 03:40:51 INFO Agent starting run with config:
+	TAU: 0.02264858347926804
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8372287141968104
+	fc_layer_size_1: 48
+	fc_layer_size_2: 64
+	gamma: 0.021480445868484008
+	learning_rate: 0.019497908298154495
+	num_episodes: 650
+2024-10-18 03:40:51 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02264858347926804 --batch_size=256 --eps_decay=2000 --eps_start=0.8372287141968104 --fc_layer_size_1=48 --fc_layer_size_2=64 --gamma=0.021480445868484008 --learning_rate=0.019497908298154495 --num_episodes=650
+2024-10-18 03:40:56 INFO Running runs: ['wcxyxhoi']
+2024-10-18 03:41:24 INFO Cleaning up finished run: an8ryqwk
+2024-10-18 03:41:24 INFO Agent received command: run
+2024-10-18 03:41:24 INFO Agent starting run with config:
+	TAU: 0.036039270816757535
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8448272393266771
+	fc_layer_size_1: 32
+	fc_layer_size_2: 96
+	gamma: 0.08009326899145894
+	learning_rate: 0.007617490976402419
+	num_episodes: 750
+2024-10-18 03:41:24 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.036039270816757535 --batch_size=256 --eps_decay=2000 --eps_start=0.8448272393266771 --fc_layer_size_1=32 --fc_layer_size_2=96 --gamma=0.08009326899145894 --learning_rate=0.007617490976402419 --num_episodes=750
+2024-10-18 03:41:29 INFO Running runs: ['klp3hxew']
+2024-10-18 03:42:33 INFO Cleaning up finished run: 9jt6zvhn
+2024-10-18 03:42:35 INFO Agent received command: run
+2024-10-18 03:42:35 INFO Agent starting run with config:
+	TAU: 0.011894295018883208
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8371276041547107
+	fc_layer_size_1: 32
+	fc_layer_size_2: 80
+	gamma: 0.08882717624919996
+	learning_rate: 0.05043018172621075
+	num_episodes: 750
+2024-10-18 03:42:35 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.011894295018883208 --batch_size=256 --eps_decay=2000 --eps_start=0.8371276041547107 --fc_layer_size_1=32 --fc_layer_size_2=80 --gamma=0.08882717624919996 --learning_rate=0.05043018172621075 --num_episodes=750
+2024-10-18 03:42:40 INFO Running runs: ['v5ostr9e']
+2024-10-18 04:02:35 INFO Cleaning up finished run: 14xq8n6m
+2024-10-18 04:02:36 INFO Agent received command: run
+2024-10-18 04:02:36 INFO Agent starting run with config:
+	TAU: 0.018582820092231864
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.803579784293236
+	fc_layer_size_1: 32
+	fc_layer_size_2: 48
+	gamma: 0.06048852246378274
+	learning_rate: 0.03505529609419157
+	num_episodes: 750
+2024-10-18 04:02:36 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.018582820092231864 --batch_size=256 --eps_decay=2000 --eps_start=0.803579784293236 --fc_layer_size_1=32 --fc_layer_size_2=48 --gamma=0.06048852246378274 --learning_rate=0.03505529609419157 --num_episodes=750
+2024-10-18 04:02:41 INFO Running runs: ['mm3l4rlu']
+2024-10-18 04:02:56 INFO Cleaning up finished run: 7768khxw
+2024-10-18 04:02:58 INFO Agent received command: run
+2024-10-18 04:02:58 INFO Agent starting run with config:
+	TAU: 0.012168204876098324
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8443896182110939
+	fc_layer_size_1: 64
+	fc_layer_size_2: 48
+	gamma: 0.0874279996163378
+	learning_rate: 0.04011824964713561
+	num_episodes: 750
+2024-10-18 04:02:58 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.012168204876098324 --batch_size=256 --eps_decay=2000 --eps_start=0.8443896182110939 --fc_layer_size_1=64 --fc_layer_size_2=48 --gamma=0.0874279996163378 --learning_rate=0.04011824964713561 --num_episodes=750
+2024-10-18 04:03:03 INFO Running runs: ['sha3smj6']
+2024-10-18 05:44:47 INFO Cleaning up finished run: 15u2np5c
+2024-10-18 05:44:48 INFO Agent received command: run
+2024-10-18 05:44:48 INFO Agent starting run with config:
+	TAU: 0.03412928435254346
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8837218103604344
+	fc_layer_size_1: 16
+	fc_layer_size_2: 48
+	gamma: 0.1205009423496821
+	learning_rate: 0.039030439373833214
+	num_episodes: 750
+2024-10-18 05:44:48 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03412928435254346 --batch_size=256 --eps_decay=2000 --eps_start=0.8837218103604344 --fc_layer_size_1=16 --fc_layer_size_2=48 --gamma=0.1205009423496821 --learning_rate=0.039030439373833214 --num_episodes=750
+2024-10-18 05:44:53 INFO Running runs: ['2ysc57h4']
+2024-10-18 05:58:49 INFO Cleaning up finished run: 4ltsm5ga
+2024-10-18 05:58:50 INFO Agent received command: run
+2024-10-18 05:58:50 INFO Agent starting run with config:
+	TAU: 0.019947339137818616
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8208507186973809
+	fc_layer_size_1: 64
+	fc_layer_size_2: 16
+	gamma: 0.1498375797483635
+	learning_rate: 0.02387194991963485
+	num_episodes: 750
+2024-10-18 05:58:50 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.019947339137818616 --batch_size=256 --eps_decay=500 --eps_start=0.8208507186973809 --fc_layer_size_1=64 --fc_layer_size_2=16 --gamma=0.1498375797483635 --learning_rate=0.02387194991963485 --num_episodes=750
+2024-10-18 05:58:55 INFO Running runs: ['q4cvui1z']
+2024-10-18 06:08:06 INFO Cleaning up finished run: wcxyxhoi
+2024-10-18 06:08:07 INFO Agent received command: run
+2024-10-18 06:08:07 INFO Agent starting run with config:
+	TAU: 0.02779580713413942
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8512359029077124
+	fc_layer_size_1: 48
+	fc_layer_size_2: 80
+	gamma: 0.12045749152183172
+	learning_rate: 0.03390812196889766
+	num_episodes: 750
+2024-10-18 06:08:07 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02779580713413942 --batch_size=256 --eps_decay=2000 --eps_start=0.8512359029077124 --fc_layer_size_1=48 --fc_layer_size_2=80 --gamma=0.12045749152183172 --learning_rate=0.03390812196889766 --num_episodes=750
+2024-10-18 06:08:12 INFO Running runs: ['z8i09rvd']
+2024-10-18 06:19:02 INFO Cleaning up finished run: 6ih618o4
+2024-10-18 06:19:04 INFO Agent received command: run
+2024-10-18 06:19:04 INFO Agent starting run with config:
+	TAU: 0.00976200794970387
+	batch_size: 256
+	eps_decay: 500
+	eps_start: 0.8275696935725949
+	fc_layer_size_1: 64
+	fc_layer_size_2: 48
+	gamma: 0.3461076704142787
+	learning_rate: 0.0016854121691374216
+	num_episodes: 750
+2024-10-18 06:19:04 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.00976200794970387 --batch_size=256 --eps_decay=500 --eps_start=0.8275696935725949 --fc_layer_size_1=64 --fc_layer_size_2=48 --gamma=0.3461076704142787 --learning_rate=0.0016854121691374216 --num_episodes=750
+2024-10-18 06:19:09 INFO Running runs: ['9dxfz663']
+2024-10-18 06:31:06 INFO Cleaning up finished run: v5ostr9e
+2024-10-18 06:31:06 INFO Cleaning up finished run: klp3hxew
+2024-10-18 06:31:07 INFO Agent received command: run
+2024-10-18 06:31:07 INFO Agent starting run with config:
+	TAU: 0.02884651124137021
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.814725403003821
+	fc_layer_size_1: 48
+	fc_layer_size_2: 80
+	gamma: 0.05668050359905732
+	learning_rate: 0.04223366003277803
+	num_episodes: 750
+2024-10-18 06:31:07 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02884651124137021 --batch_size=256 --eps_decay=2000 --eps_start=0.814725403003821 --fc_layer_size_1=48 --fc_layer_size_2=80 --gamma=0.05668050359905732 --learning_rate=0.04223366003277803 --num_episodes=750
+2024-10-18 06:31:07 INFO Agent received command: run
+2024-10-18 06:31:07 INFO Agent starting run with config:
+	TAU: 0.025989268715599204
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8537233754259397
+	fc_layer_size_1: 16
+	fc_layer_size_2: 64
+	gamma: 0.0278965511279217
+	learning_rate: 0.04561137681012306
+	num_episodes: 750
+2024-10-18 06:31:07 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.025989268715599204 --batch_size=256 --eps_decay=1000 --eps_start=0.8537233754259397 --fc_layer_size_1=16 --fc_layer_size_2=64 --gamma=0.0278965511279217 --learning_rate=0.04561137681012306 --num_episodes=750
+2024-10-18 06:31:12 INFO Running runs: ['6l6g1m6d']
+2024-10-18 06:31:12 INFO Running runs: ['dggjj2ku']
+2024-10-18 06:49:59 INFO Cleaning up finished run: mm3l4rlu
+2024-10-18 06:49:59 INFO Agent received command: run
+2024-10-18 06:49:59 INFO Agent starting run with config:
+	TAU: 0.01922392511318047
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8350940559985236
+	fc_layer_size_1: 32
+	fc_layer_size_2: 32
+	gamma: 0.12004208173090682
+	learning_rate: 0.015251881045834918
+	num_episodes: 750
+2024-10-18 06:49:59 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.01922392511318047 --batch_size=256 --eps_decay=1000 --eps_start=0.8350940559985236 --fc_layer_size_1=32 --fc_layer_size_2=32 --gamma=0.12004208173090682 --learning_rate=0.015251881045834918 --num_episodes=750
+2024-10-18 06:50:04 INFO Running runs: ['8dri0pa3']
+2024-10-18 06:50:57 INFO Cleaning up finished run: sha3smj6
+2024-10-18 06:50:58 INFO Agent received command: run
+2024-10-18 06:50:58 INFO Agent starting run with config:
+	TAU: 0.027450897060187295
+	batch_size: 256
+	eps_decay: 1000
+	eps_start: 0.8888853316414814
+	fc_layer_size_1: 32
+	fc_layer_size_2: 64
+	gamma: 0.07378742617210711
+	learning_rate: 0.012625693861028728
+	num_episodes: 750
+2024-10-18 06:50:58 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.027450897060187295 --batch_size=256 --eps_decay=1000 --eps_start=0.8888853316414814 --fc_layer_size_1=32 --fc_layer_size_2=64 --gamma=0.07378742617210711 --learning_rate=0.012625693861028728 --num_episodes=750
+2024-10-18 06:51:03 INFO Running runs: ['01kmbyfu']
+2024-10-18 08:34:56 INFO Cleaning up finished run: 2ysc57h4
+2024-10-18 08:34:57 INFO Agent received command: run
+2024-10-18 08:34:57 INFO Agent starting run with config:
+	TAU: 0.02515148686272583
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.81930824095635
+	fc_layer_size_1: 16
+	fc_layer_size_2: 48
+	gamma: 0.19388659987934287
+	learning_rate: 0.04564164505212251
+	num_episodes: 750
+2024-10-18 08:34:57 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02515148686272583 --batch_size=256 --eps_decay=2000 --eps_start=0.81930824095635 --fc_layer_size_1=16 --fc_layer_size_2=48 --gamma=0.19388659987934287 --learning_rate=0.04564164505212251 --num_episodes=750
+2024-10-18 08:35:02 INFO Running runs: ['z0e4tj6v']
+2024-10-18 08:48:02 INFO Cleaning up finished run: q4cvui1z
+2024-10-18 08:48:04 INFO Agent received command: run
+2024-10-18 08:48:04 INFO Agent starting run with config:
+	TAU: 0.027184369754582348
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8508499602925801
+	fc_layer_size_1: 16
+	fc_layer_size_2: 32
+	gamma: 0.19453780988955413
+	learning_rate: 0.0007524383809499002
+	num_episodes: 750
+2024-10-18 08:48:04 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.027184369754582348 --batch_size=256 --eps_decay=2000 --eps_start=0.8508499602925801 --fc_layer_size_1=16 --fc_layer_size_2=32 --gamma=0.19453780988955413 --learning_rate=0.0007524383809499002 --num_episodes=750
+2024-10-18 08:48:09 INFO Running runs: ['45f1p5uu']
+2024-10-18 08:59:06 INFO Cleaning up finished run: z8i09rvd
+2024-10-18 08:59:06 INFO Agent received command: run
+2024-10-18 08:59:06 INFO Agent starting run with config:
+	TAU: 0.03706637842539404
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.8098517862269999
+	fc_layer_size_1: 16
+	fc_layer_size_2: 48
+	gamma: 0.01076730832489479
+	learning_rate: 0.006195542388732152
+	num_episodes: 600
+2024-10-18 08:59:06 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.03706637842539404 --batch_size=256 --eps_decay=2000 --eps_start=0.8098517862269999 --fc_layer_size_1=16 --fc_layer_size_2=48 --gamma=0.01076730832489479 --learning_rate=0.006195542388732152 --num_episodes=600
+2024-10-18 08:59:11 INFO Running runs: ['top26lt1']
+2024-10-18 09:11:45 INFO Cleaning up finished run: 9dxfz663
+2024-10-18 09:11:46 INFO Agent received command: run
+2024-10-18 09:11:46 INFO Agent starting run with config:
+	TAU: 0.02326405805218361
+	batch_size: 128
+	eps_decay: 2000
+	eps_start: 0.8010842247868564
+	fc_layer_size_1: 16
+	fc_layer_size_2: 48
+	gamma: 0.1261046130109013
+	learning_rate: 0.06393822245708695
+	num_episodes: 750
+2024-10-18 09:11:46 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.02326405805218361 --batch_size=128 --eps_decay=2000 --eps_start=0.8010842247868564 --fc_layer_size_1=16 --fc_layer_size_2=48 --gamma=0.1261046130109013 --learning_rate=0.06393822245708695 --num_episodes=750
+2024-10-18 09:11:51 INFO Running runs: ['er5mm335']
+2024-10-18 09:19:39 INFO Cleaning up finished run: 6l6g1m6d
+2024-10-18 09:19:40 INFO Agent received command: run
+2024-10-18 09:19:40 INFO Agent starting run with config:
+	TAU: 0.017475859600320026
+	batch_size: 256
+	eps_decay: 2000
+	eps_start: 0.859167797482643
+	fc_layer_size_1: 48
+	fc_layer_size_2: 48
+	gamma: 0.0405886401418125
+	learning_rate: 0.050022926030877345
+	num_episodes: 600
+2024-10-18 09:19:40 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.017475859600320026 --batch_size=256 --eps_decay=2000 --eps_start=0.859167797482643 --fc_layer_size_1=48 --fc_layer_size_2=48 --gamma=0.0405886401418125 --learning_rate=0.050022926030877345 --num_episodes=600
+2024-10-18 09:19:45 INFO Running runs: ['g2us6qgl']
+2024-10-18 09:21:31 INFO Cleaning up finished run: dggjj2ku
+2024-10-18 09:21:32 INFO Agent received command: run
+2024-10-18 09:21:32 INFO Agent starting run with config:
+	TAU: 0.005923622435122386
+	batch_size: 128
+	eps_decay: 2000
+	eps_start: 0.8198839702314462
+	fc_layer_size_1: 32
+	fc_layer_size_2: 48
+	gamma: 0.0872791921663322
+	learning_rate: 0.012687181355964668
+	num_episodes: 750
+2024-10-18 09:21:32 INFO About to run command: /usr/bin/env python train_pytorch.py --TAU=0.005923622435122386 --batch_size=128 --eps_decay=2000 --eps_start=0.8198839702314462 --fc_layer_size_1=32 --fc_layer_size_2=48 --gamma=0.0872791921663322 --learning_rate=0.012687181355964668 --num_episodes=750
+2024-10-18 09:21:37 INFO Running runs: ['u5u679yi']

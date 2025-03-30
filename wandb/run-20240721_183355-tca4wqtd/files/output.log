@@ -1,5 +1,0 @@
-wandb: WARNING Calling wandb.login() after wandb.init() has no effect.
-wandb: WARNING Calling wandb.login() after wandb.init() has no effect.
-Create sweep with ID: 6taxsvb5
-Sweep URL: https://wandb.ai/wagnertamas-budapesti-m-szaki-s-gazdas-gtudom-nyi-egyetem/traffic-light-dqn/sweeps/6taxsvb5
-Starting sweep, id: 6taxsvb5

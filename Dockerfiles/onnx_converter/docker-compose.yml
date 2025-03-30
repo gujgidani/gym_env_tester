@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  onnx_converter:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: onnx_converter_instance
+    volumes:
+      - ./output:/home/app/output
+    #command: ["./convert_model.sh"]
+    #Run in interactive mode
+    stdin_open: true
+    tty: true

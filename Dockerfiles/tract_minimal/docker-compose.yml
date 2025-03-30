@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  plc_nn_converter_instance:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      platforms:
+        - linux/arm/v7
+    image: plc_nn_converter_instance
+    container_name: plc_nn_converter_instance
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./model.onnx:/app/model.onnx

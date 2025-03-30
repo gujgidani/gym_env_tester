@@ -3,7 +3,7 @@ import numpy as np
 import opcua
 
 # Load the ONNX model
-onnx_model_path = "model.onnx"
+onnx_model_path = "model-4.onnx"
 session = ort.InferenceSession(onnx_model_path)
 
 # Prepare two input tensors of shape (1,6)

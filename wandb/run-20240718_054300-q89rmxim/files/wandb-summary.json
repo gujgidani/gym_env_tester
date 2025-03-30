@@ -1,1 +1,0 @@
-{"reward": 9.567064642906189, "episode": 549, "_timestamp": 1721277147.4285061, "epsilon": 0.05, "_runtime": 2966.7114741802216, "_step": 549, "mean_reward": 9.405420303344727, "_wandb": {"runtime": 2966}, "sum_of_rewards": 9.210461488907987}

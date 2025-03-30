@@ -4,6 +4,7 @@ This module contains the traffic light environment for the traffic light control
 import os
 import sys
 import time
+from statistics import mean
 
 import gymnasium as gym
 import numpy as np
@@ -44,9 +45,15 @@ class TrafficEnv(gym.Env):
         self.cycle_time = cycle_time
         self.phase_plan = np.empty((5, phase_number, cycle_time), dtype=np.int8)
         self.initial_phase_plan = tlsf.generate_phase_plan(starting_phases, phase_lengths)
+        self.traffic_flow = {
+            "vehicle_count": [],
+            "occupancy": []
+        }
+        self.detectors = []
         self.time_limit = simulation_time
         self.current_step = 0
         self.edge_list = ("660942467#1","-24203041#0","660942464")
+
         # Create a np array with 5 initial Phaseplans
         for i in range(5):
             self.phase_plan[i] = self.initial_phase_plan
@@ -98,17 +105,50 @@ class TrafficEnv(gym.Env):
         :return: The observation for the environment. Occupancy, vehicle count and the last
         five phase plans.
         """
-        detectors = traci.inductionloop.getIDList()
-        occopancy = []
+
+        occupancy = []
         vehicle_count = []
-        for detector in detectors:
-            occopancy.append(traci.inductionloop.getLastIntervalOccupancy(detector))
-            vehicle_count.append(traci.inductionloop.getLastIntervalVehicleNumber(detector))
+        for idx in range(len(self.detectors)):
+            try:
+                occupancy.append(mean(self.traffic_flow["occupancy"][idx]))
+            except Exception:
+                occupancy.append(0)
+
+            try:
+                vehicle_count.append(sum(self.traffic_flow["vehicle_count"][idx]))
+            except Exception:
+                vehicle_count.append(0)
+
+        #for detector in self.detectors:
+        #    occopancy.append(self.traffic_flow["occupancy"])
+        #    vehicle_count.append(traci.inductionloop.getLastIntervalVehicleNumber(detector))
         return {
-            "occupancy": np.array(occopancy, dtype=np.float32),
+            "occupancy": np.array(occupancy, dtype=np.float32),
             "vehicle_count": np.array(vehicle_count, dtype=np.int32),
             "last_five_phaseplan": self.phase_plan
         }
+
+    def _calc_traffic_flow(self):
+        """
+        Calculate the traffic flow for the environment for the last interval and saves it to the
+        internal variable.
+        """
+        for idx, detector in enumerate(self.detectors):
+            self.traffic_flow["occupancy"][idx].append(
+                traci.inductionloop.getLastIntervalOccupancy(detector))
+            self.traffic_flow["vehicle_count"][idx].append(
+                traci.inductionloop.getLastIntervalVehicleNumber(detector))
+
+    def _reset_traffic_flow(self):
+        """
+        Resets the traffic flow for the environment.
+        """
+        self.traffic_flow = {
+            "vehicle_count": [[] for _ in range(len(self.detectors))],
+            "occupancy": [[] for _ in range(len(self.detectors))]
+        }
+
+
 
     def _get_info(self):
         """
@@ -132,6 +172,7 @@ class TrafficEnv(gym.Env):
         #    pass
         self.current_step = 0
 
+        #Set traffic flow
         self.sumo_cmd[-1] = str(self.np_random.integers(2, 6) / 4.0)
         #traci.start(self.sumo_cmd, port=8813)
         traci.load(self.sumo_cmd[1:])
@@ -143,6 +184,9 @@ class TrafficEnv(gym.Env):
             self.phase_plan[i] = self.initial_phase_plan
 
         self.edge_list = traci.edge.getIDList()
+        self.detectors = traci.inductionloop.getIDList()
+
+        self._reset_traffic_flow()
 
         return self._get_obs(), {}
 
@@ -157,9 +201,10 @@ class TrafficEnv(gym.Env):
         #self.phase_plan[:, -1] = tlsf.change_phase_plan(self.actions[action])
         self.phase_plan[-1] = tlsf.change_phase_plan(self.actions[action[0]], self.cycle_time)
         travel_time = 0
-        mean_speed = 0
+        mean_speed = []
+        self._reset_traffic_flow()
         #TODO imeplementálni a közbeeső idő checket
-
+        start_time = self.current_step
         for j in range (0,5):
             for i in range(0, self.cycle_time):
                 traci.simulationStep()
@@ -168,12 +213,19 @@ class TrafficEnv(gym.Env):
                 traci.trafficlight.setRedYellowGreenState(
                     tls[0], tlsf.get_phase_column_for_step(self.phase_plan[-1], i, self.traci_order)
                 )
+
+                if i % 5 == 4:
+                    self._calc_traffic_flow()
+
+                if (self.current_step - start_time) == 5 * self.cycle_time - 5:
+                    obs = self._get_obs()
+
                 for edge in self.edge_list:
-                    mean_speed += traci.edge.getLastStepMeanSpeed(edge)/ 13.89 / len(self.edge_list)
-        obs = self._get_obs()
+                    mean_speed.append(traci.edge.getLastStepMeanSpeed(edge)/ 13.89 / len(self.edge_list))
+
         # The reward is the negative of the traveltimes
         # Reward = átlag sebessség edge-kre
-        reward = mean_speed / self.cycle_time / 5
+        reward = mean(mean_speed)
 
         #done = traci.simulation.getTime() / 1000 > self.time_limit
         done = self.current_step > self.time_limit
