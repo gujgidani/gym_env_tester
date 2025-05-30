@@ -66,6 +66,8 @@ class TrafficEnv(gym.Env):
             #Check if mac or linux
             if sys.platform == "darwin":
                 self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.20.0/bin/sumo"
+            elif sys.platform == "win32":
+                self.sumo_binary = "C:"+os.sep+"Sumo"+os.sep+"bin"+os.sep+"sumo.exe"
             else:
                 self.sumo_binary = '/usr/bin/sumo'
         else:
@@ -74,6 +76,8 @@ class TrafficEnv(gym.Env):
             #Check if mac or linux
             if sys.platform == "darwin":
                 self.sumo_binary = "/opt/homebrew/Cellar/sumo/1.20.0/bin/sumo-gui"
+            elif sys.platform == "win32":
+                self.sumo_binary = "C:" + os.sep + "Sumo" + os.sep + "bin" + os.sep + "sumo-gui.exe"
             else:
                 self.sumo_binary = '/usr/bin/sumo-gui'
         self.sumo_cmd = [
