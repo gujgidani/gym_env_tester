@@ -1,0 +1,10 @@
+gymnasium==0.29.1
+numpy==1.24.2
+sumolib==1.22.0
+traci==1.22.0
+torch==2.7.0
+matplotlib==3.10.3
+tensordict==0.8.3
+accelerate
+wandb==0.19.11
+onnx==1.15.0
